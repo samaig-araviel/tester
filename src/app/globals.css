@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #0F7B6C;
+  --primary-hover: #0A6356;
+  --primary-light: #E8F5F1;
+  --secondary: #0D1F3C;
+  --bg: #FAF8F5;
+  --surface: #FFFFFF;
+  --accent: #F0D5BF;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B7280;
+  --border: #E8E4DE;
+  --error: #D44848;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
+  --color-error: var(--error);
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(6deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-12deg);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
