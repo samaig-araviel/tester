@@ -10,9 +10,9 @@ export interface OnboardingData {
 }
 
 export const IDENTITY_OPTIONS = [
-  { key: "parent", label: "Parent", icon: "👤" },
-  { key: "expectant_parent", label: "Expectant parent", icon: "🤰" },
-  { key: "prefer_not_to_say", label: "Prefer not to say", icon: "—" },
+  { key: "PARENT", label: "Parent", icon: "👤" },
+  { key: "EXPECTANT_PARENT", label: "Expectant parent", icon: "🤰" },
+  { key: "PREFER_NOT_TO_SAY", label: "Prefer not to say", icon: "—" },
 ] as const;
 
 export const CHILD_COUNT_OPTIONS = ["1", "2", "3", "4", "5+"] as const;
@@ -54,7 +54,7 @@ export const SUPPORT_NEED_DISPLAY: Record<string, string> = {
 };
 
 export const IDENTITY_DISPLAY: Record<string, string> = {
-  parent: "Parent",
-  expectant_parent: "Expectant parent",
-  prefer_not_to_say: "Prefer not to say",
+  PARENT: "Parent",
+  EXPECTANT_PARENT: "Expectant parent",
+  PREFER_NOT_TO_SAY: "Prefer not to say",
 };
