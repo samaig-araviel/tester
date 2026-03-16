@@ -13,6 +13,12 @@
   --border: #E8E4DE;
   --error: #D44848;
   --onboarding-bg: #F7F4EF;
+  --warm-teal: #117A65;
+  --soft-navy: #0A2342;
+  --charcoal: #1C1C1C;
+  --muted-grey: #6F6F6F;
+  --warm-sand: #F7F4EF;
+  --warm-teal-light: #E6F2EF;
 }
 
 @theme inline {
@@ -28,6 +34,12 @@
   --color-border: var(--border);
   --color-error: var(--error);
   --color-onboarding-bg: var(--onboarding-bg);
+  --color-warm-teal: var(--warm-teal);
+  --color-soft-navy: var(--soft-navy);
+  --color-charcoal: var(--charcoal);
+  --color-muted-grey: var(--muted-grey);
+  --color-warm-sand: var(--warm-sand);
+  --color-warm-teal-light: var(--warm-teal-light);
   --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
   --font-body: "DM Sans", system-ui, sans-serif;
 }
@@ -88,4 +100,13 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Hide scrollbar for carousels */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
