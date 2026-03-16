@@ -10,6 +10,8 @@ export interface HubArticle {
   isFeatured: boolean;
   gradientFrom: string;
   gradientTo: string;
+  readTime: number;
+  publishedDate: string;
 }
 
 export interface HubToolkit {
@@ -63,6 +65,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: true,
     gradientFrom: "#E6F2EF",
     gradientTo: "#F0D5BF",
+    readTime: 8,
+    publishedDate: "2025-05-20",
   },
   {
     id: "art-2",
@@ -74,6 +78,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: true,
     gradientFrom: "#FBE8D8",
     gradientTo: "#E8F5F1",
+    readTime: 10,
+    publishedDate: "2025-06-02",
   },
   {
     id: "art-3",
@@ -85,6 +91,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: true,
     gradientFrom: "#EEF4F8",
     gradientTo: "#E6F2EF",
+    readTime: 5,
+    publishedDate: "2025-04-15",
   },
   {
     id: "art-4",
@@ -96,6 +104,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: true,
     gradientFrom: "#E6F2EF",
     gradientTo: "#EEF4F8",
+    readTime: 12,
+    publishedDate: "2025-06-10",
   },
   {
     id: "art-5",
@@ -107,6 +117,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#FBE8D8",
     gradientTo: "#F7F4EF",
+    readTime: 7,
+    publishedDate: "2025-05-08",
   },
   {
     id: "art-6",
@@ -118,6 +130,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#EEF4F8",
     gradientTo: "#F0D5BF",
+    readTime: 6,
+    publishedDate: "2025-03-22",
   },
   {
     id: "art-7",
@@ -129,6 +143,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#E6F2EF",
     gradientTo: "#FBE8D8",
+    readTime: 9,
+    publishedDate: "2025-04-28",
   },
   {
     id: "art-8",
@@ -140,6 +156,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#EEF4F8",
     gradientTo: "#E6F2EF",
+    readTime: 8,
+    publishedDate: "2025-05-15",
   },
   {
     id: "art-9",
@@ -151,6 +169,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#F7F4EF",
     gradientTo: "#E8F5F1",
+    readTime: 11,
+    publishedDate: "2025-06-18",
   },
   {
     id: "art-10",
@@ -162,6 +182,8 @@ export const ARTICLES: HubArticle[] = [
     isFeatured: false,
     gradientFrom: "#E8F5F1",
     gradientTo: "#EEF4F8",
+    readTime: 7,
+    publishedDate: "2025-02-14",
   },
 ];
 
