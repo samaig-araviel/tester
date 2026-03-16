@@ -1,50 +1,47 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import SectionHeader from "./SectionHeader";
-import Carousel from "./Carousel";
-import OfferCard from "./OfferCard";
+import Carousel from "@/components/home/Carousel";
+import OfferCard from "@/components/home/OfferCard";
+import SectionHeader from "@/components/home/SectionHeader";
 
-interface Offer {
+interface SimilarOffer {
   id: string;
   vendor_name: string;
   vendor_logo_url: string | null;
   banner_url: string | null;
   offer_headline: string;
-  is_saved: boolean;
   is_new: boolean;
+  is_saved: boolean;
+  delivery_type: string | null;
 }
 
-interface NewFeaturedSectionProps {
-  offers: Offer[];
+interface SimilarOffersProps {
+  offers: SimilarOffer[];
+  category: string | null;
   onToggleSave: (offerId: string) => void;
 }
 
-export default function NewFeaturedSection({
+export default function SimilarOffers({
   offers,
+  category,
   onToggleSave,
-}: NewFeaturedSectionProps) {
+}: SimilarOffersProps) {
   const router = useRouter();
 
-  if (offers.length === 0) {
-    return (
-      <section>
-        <SectionHeader
-          title="New & Featured"
-          helperText="New partners and offers added recently."
-        />
-        <p className="font-body text-[14px] text-muted-grey text-center py-8">
-          No new offers this week. Check back soon.
-        </p>
-      </section>
-    );
-  }
+  if (offers.length === 0) return null;
+
+  const explorePath = category
+    ? `/explore/online`
+    : undefined;
 
   return (
-    <section>
+    <section className="mt-12 pt-10 border-t border-border">
       <SectionHeader
-        title="New & Featured"
-        helperText="New partners and offers added recently."
+        title="You might also like..."
+        helperText=""
+        ctaText={category ? `View all in ${category}` : undefined}
+        ctaHref={explorePath}
       />
       <Carousel itemCount={offers.length}>
         {offers.map((offer) => (

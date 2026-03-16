@@ -156,7 +156,7 @@ export default function ExploreContent({
 
   // Navigation
   function handleVendorClick(offerId: string) {
-    router.push(`/offers/${offerId}`);
+    router.push(`/offer/${offerId}`);
   }
 
   return (

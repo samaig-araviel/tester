@@ -34,7 +34,7 @@ export async function updateSession(request: NextRequest) {
   // Redirect unauthenticated users to login
   if (
     !user &&
-    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding"))
+    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer"))
   ) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
@@ -42,7 +42,7 @@ export async function updateSession(request: NextRequest) {
   }
 
   // Onboarding routing for authenticated users
-  if (user && (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding"))) {
+  if (user && (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer"))) {
     const { data: profile } = await supabase
       .from("users")
       .select("onboarding_completed")
