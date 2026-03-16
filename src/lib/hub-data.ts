@@ -29,6 +29,10 @@ export interface MoneyArticle {
   id: string;
   title: string;
   description: string;
+  category: string;
+  author: string;
+  publishedDate: string;
+  imageUrl: string;
   gradientFrom: string;
   gradientTo: string;
 }
@@ -255,6 +259,10 @@ export const MONEY_ARTICLES: MoneyArticle[] = [
     id: "money-1",
     title: "Tax Relief & Allowances",
     description: "Reclaim from government sources",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-01-25",
+    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
     gradientFrom: "#E6F2EF",
     gradientTo: "#F0D5BF",
   },
@@ -262,6 +270,10 @@ export const MONEY_ARTICLES: MoneyArticle[] = [
     id: "money-2",
     title: "How to confidently request flexible working",
     description: "Negotiation tips and scripts",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-02-10",
+    imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
     gradientFrom: "#FBE8D8",
     gradientTo: "#E8F5F1",
   },
@@ -269,6 +281,10 @@ export const MONEY_ARTICLES: MoneyArticle[] = [
     id: "money-3",
     title: "Tips for working from home with a toddler",
     description: "Practical strategies for balance",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-03-05",
+    imageUrl: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&h=400&fit=crop",
     gradientFrom: "#EEF4F8",
     gradientTo: "#E6F2EF",
   },
@@ -276,8 +292,34 @@ export const MONEY_ARTICLES: MoneyArticle[] = [
     id: "money-4",
     title: "A guide to maternity leave pay and benefits",
     description: "Understanding your entitlements",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-04-12",
+    imageUrl: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop",
     gradientFrom: "#E6F2EF",
     gradientTo: "#EEF4F8",
+  },
+  {
+    id: "money-5",
+    title: "Understanding childcare vouchers and tax-free childcare",
+    description: "Which scheme works best for your family",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-05-01",
+    imageUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
+    gradientFrom: "#F7F4EF",
+    gradientTo: "#E6F2EF",
+  },
+  {
+    id: "money-6",
+    title: "Budgeting for baby: a new parent's guide",
+    description: "Smart money planning before and after birth",
+    category: "Financial Support",
+    author: "Parentfits",
+    publishedDate: "2025-05-18",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+    gradientFrom: "#EEF4F8",
+    gradientTo: "#FBE8D8",
   },
 ];
 
