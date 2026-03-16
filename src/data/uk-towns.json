@@ -1,0 +1,6438 @@
+[
+  {
+    "name": "Aberaeron",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Aberdare",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Aberdeen",
+    "county": "Aberdeen City"
+  },
+  {
+    "name": "Aberfeldy",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Aberfoyle",
+    "county": "Stirling"
+  },
+  {
+    "name": "Abergavenny",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Abergele",
+    "county": "Conwy"
+  },
+  {
+    "name": "Aberlour",
+    "county": "Moray"
+  },
+  {
+    "name": "Abersoch",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Abertillery",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Aberystwyth",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Abingdon",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Aboyne",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Accrington",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Acton",
+    "county": "Greater London"
+  },
+  {
+    "name": "Addlestone",
+    "county": "Surrey"
+  },
+  {
+    "name": "Adlington",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Ahoghill",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Airdrie",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Alcester",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Aldeburgh",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Alderley Edge",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Aldershot",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Aldridge",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Alexandria",
+    "county": "West Dunbartonshire"
+  },
+  {
+    "name": "Alford",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Alford",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Alfreton",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Alloa",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Alness",
+    "county": "Highland"
+  },
+  {
+    "name": "Alnwick",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Alsager",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Alston",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Alton",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Altrincham",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Alva",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Amble",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Ambleside",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Amersham",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Amesbury",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Amlwch",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Ammanford",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Ampthill",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Andover",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Annalong",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Annan",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Anstruther",
+    "county": "Fife"
+  },
+  {
+    "name": "Antrim",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Appleby-in-Westmorland",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Arbroath",
+    "county": "Angus"
+  },
+  {
+    "name": "Ardrossan",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Arlesey",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Armadale",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Armagh",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Arnold",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Arundel",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Ascot",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Ashbourne",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Ashby-de-la-Zouch",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Ashford",
+    "county": "Kent"
+  },
+  {
+    "name": "Ashington",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Ashtead",
+    "county": "Surrey"
+  },
+  {
+    "name": "Ashton-under-Lyne",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Aspatria",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Atherstone",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Atherton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Attleborough",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Auchterarder",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Aviemore",
+    "county": "Highland"
+  },
+  {
+    "name": "Axminster",
+    "county": "Devon"
+  },
+  {
+    "name": "Aylesbury",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Aylesford",
+    "county": "Kent"
+  },
+  {
+    "name": "Aylsham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Ayr",
+    "county": "South Ayrshire"
+  },
+  {
+    "name": "Bacup",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Bagshot",
+    "county": "Surrey"
+  },
+  {
+    "name": "Bakewell",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Bala",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Baldock",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Balerno",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Balfron",
+    "county": "Stirling"
+  },
+  {
+    "name": "Ballater",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Balloch",
+    "county": "West Dunbartonshire"
+  },
+  {
+    "name": "Ballycastle",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Ballyclare",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Ballygowan",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Ballymena",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Ballymoney",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Ballynahinch",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Bampton",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Banbridge",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Banbury",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Banchory",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Bangor",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Bangor",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Bangor-on-Dee",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Banstead",
+    "county": "Surrey"
+  },
+  {
+    "name": "Bargoed",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Barking",
+    "county": "Greater London"
+  },
+  {
+    "name": "Barmouth",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Barnard Castle",
+    "county": "County Durham"
+  },
+  {
+    "name": "Barnet",
+    "county": "Greater London"
+  },
+  {
+    "name": "Barnoldswick",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Barnsley",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Barnstaple",
+    "county": "Devon"
+  },
+  {
+    "name": "Barrhead",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Barrow upon Soar",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Barrow-in-Furness",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Barry",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Barton-upon-Humber",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Barwell",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Basildon",
+    "county": "Essex"
+  },
+  {
+    "name": "Basingstoke",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Bath",
+    "county": "Somerset"
+  },
+  {
+    "name": "Bathgate",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Batley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Battle",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Bawtry",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Bayswater",
+    "county": "Greater London"
+  },
+  {
+    "name": "Beaconsfield",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Beaminster",
+    "county": "Dorset"
+  },
+  {
+    "name": "Bearsden",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Beauly",
+    "county": "Highland"
+  },
+  {
+    "name": "Beaumaris",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Bebington",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Beccles",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Beckenham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Bedale",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Bedford",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Bedlington",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Bedwas",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Bedworth",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Beeston",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Beith",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Belfast",
+    "county": "Belfast"
+  },
+  {
+    "name": "Bellingham",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Bellshill",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Belper",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Bembridge",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Benfleet",
+    "county": "Essex"
+  },
+  {
+    "name": "Benllech",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Berkhamsted",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Bermondsey",
+    "county": "Greater London"
+  },
+  {
+    "name": "Berwick-upon-Tweed",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Bethesda",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Bethnal Green",
+    "county": "Greater London"
+  },
+  {
+    "name": "Betws-y-Coed",
+    "county": "Conwy"
+  },
+  {
+    "name": "Beverley",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Bewdley",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Bexhill-on-Sea",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Bexley",
+    "county": "Greater London"
+  },
+  {
+    "name": "Bicester",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Biddulph",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Bideford",
+    "county": "Devon"
+  },
+  {
+    "name": "Bidford-on-Avon",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Biggar",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Biggleswade",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Billericay",
+    "county": "Essex"
+  },
+  {
+    "name": "Billingshurst",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Bilston",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Bingham",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Bingley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Birkenhead",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Birmingham",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Bishop Auckland",
+    "county": "County Durham"
+  },
+  {
+    "name": "Bishop's Castle",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Bishop's Stortford",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Bishopbriggs",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Bishops Waltham",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Bishopton",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Blaby",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Blackburn",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Blackburn",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Blackpool",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Blackwood",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Blaenau Ffestiniog",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Blaenavon",
+    "county": "Torfaen"
+  },
+  {
+    "name": "Blaina",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Blairgowrie",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Blandford Forum",
+    "county": "Dorset"
+  },
+  {
+    "name": "Blantyre",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Blaydon",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Bletchley",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Bloxwich",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Blyth",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Bo'ness",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Bodmin",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Bognor Regis",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Boldon",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Bollington",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Bolsover",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Bolton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Bonnybridge",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Bonnyrigg",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Bootle",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Borehamwood",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Borough Green",
+    "county": "Kent"
+  },
+  {
+    "name": "Boroughbridge",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Boston",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Bothwell",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Bourne",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Bournemouth",
+    "county": "Dorset"
+  },
+  {
+    "name": "Bourton-on-the-Water",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Bow",
+    "county": "Greater London"
+  },
+  {
+    "name": "Brackley",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Bracknell",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Bradford",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Bradford-on-Avon",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Brading",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Bradley Stoke",
+    "county": "Bristol"
+  },
+  {
+    "name": "Braintree",
+    "county": "Essex"
+  },
+  {
+    "name": "Bramhall",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Brampton",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Brandon",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Braunton",
+    "county": "Devon"
+  },
+  {
+    "name": "Brechin",
+    "county": "Angus"
+  },
+  {
+    "name": "Brecon",
+    "county": "Powys"
+  },
+  {
+    "name": "Brent",
+    "county": "Greater London"
+  },
+  {
+    "name": "Brentwood",
+    "county": "Essex"
+  },
+  {
+    "name": "Brewood",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Bridge of Allan",
+    "county": "Stirling"
+  },
+  {
+    "name": "Bridge of Weir",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Bridgend",
+    "county": "Bridgend"
+  },
+  {
+    "name": "Bridgnorth",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Bridgwater",
+    "county": "Somerset"
+  },
+  {
+    "name": "Bridlington",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Bridport",
+    "county": "Dorset"
+  },
+  {
+    "name": "Brierley Hill",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Brigg",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Brighouse",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Brighton",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Bristol",
+    "county": "Bristol"
+  },
+  {
+    "name": "Briton Ferry",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Brixton",
+    "county": "Greater London"
+  },
+  {
+    "name": "Broadford",
+    "county": "Highland"
+  },
+  {
+    "name": "Broadstairs",
+    "county": "Kent"
+  },
+  {
+    "name": "Broadway",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Brockenhurst",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Bromley",
+    "county": "Greater London"
+  },
+  {
+    "name": "Bromsgrove",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Bromyard",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Brora",
+    "county": "Highland"
+  },
+  {
+    "name": "Brough",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Broughshane",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Brownhills",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Broxburn",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Bruton",
+    "county": "Somerset"
+  },
+  {
+    "name": "Brynmawr",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Buckhaven",
+    "county": "Fife"
+  },
+  {
+    "name": "Buckhurst Hill",
+    "county": "Essex"
+  },
+  {
+    "name": "Buckie",
+    "county": "Moray"
+  },
+  {
+    "name": "Buckingham",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Buckley",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Bude",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Budleigh Salterton",
+    "county": "Devon"
+  },
+  {
+    "name": "Builth Wells",
+    "county": "Powys"
+  },
+  {
+    "name": "Bungay",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Burford",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Burgess Hill",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Burghead",
+    "county": "Moray"
+  },
+  {
+    "name": "Burnham",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Burnham-on-Crouch",
+    "county": "Essex"
+  },
+  {
+    "name": "Burnham-on-Sea",
+    "county": "Somerset"
+  },
+  {
+    "name": "Burnley",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Burntisland",
+    "county": "Fife"
+  },
+  {
+    "name": "Burntwood",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Burry Port",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Burton Latimer",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Burton upon Trent",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Bury",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Bury St Edmunds",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Bushey",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Bushmills",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Buxton",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Caerleon",
+    "county": "Newport"
+  },
+  {
+    "name": "Caernarfon",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Caerphilly",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Caistor",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Caldicot",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Callander",
+    "county": "Stirling"
+  },
+  {
+    "name": "Callington",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Calne",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Calverton",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Camberley",
+    "county": "Surrey"
+  },
+  {
+    "name": "Camberwell",
+    "county": "Greater London"
+  },
+  {
+    "name": "Camborne",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Cambridge",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Cambuslang",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Camden",
+    "county": "Greater London"
+  },
+  {
+    "name": "Camelford",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Campbeltown",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Cannock",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Canterbury",
+    "county": "Kent"
+  },
+  {
+    "name": "Canvey Island",
+    "county": "Essex"
+  },
+  {
+    "name": "Cardiff",
+    "county": "Cardiff"
+  },
+  {
+    "name": "Cardigan",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Carlisle",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Carlton",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Carluke",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Carmarthen",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Carnforth",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Carnoustie",
+    "county": "Angus"
+  },
+  {
+    "name": "Carrickfergus",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Carryduff",
+    "county": "Lisburn and Castlereagh"
+  },
+  {
+    "name": "Carterton",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Castle Cary",
+    "county": "Somerset"
+  },
+  {
+    "name": "Castle Donington",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Castle Douglas",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Castlederg",
+    "county": "Derry City and Strabane"
+  },
+  {
+    "name": "Castleford",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Castlereagh",
+    "county": "Lisburn and Castlereagh"
+  },
+  {
+    "name": "Castlewellan",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Caterham",
+    "county": "Surrey"
+  },
+  {
+    "name": "Catford",
+    "county": "Greater London"
+  },
+  {
+    "name": "Cefn Mawr",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Chalfont St Giles",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Chalfont St Peter",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Chapeltown",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Chard",
+    "county": "Somerset"
+  },
+  {
+    "name": "Charlbury",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Chatham",
+    "county": "Kent"
+  },
+  {
+    "name": "Chatteris",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Cheadle",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Cheadle",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Chelmsford",
+    "county": "Essex"
+  },
+  {
+    "name": "Chelsea",
+    "county": "Greater London"
+  },
+  {
+    "name": "Cheltenham",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Chepstow",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Chertsey",
+    "county": "Surrey"
+  },
+  {
+    "name": "Chesham",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Cheshunt",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Chester",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Chester-le-Street",
+    "county": "County Durham"
+  },
+  {
+    "name": "Chesterfield",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Chichester",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Chigwell",
+    "county": "Essex"
+  },
+  {
+    "name": "Chippenham",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Chipping Campden",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Chipping Norton",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Chirk",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Chirnside",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Chislehurst",
+    "county": "Greater London"
+  },
+  {
+    "name": "Chiswick",
+    "county": "Greater London"
+  },
+  {
+    "name": "Chorley",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Christchurch",
+    "county": "Dorset"
+  },
+  {
+    "name": "Church Stretton",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Cinderford",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Cirencester",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "City of London",
+    "county": "City of London"
+  },
+  {
+    "name": "Clacton-on-Sea",
+    "county": "Essex"
+  },
+  {
+    "name": "Clarkston",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Clay Cross",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Cleadon",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Cleator Moor",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Cleckheaton",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Cleethorpes",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Cleobury Mortimer",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Clevedon",
+    "county": "Somerset"
+  },
+  {
+    "name": "Clitheroe",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Clun",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Clydach",
+    "county": "Swansea"
+  },
+  {
+    "name": "Clydebank",
+    "county": "West Dunbartonshire"
+  },
+  {
+    "name": "Coalisland",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Coalville",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Coatbridge",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Cobham",
+    "county": "Surrey"
+  },
+  {
+    "name": "Cockenzie",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Cockermouth",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Coedpoeth",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Coggeshall",
+    "county": "Essex"
+  },
+  {
+    "name": "Colchester",
+    "county": "Essex"
+  },
+  {
+    "name": "Coldstream",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Coleford",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Coleraine",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Coleshill",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Colne",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Colwyn Bay",
+    "county": "Conwy"
+  },
+  {
+    "name": "Comber",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Comrie",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Congleton",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Conisbrough",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Connah's Quay",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Consett",
+    "county": "County Durham"
+  },
+  {
+    "name": "Conwy",
+    "county": "Conwy"
+  },
+  {
+    "name": "Cookham",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Cookstown",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Corbridge",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Corby",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Corfe Castle",
+    "county": "Dorset"
+  },
+  {
+    "name": "Corsham",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Corstorphine",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Corwen",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Cotgrave",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Cottenham",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Cottingham",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Coupar Angus",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Coventry",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Cowbridge",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Cowdenbeath",
+    "county": "Fife"
+  },
+  {
+    "name": "Cowes",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Cradley Heath",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Craigavon",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Crail",
+    "county": "Fife"
+  },
+  {
+    "name": "Cramlington",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Cramond",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Cranbrook",
+    "county": "Kent"
+  },
+  {
+    "name": "Cranfield",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Cranleigh",
+    "county": "Surrey"
+  },
+  {
+    "name": "Crawley",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Crediton",
+    "county": "Devon"
+  },
+  {
+    "name": "Crewe",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Crewkerne",
+    "county": "Somerset"
+  },
+  {
+    "name": "Criccieth",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Crickhowell",
+    "county": "Powys"
+  },
+  {
+    "name": "Cricklade",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Crieff",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Cromarty",
+    "county": "Highland"
+  },
+  {
+    "name": "Cromer",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Crook",
+    "county": "County Durham"
+  },
+  {
+    "name": "Crosby",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Crossmaglen",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Crowborough",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Crowle",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Crowthorne",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Croydon",
+    "county": "Greater London"
+  },
+  {
+    "name": "Crumlin",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Cullompton",
+    "county": "Devon"
+  },
+  {
+    "name": "Cumbernauld",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Cumnock",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Cupar",
+    "county": "Fife"
+  },
+  {
+    "name": "Currie",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Cushendall",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Cwmbran",
+    "county": "Torfaen"
+  },
+  {
+    "name": "Dagenham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Dalbeattie",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Dalgety Bay",
+    "county": "Fife"
+  },
+  {
+    "name": "Dalkeith",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Dalry",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Dalton-in-Furness",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Darlaston",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Darlington",
+    "county": "County Durham"
+  },
+  {
+    "name": "Dartford",
+    "county": "Kent"
+  },
+  {
+    "name": "Dartmouth",
+    "county": "Devon"
+  },
+  {
+    "name": "Darvel",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Darwen",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Daventry",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Dawley",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Dawlish",
+    "county": "Devon"
+  },
+  {
+    "name": "Deal",
+    "county": "Kent"
+  },
+  {
+    "name": "Debenham",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Deganwy",
+    "county": "Conwy"
+  },
+  {
+    "name": "Denbigh",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Denny",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Denton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Deptford",
+    "county": "Greater London"
+  },
+  {
+    "name": "Derby",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Dereham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Derry",
+    "county": "Derry City and Strabane"
+  },
+  {
+    "name": "Desborough",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Devizes",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Dewsbury",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Didcot",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Dinas Powys",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Dingwall",
+    "county": "Highland"
+  },
+  {
+    "name": "Diss",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Ditchling",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Dolgellau",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Dollar",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Donaghadee",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Doncaster",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Dorchester",
+    "county": "Dorset"
+  },
+  {
+    "name": "Dorking",
+    "county": "Surrey"
+  },
+  {
+    "name": "Dornoch",
+    "county": "Highland"
+  },
+  {
+    "name": "Dorridge",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Douglas",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Doune",
+    "county": "Stirling"
+  },
+  {
+    "name": "Dover",
+    "county": "Kent"
+  },
+  {
+    "name": "Downham Market",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Downpatrick",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Downton",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Draperstown",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Driffield",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Droitwich Spa",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Dromore",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Dronfield",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Droylsden",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Drymen",
+    "county": "Stirling"
+  },
+  {
+    "name": "Dudley",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Dufftown",
+    "county": "Moray"
+  },
+  {
+    "name": "Dukinfield",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Dulverton",
+    "county": "Somerset"
+  },
+  {
+    "name": "Dulwich",
+    "county": "Greater London"
+  },
+  {
+    "name": "Dumbarton",
+    "county": "West Dunbartonshire"
+  },
+  {
+    "name": "Dumfries",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Dunbar",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Dunblane",
+    "county": "Stirling"
+  },
+  {
+    "name": "Dundee",
+    "county": "Angus"
+  },
+  {
+    "name": "Dunfermline",
+    "county": "Fife"
+  },
+  {
+    "name": "Dungannon",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Dunkeld",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Dunoon",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Duns",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Dunstable",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Durham",
+    "county": "County Durham"
+  },
+  {
+    "name": "Dursley",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Eaglesham",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Ealing",
+    "county": "Greater London"
+  },
+  {
+    "name": "Earl Shilton",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Earley",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Earls Barton",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Easingwold",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "East Calder",
+    "county": "West Lothian"
+  },
+  {
+    "name": "East Grinstead",
+    "county": "West Sussex"
+  },
+  {
+    "name": "East Kilbride",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "East Linton",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Eastbourne",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Eastleigh",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Eastwood",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Ebbw Vale",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Eccles",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Eccleshall",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Eckington",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Edenbridge",
+    "county": "Kent"
+  },
+  {
+    "name": "Edgware",
+    "county": "Greater London"
+  },
+  {
+    "name": "Edinburgh",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Edwinstowe",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Egham",
+    "county": "Surrey"
+  },
+  {
+    "name": "Egremont",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Elgin",
+    "county": "Moray"
+  },
+  {
+    "name": "Elland",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Ellesmere",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Ellesmere Port",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Ellon",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Elloughton",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Eltham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Ely",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Emsworth",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Enderby",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Enfield",
+    "county": "Greater London"
+  },
+  {
+    "name": "Enniskillen",
+    "county": "Fermanagh and Omagh"
+  },
+  {
+    "name": "Epping",
+    "county": "Essex"
+  },
+  {
+    "name": "Epsom",
+    "county": "Surrey"
+  },
+  {
+    "name": "Epworth",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Erith",
+    "county": "Greater London"
+  },
+  {
+    "name": "Erskine",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Esher",
+    "county": "Surrey"
+  },
+  {
+    "name": "Eton",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Evesham",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Ewell",
+    "county": "Surrey"
+  },
+  {
+    "name": "Exeter",
+    "county": "Devon"
+  },
+  {
+    "name": "Exmouth",
+    "county": "Devon"
+  },
+  {
+    "name": "Eye",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Eyemouth",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Eynsham",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Failsworth",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Fairford",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Fakenham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Falkirk",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Falmouth",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Fareham",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Faringdon",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Farnborough",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Farnham",
+    "county": "Surrey"
+  },
+  {
+    "name": "Farnworth",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Faversham",
+    "county": "Kent"
+  },
+  {
+    "name": "Featherstone",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Felixstowe",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Feltham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Ferndale",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Ferndown",
+    "county": "Dorset"
+  },
+  {
+    "name": "Ferryhill",
+    "county": "County Durham"
+  },
+  {
+    "name": "Fetcham",
+    "county": "Surrey"
+  },
+  {
+    "name": "Filey",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Filton",
+    "county": "Bristol"
+  },
+  {
+    "name": "Finchley",
+    "county": "Greater London"
+  },
+  {
+    "name": "Fishguard",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Fivemiletown",
+    "county": "Fermanagh and Omagh"
+  },
+  {
+    "name": "Fleet",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Fleetwood",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Flint",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Flitwick",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Fochabers",
+    "county": "Moray"
+  },
+  {
+    "name": "Folkestone",
+    "county": "Kent"
+  },
+  {
+    "name": "Fordingbridge",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Forfar",
+    "county": "Angus"
+  },
+  {
+    "name": "Formby",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Forres",
+    "county": "Moray"
+  },
+  {
+    "name": "Fort Augustus",
+    "county": "Highland"
+  },
+  {
+    "name": "Fort William",
+    "county": "Highland"
+  },
+  {
+    "name": "Fortrose",
+    "county": "Highland"
+  },
+  {
+    "name": "Fowey",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Framlingham",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Fraserburgh",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Freshwater",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Frimley",
+    "county": "Surrey"
+  },
+  {
+    "name": "Frinton-on-Sea",
+    "county": "Essex"
+  },
+  {
+    "name": "Frodsham",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Frome",
+    "county": "Somerset"
+  },
+  {
+    "name": "Fulham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Gainsborough",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Galashiels",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Galston",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Garforth",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Garstang",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Gatehouse of Fleet",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Gateshead",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Gatley",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Gerrards Cross",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Giffnock",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Gilford",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Gillingham",
+    "county": "Dorset"
+  },
+  {
+    "name": "Gillingham",
+    "county": "Kent"
+  },
+  {
+    "name": "Girvan",
+    "county": "South Ayrshire"
+  },
+  {
+    "name": "Glasgow",
+    "county": "Glasgow City"
+  },
+  {
+    "name": "Glastonbury",
+    "county": "Somerset"
+  },
+  {
+    "name": "Glenrothes",
+    "county": "Fife"
+  },
+  {
+    "name": "Glossop",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Glossop",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Gloucester",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Glynneath",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Godalming",
+    "county": "Surrey"
+  },
+  {
+    "name": "Godmanchester",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Golspie",
+    "county": "Highland"
+  },
+  {
+    "name": "Goodwick",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Goole",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Gorebridge",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Gorseinon",
+    "county": "Swansea"
+  },
+  {
+    "name": "Gosport",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Gourock",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Grange-over-Sands",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Grangemouth",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Grantham",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Grantown-on-Spey",
+    "county": "Highland"
+  },
+  {
+    "name": "Grassington",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Gravesend",
+    "county": "Kent"
+  },
+  {
+    "name": "Grays",
+    "county": "Essex"
+  },
+  {
+    "name": "Great Ayton",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Great Dunmow",
+    "county": "Essex"
+  },
+  {
+    "name": "Great Harwood",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Great Torrington",
+    "county": "Devon"
+  },
+  {
+    "name": "Great Yarmouth",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Greenisland",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Greenock",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Greenwich",
+    "county": "Greater London"
+  },
+  {
+    "name": "Grimsby",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Guildford",
+    "county": "Surrey"
+  },
+  {
+    "name": "Guiseley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Gullane",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Hackney",
+    "county": "Greater London"
+  },
+  {
+    "name": "Haddington",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Hadleigh",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Hailsham",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Halesowen",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Halesworth",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Halifax",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Halstead",
+    "county": "Essex"
+  },
+  {
+    "name": "Haltwhistle",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Hamilton",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Hammersmith",
+    "county": "Greater London"
+  },
+  {
+    "name": "Hampstead",
+    "county": "Greater London"
+  },
+  {
+    "name": "Harlech",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Harleston",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Harlow",
+    "county": "Essex"
+  },
+  {
+    "name": "Harpenden",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Harrogate",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Harrow",
+    "county": "Greater London"
+  },
+  {
+    "name": "Hartlepool",
+    "county": "County Durham"
+  },
+  {
+    "name": "Hartley Wintney",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Haslemere",
+    "county": "Surrey"
+  },
+  {
+    "name": "Haslingden",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Hastings",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Hatfield",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Havant",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Haverfordwest",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Haverhill",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Hawarden",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Hawes",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Hawick",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Hay-on-Wye",
+    "county": "Powys"
+  },
+  {
+    "name": "Hayes",
+    "county": "Greater London"
+  },
+  {
+    "name": "Hayle",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Haywards Heath",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Hazel Grove",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Heanor",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Heathfield",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Hebburn",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Hebden Bridge",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Heckmondwike",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Hedge End",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Hedon",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Helensburgh",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Helmsdale",
+    "county": "Highland"
+  },
+  {
+    "name": "Helmsley",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Helston",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Hemel Hempstead",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Henfield",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Henley-in-Arden",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Henley-on-Thames",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Hereford",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Herne Bay",
+    "county": "Kent"
+  },
+  {
+    "name": "Hertford",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Hessle",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Heswall",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Hetton-le-Hole",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Hexham",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Heywood",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "High Wycombe",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Higham Ferrers",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Highworth",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Hillsborough",
+    "county": "Lisburn and Castlereagh"
+  },
+  {
+    "name": "Hinckley",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Histon",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Hitchin",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Hoddesdon",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Holbeach",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Holmes Chapel",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Holt",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Holt",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Holyhead",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Holywell",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Holywood",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Honiton",
+    "county": "Devon"
+  },
+  {
+    "name": "Hook",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Hopeman",
+    "county": "Moray"
+  },
+  {
+    "name": "Horncastle",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Hornsea",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Horsforth",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Horsham",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Houghton Regis",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Houghton-le-Spring",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Hounslow",
+    "county": "Greater London"
+  },
+  {
+    "name": "Houston",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Hove",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Howden",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Hoylake",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Hucknall",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Huddersfield",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Hull",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Hungerford",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Hunstanton",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Huntingdon",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Huntly",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Hurstpierpoint",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Huyton",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Hyde",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Hythe",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Hythe",
+    "county": "Kent"
+  },
+  {
+    "name": "Ilford",
+    "county": "Greater London"
+  },
+  {
+    "name": "Ilfracombe",
+    "county": "Devon"
+  },
+  {
+    "name": "Ilkeston",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Ilkley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Ilminster",
+    "county": "Somerset"
+  },
+  {
+    "name": "Immingham",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Impington",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Innerleithen",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Inveraray",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Inverbervie",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Invergordon",
+    "county": "Highland"
+  },
+  {
+    "name": "Inverkeithing",
+    "county": "Fife"
+  },
+  {
+    "name": "Inverkip",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Inverness",
+    "county": "Highland"
+  },
+  {
+    "name": "Inverurie",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Ipswich",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Irthlingborough",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Irvine",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Irvinestown",
+    "county": "Fermanagh and Omagh"
+  },
+  {
+    "name": "Islington",
+    "county": "Greater London"
+  },
+  {
+    "name": "Iver",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Ivybridge",
+    "county": "Devon"
+  },
+  {
+    "name": "Jarrow",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Jedburgh",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Johnstone",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Juniper Green",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Keady",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Kearsley",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Kegworth",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Keighley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Keith",
+    "county": "Moray"
+  },
+  {
+    "name": "Kelso",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Kendal",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Kenilworth",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Kensington",
+    "county": "Greater London"
+  },
+  {
+    "name": "Keswick",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Kettering",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Keynsham",
+    "county": "Somerset"
+  },
+  {
+    "name": "Kibworth",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Kidderminster",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Kidlington",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Kidsgrove",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Kidwelly",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Kilbarchan",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Kilkeel",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Killin",
+    "county": "Stirling"
+  },
+  {
+    "name": "Kilmacolm",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Kilmarnock",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Kilsyth",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Kilwinning",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Kimberley",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "King's Lynn",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Kinghorn",
+    "county": "Fife"
+  },
+  {
+    "name": "Kingsbridge",
+    "county": "Devon"
+  },
+  {
+    "name": "Kingston upon Thames",
+    "county": "Greater London"
+  },
+  {
+    "name": "Kington",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Kingussie",
+    "county": "Highland"
+  },
+  {
+    "name": "Kinross",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Kirkby",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Kirkby Lonsdale",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Kirkby-in-Ashfield",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Kirkcaldy",
+    "county": "Fife"
+  },
+  {
+    "name": "Kirkcudbright",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Kirkham",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Kirkintilloch",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Kirkliston",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Kirkwall",
+    "county": "Orkney Islands"
+  },
+  {
+    "name": "Kirriemuir",
+    "county": "Angus"
+  },
+  {
+    "name": "Knaresborough",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Knebworth",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Knighton",
+    "county": "Powys"
+  },
+  {
+    "name": "Knottingley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Knowle",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Knutsford",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Kyle of Lochalsh",
+    "county": "Highland"
+  },
+  {
+    "name": "Lairg",
+    "county": "Highland"
+  },
+  {
+    "name": "Lampeter",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Lanark",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Lancaster",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Lancing",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Langbank",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Langholm",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Langport",
+    "county": "Somerset"
+  },
+  {
+    "name": "Larbert",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Largs",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Larkhall",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Larne",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Lasswade",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Lauder",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Laugharne",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Launceston",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Laurencekirk",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Lavenham",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Leamington Spa",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Leatherhead",
+    "county": "Surrey"
+  },
+  {
+    "name": "Lechlade",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Ledbury",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Leeds",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Leek",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Leicester",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Leigh",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Leigh-on-Sea",
+    "county": "Essex"
+  },
+  {
+    "name": "Leighton Buzzard",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Leiston",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Leith",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Lenzie",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Leominster",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Lerwick",
+    "county": "Shetland Islands"
+  },
+  {
+    "name": "Leslie",
+    "county": "Fife"
+  },
+  {
+    "name": "Lesmahagow",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Letchworth",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Leven",
+    "county": "Fife"
+  },
+  {
+    "name": "Lewes",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Lewisham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Leyburn",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Leyland",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Lichfield",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Limavady",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Lincoln",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Lingfield",
+    "county": "Surrey"
+  },
+  {
+    "name": "Linlithgow",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Linwood",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Lisburn",
+    "county": "Lisburn and Castlereagh"
+  },
+  {
+    "name": "Liskeard",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Lisnaskea",
+    "county": "Fermanagh and Omagh"
+  },
+  {
+    "name": "Littleborough",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Littlehampton",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Littleport",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Liverpool",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Livingston",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Llanberis",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Llandeilo",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Llandovery",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Llandrindod Wells",
+    "county": "Powys"
+  },
+  {
+    "name": "Llandudno",
+    "county": "Conwy"
+  },
+  {
+    "name": "Llandysul",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Llanelli",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Llanfairfechan",
+    "county": "Conwy"
+  },
+  {
+    "name": "Llanfyllin",
+    "county": "Powys"
+  },
+  {
+    "name": "Llangefni",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Llangollen",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Llanidloes",
+    "county": "Powys"
+  },
+  {
+    "name": "Llanrwst",
+    "county": "Conwy"
+  },
+  {
+    "name": "Llantrisant",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Llantwit Major",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Llanwrtyd Wells",
+    "county": "Powys"
+  },
+  {
+    "name": "Loanhead",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Lochgelly",
+    "county": "Fife"
+  },
+  {
+    "name": "Lochgilphead",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Lochwinnoch",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Lockerbie",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Loddon",
+    "county": "Norfolk"
+  },
+  {
+    "name": "London",
+    "county": "Greater London"
+  },
+  {
+    "name": "Londonderry",
+    "county": "Derry City and Strabane"
+  },
+  {
+    "name": "Long Buckby",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Long Eaton",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Long Stratton",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Long Sutton",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Longbenton",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Longridge",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Looe",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Lossiemouth",
+    "county": "Moray"
+  },
+  {
+    "name": "Lostwithiel",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Loughborough",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Loughton",
+    "county": "Essex"
+  },
+  {
+    "name": "Louth",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Lowestoft",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Ludgershall",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Ludlow",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Lurgan",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Luton",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Lutterworth",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Lydd",
+    "county": "Kent"
+  },
+  {
+    "name": "Lydney",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Lyme Regis",
+    "county": "Dorset"
+  },
+  {
+    "name": "Lymington",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Lymm",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Lyndhurst",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Lynton",
+    "county": "Devon"
+  },
+  {
+    "name": "Lytham St Annes",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Mablethorpe",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Macclesfield",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Machynlleth",
+    "county": "Powys"
+  },
+  {
+    "name": "Madeley",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Maesteg",
+    "county": "Bridgend"
+  },
+  {
+    "name": "Maghera",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Magherafelt",
+    "county": "Mid Ulster"
+  },
+  {
+    "name": "Maghull",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Maidenhead",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Maidstone",
+    "county": "Kent"
+  },
+  {
+    "name": "Maldon",
+    "county": "Essex"
+  },
+  {
+    "name": "Malmesbury",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Maltby",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Malton",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Malvern",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Manchester",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Manningtree",
+    "county": "Essex"
+  },
+  {
+    "name": "Mansfield",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Marazion",
+    "county": "Cornwall"
+  },
+  {
+    "name": "March",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Margate",
+    "county": "Kent"
+  },
+  {
+    "name": "Market Bosworth",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Market Deeping",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Market Drayton",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Market Harborough",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Market Rasen",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Market Weighton",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Markethill",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Markinch",
+    "county": "Fife"
+  },
+  {
+    "name": "Marlborough",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Marlow",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Marple",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Maryport",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Masham",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Matlock",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Mauchline",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Maybole",
+    "county": "South Ayrshire"
+  },
+  {
+    "name": "Melbourne",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Melksham",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Melrose",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Melton Mowbray",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Menai Bridge",
+    "county": "Anglesey"
+  },
+  {
+    "name": "Menstrie",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Mere",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Meriden",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Merthyr Tydfil",
+    "county": "Merthyr Tydfil"
+  },
+  {
+    "name": "Methil",
+    "county": "Fife"
+  },
+  {
+    "name": "Mexborough",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Middleton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Middleton-in-Teesdale",
+    "county": "County Durham"
+  },
+  {
+    "name": "Middlewich",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Midhurst",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Midsomer Norton",
+    "county": "Somerset"
+  },
+  {
+    "name": "Mildenhall",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Milford Haven",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Millom",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Millport",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Milngavie",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Milnrow",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Milton Keynes",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Minehead",
+    "county": "Somerset"
+  },
+  {
+    "name": "Mirfield",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Mitcham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Moffat",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Moira",
+    "county": "Lisburn and Castlereagh"
+  },
+  {
+    "name": "Mold",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Monifieth",
+    "county": "Angus"
+  },
+  {
+    "name": "Monmouth",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Montgomery",
+    "county": "Powys"
+  },
+  {
+    "name": "Montrose",
+    "county": "Angus"
+  },
+  {
+    "name": "Moodiesburn",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Morden",
+    "county": "Greater London"
+  },
+  {
+    "name": "Morecambe",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Moreton-in-Marsh",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Morley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Morpeth",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Mossley",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Motherwell",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Mountain Ash",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Mountsorrel",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Much Hadham",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Much Wenlock",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Mumbles",
+    "county": "Swansea"
+  },
+  {
+    "name": "Musselburgh",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Nailsea",
+    "county": "Somerset"
+  },
+  {
+    "name": "Nailsworth",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Nairn",
+    "county": "Highland"
+  },
+  {
+    "name": "Nantwich",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Nantyglo",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Narberth",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Narborough",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Neath",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Needham Market",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Nefyn",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Neilston",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Nelson",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Neston",
+    "county": "Cheshire"
+  },
+  {
+    "name": "New Milton",
+    "county": "Hampshire"
+  },
+  {
+    "name": "New Quay",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "New Romney",
+    "county": "Kent"
+  },
+  {
+    "name": "Newark-on-Trent",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Newbridge",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Newbury",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Newcastle",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Newcastle Emlyn",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Newcastle upon Tyne",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Newcastle-under-Lyme",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Newent",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Newhaven",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Newmarket",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Newmilns",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Newport",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Newport",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Newport",
+    "county": "Newport"
+  },
+  {
+    "name": "Newport Pagnell",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Newport-on-Tay",
+    "county": "Fife"
+  },
+  {
+    "name": "Newquay",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Newry",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Newton Abbot",
+    "county": "Devon"
+  },
+  {
+    "name": "Newton Aycliffe",
+    "county": "County Durham"
+  },
+  {
+    "name": "Newton Mearns",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Newton Stewart",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Newton-le-Willows",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Newtongrange",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Newtown",
+    "county": "Powys"
+  },
+  {
+    "name": "Newtown St Boswells",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Newtownabbey",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Newtownards",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Neyland",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Normanton",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "North Berwick",
+    "county": "East Lothian"
+  },
+  {
+    "name": "North Shields",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "North Walsham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Northallerton",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Northampton",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Northleach",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Northolt",
+    "county": "Greater London"
+  },
+  {
+    "name": "Northwich",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Norwich",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Notting Hill",
+    "county": "Greater London"
+  },
+  {
+    "name": "Nottingham",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Nuneaton",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Oadby",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Oakham",
+    "county": "Rutland"
+  },
+  {
+    "name": "Oban",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Odiham",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Ogmore Vale",
+    "county": "Bridgend"
+  },
+  {
+    "name": "Okehampton",
+    "county": "Devon"
+  },
+  {
+    "name": "Old Kilpatrick",
+    "county": "West Dunbartonshire"
+  },
+  {
+    "name": "Oldbury",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Oldham",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Oldmeldrum",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Ollerton",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Olney",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Omagh",
+    "county": "Fermanagh and Omagh"
+  },
+  {
+    "name": "Ormskirk",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Orpington",
+    "county": "Greater London"
+  },
+  {
+    "name": "Ossett",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Oswestry",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Otley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Ottery St Mary",
+    "county": "Devon"
+  },
+  {
+    "name": "Oundle",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Overton",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Oxford",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Oxted",
+    "county": "Surrey"
+  },
+  {
+    "name": "Paddington",
+    "county": "Greater London"
+  },
+  {
+    "name": "Paddock Wood",
+    "county": "Kent"
+  },
+  {
+    "name": "Padiham",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Padstow",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Paignton",
+    "county": "Devon"
+  },
+  {
+    "name": "Paisley",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Pangbourne",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Patchway",
+    "county": "Bristol"
+  },
+  {
+    "name": "Pateley Bridge",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Pathhead",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Peacehaven",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Peckham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Peebles",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Pembroke",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Pembroke Dock",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Penarth",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Pencoed",
+    "county": "Bridgend"
+  },
+  {
+    "name": "Penicuik",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Penistone",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Penkridge",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Penmaenmawr",
+    "county": "Conwy"
+  },
+  {
+    "name": "Penrith",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Penryn",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Penzance",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Perranporth",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Pershore",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Perth",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Peterborough",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Peterhead",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Peterlee",
+    "county": "County Durham"
+  },
+  {
+    "name": "Petersfield",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Petworth",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Pewsey",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Pickering",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Pitlochry",
+    "county": "Perth and Kinross"
+  },
+  {
+    "name": "Pittenweem",
+    "county": "Fife"
+  },
+  {
+    "name": "Plymouth",
+    "county": "Devon"
+  },
+  {
+    "name": "Pocklington",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Polegate",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Polesworth",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Polmont",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Pontardawe",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Pontarddulais",
+    "county": "Swansea"
+  },
+  {
+    "name": "Pontefract",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Ponteland",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Pontypool",
+    "county": "Torfaen"
+  },
+  {
+    "name": "Pontypridd",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Poole",
+    "county": "Dorset"
+  },
+  {
+    "name": "Poplar",
+    "county": "Greater London"
+  },
+  {
+    "name": "Port Glasgow",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Port Talbot",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Portadown",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Portaferry",
+    "county": "North Down and Ards"
+  },
+  {
+    "name": "Porth",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Porthcawl",
+    "county": "Bridgend"
+  },
+  {
+    "name": "Porthmadog",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Portishead",
+    "county": "Somerset"
+  },
+  {
+    "name": "Portlethen",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Portobello",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Portree",
+    "county": "Highland"
+  },
+  {
+    "name": "Portrush",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Portsmouth",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Portstewart",
+    "county": "Causeway Coast and Glens"
+  },
+  {
+    "name": "Potters Bar",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Potton",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Poulton-le-Fylde",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Poynton",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Prescot",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Prestatyn",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Presteigne",
+    "county": "Powys"
+  },
+  {
+    "name": "Preston",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Prestonpans",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Prestwich",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Prestwick",
+    "county": "South Ayrshire"
+  },
+  {
+    "name": "Princes Risborough",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Prudhoe",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Pudsey",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Pulborough",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Putney",
+    "county": "Greater London"
+  },
+  {
+    "name": "Pwllheli",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Queensferry",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Queensferry",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Quorn",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Radcliffe",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Radstock",
+    "county": "Somerset"
+  },
+  {
+    "name": "Raglan",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Rainhill",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Ramsey",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Ramsgate",
+    "county": "Kent"
+  },
+  {
+    "name": "Randalstown",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Ratho",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "Raunds",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Rawmarsh",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Rawtenstall",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Rayleigh",
+    "county": "Essex"
+  },
+  {
+    "name": "Reading",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Redbourn",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Redditch",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Redhill",
+    "county": "Surrey"
+  },
+  {
+    "name": "Redruth",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Reepham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Reigate",
+    "county": "Surrey"
+  },
+  {
+    "name": "Renfrew",
+    "county": "Renfrewshire"
+  },
+  {
+    "name": "Resolven",
+    "county": "Neath Port Talbot"
+  },
+  {
+    "name": "Retford",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Rhayader",
+    "county": "Powys"
+  },
+  {
+    "name": "Rhoose",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Rhosllanerchrugog",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Rhyl",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Richhill",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Richmond",
+    "county": "Greater London"
+  },
+  {
+    "name": "Richmond",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Rickmansworth",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Ringwood",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Ripley",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Ripon",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Risca",
+    "county": "Caerphilly"
+  },
+  {
+    "name": "Robertsbridge",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Rochdale",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Rochester",
+    "county": "Kent"
+  },
+  {
+    "name": "Rochford",
+    "county": "Essex"
+  },
+  {
+    "name": "Rogerstone",
+    "county": "Newport"
+  },
+  {
+    "name": "Romford",
+    "county": "Greater London"
+  },
+  {
+    "name": "Romsey",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Roslin",
+    "county": "Midlothian"
+  },
+  {
+    "name": "Ross-on-Wye",
+    "county": "Herefordshire"
+  },
+  {
+    "name": "Rostrevor",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Rosyth",
+    "county": "Fife"
+  },
+  {
+    "name": "Rothbury",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Rotherham",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Rothes",
+    "county": "Moray"
+  },
+  {
+    "name": "Rothesay",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Rothwell",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Rothwell",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Rowley Regis",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Royal Wootton Bassett",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Royston",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Royton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Ruabon",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Ruddington",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Rugby",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Rugeley",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Ruislip",
+    "county": "Greater London"
+  },
+  {
+    "name": "Runcorn",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Rushden",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Rutherglen",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Ruthin",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "Ryde",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Rye",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Ryton",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Saffron Walden",
+    "county": "Essex"
+  },
+  {
+    "name": "Sale",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Salford",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Salisbury",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Saltash",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Saltcoats",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Sandbach",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Sandhurst",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Sandown",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Sandwich",
+    "county": "Kent"
+  },
+  {
+    "name": "Sandy",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Sanquhar",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Sauchie",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Saundersfoot",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Sawbridgeworth",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Sawston",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Sawtry",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Saxmundham",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Scalloway",
+    "county": "Shetland Islands"
+  },
+  {
+    "name": "Scarborough",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Scunthorpe",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Seaford",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Seaham",
+    "county": "County Durham"
+  },
+  {
+    "name": "Seahouses",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Seaton",
+    "county": "Devon"
+  },
+  {
+    "name": "Sedbergh",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Sedgefield",
+    "county": "County Durham"
+  },
+  {
+    "name": "Sedgley",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Selby",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Selkirk",
+    "county": "Scottish Borders"
+  },
+  {
+    "name": "Selsey",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Settle",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Sevenoaks",
+    "county": "Kent"
+  },
+  {
+    "name": "Shaftesbury",
+    "county": "Dorset"
+  },
+  {
+    "name": "Shanklin",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Shaw",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Sheerness",
+    "county": "Kent"
+  },
+  {
+    "name": "Sheffield",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Shefford",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Shepshed",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Shepton Mallet",
+    "county": "Somerset"
+  },
+  {
+    "name": "Sherborne",
+    "county": "Dorset"
+  },
+  {
+    "name": "Sherburn in Elmet",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Sheringham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Shifnal",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Shildon",
+    "county": "County Durham"
+  },
+  {
+    "name": "Shipley",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Shipston-on-Stour",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Shirebrook",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Shoreditch",
+    "county": "Greater London"
+  },
+  {
+    "name": "Shoreham-by-Sea",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Short Heath",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Shotton",
+    "county": "Flintshire"
+  },
+  {
+    "name": "Shotts",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Shrewsbury",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Sidcup",
+    "county": "Greater London"
+  },
+  {
+    "name": "Sidmouth",
+    "county": "Devon"
+  },
+  {
+    "name": "Sileby",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Silloth",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Silverstone",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Sittingbourne",
+    "county": "Kent"
+  },
+  {
+    "name": "Skegness",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Skelmersdale",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Skipton",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Sleaford",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Slough",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Smethwick",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Snodland",
+    "county": "Kent"
+  },
+  {
+    "name": "Soham",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Solihull",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Somerton",
+    "county": "Somerset"
+  },
+  {
+    "name": "Sonning",
+    "county": "Berkshire"
+  },
+  {
+    "name": "South Cave",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "South Molton",
+    "county": "Devon"
+  },
+  {
+    "name": "South Queensferry",
+    "county": "City of Edinburgh"
+  },
+  {
+    "name": "South Shields",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Southam",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Southampton",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Southend-on-Sea",
+    "county": "Essex"
+  },
+  {
+    "name": "Southport",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Southwark",
+    "county": "Greater London"
+  },
+  {
+    "name": "Southwell",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Southwold",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Sowerby Bridge",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Spalding",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Spennymoor",
+    "county": "County Durham"
+  },
+  {
+    "name": "Spilsby",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "St Albans",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "St Andrews",
+    "county": "Fife"
+  },
+  {
+    "name": "St Asaph",
+    "county": "Denbighshire"
+  },
+  {
+    "name": "St Austell",
+    "county": "Cornwall"
+  },
+  {
+    "name": "St Clears",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "St Davids",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "St Helens",
+    "county": "Merseyside"
+  },
+  {
+    "name": "St Ives",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "St Ives",
+    "county": "Cornwall"
+  },
+  {
+    "name": "St Neots",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Stafford",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Staines-upon-Thames",
+    "county": "Surrey"
+  },
+  {
+    "name": "Stalybridge",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Stamford",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Stanhope",
+    "county": "County Durham"
+  },
+  {
+    "name": "Stanley",
+    "county": "County Durham"
+  },
+  {
+    "name": "Stapleford",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Staveley",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Stenhousemuir",
+    "county": "Falkirk"
+  },
+  {
+    "name": "Stepney",
+    "county": "Greater London"
+  },
+  {
+    "name": "Stevenage",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Stevenston",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "Stewarton",
+    "county": "East Ayrshire"
+  },
+  {
+    "name": "Steyning",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Stirling",
+    "county": "Stirling"
+  },
+  {
+    "name": "Stockport",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Stocksbridge",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Stockton-on-Tees",
+    "county": "County Durham"
+  },
+  {
+    "name": "Stoke Gifford",
+    "county": "Bristol"
+  },
+  {
+    "name": "Stoke-on-Trent",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Stokesley",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Stone",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Stonehaven",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Stonehouse",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Stony Stratford",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Storrington",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Stotfold",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Stourbridge",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Stourport-on-Severn",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Stow-on-the-Wold",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Stowmarket",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Strabane",
+    "county": "Derry City and Strabane"
+  },
+  {
+    "name": "Stranraer",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Stratford",
+    "county": "Greater London"
+  },
+  {
+    "name": "Stratford-upon-Avon",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Strathaven",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Strathpeffer",
+    "county": "Highland"
+  },
+  {
+    "name": "Streatham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Street",
+    "county": "Somerset"
+  },
+  {
+    "name": "Stromness",
+    "county": "Orkney Islands"
+  },
+  {
+    "name": "Stroud",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Studley",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Sturminster Newton",
+    "county": "Dorset"
+  },
+  {
+    "name": "Sudbury",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Sully",
+    "county": "Vale of Glamorgan"
+  },
+  {
+    "name": "Sunderland",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Sunningdale",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Sutton",
+    "county": "Greater London"
+  },
+  {
+    "name": "Sutton Coldfield",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Sutton-in-Ashfield",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Swadlincote",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Swaffham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Swanage",
+    "county": "Dorset"
+  },
+  {
+    "name": "Swanley",
+    "county": "Kent"
+  },
+  {
+    "name": "Swansea",
+    "county": "Swansea"
+  },
+  {
+    "name": "Swindon",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Swinton",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Sydenham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Syston",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Tadcaster",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Tadley",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Tadworth",
+    "county": "Surrey"
+  },
+  {
+    "name": "Tain",
+    "county": "Highland"
+  },
+  {
+    "name": "Tameside",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Tamworth",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Tandragee",
+    "county": "Armagh City, Banbridge and Craigavon"
+  },
+  {
+    "name": "Tarbert",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Tarporley",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Taunton",
+    "county": "Somerset"
+  },
+  {
+    "name": "Tavistock",
+    "county": "Devon"
+  },
+  {
+    "name": "Tayport",
+    "county": "Fife"
+  },
+  {
+    "name": "Teignmouth",
+    "county": "Devon"
+  },
+  {
+    "name": "Telford",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Templepatrick",
+    "county": "Antrim and Newtownabbey"
+  },
+  {
+    "name": "Tenbury Wells",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Tenby",
+    "county": "Pembrokeshire"
+  },
+  {
+    "name": "Tenterden",
+    "county": "Kent"
+  },
+  {
+    "name": "Tetbury",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Tewkesbury",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Thame",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Thatcham",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Thaxted",
+    "county": "Essex"
+  },
+  {
+    "name": "Theale",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Thetford",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Thirsk",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Thorne",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Thornhill",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Thornton-Cleveleys",
+    "county": "Lancashire"
+  },
+  {
+    "name": "Thrapston",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Thurso",
+    "county": "Highland"
+  },
+  {
+    "name": "Tickhill",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Tidworth",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Tilbury",
+    "county": "Essex"
+  },
+  {
+    "name": "Tillicoultry",
+    "county": "Clackmannanshire"
+  },
+  {
+    "name": "Tintern",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Tipton",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Tiverton",
+    "county": "Devon"
+  },
+  {
+    "name": "Tobermory",
+    "county": "Argyll and Bute"
+  },
+  {
+    "name": "Todmorden",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Tonbridge",
+    "county": "Kent"
+  },
+  {
+    "name": "Tonypandy",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Tonyrefail",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Torphichen",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Torpoint",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Torquay",
+    "county": "Devon"
+  },
+  {
+    "name": "Torrance",
+    "county": "East Dunbartonshire"
+  },
+  {
+    "name": "Totnes",
+    "county": "Devon"
+  },
+  {
+    "name": "Tottenham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Totton",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Tow Law",
+    "county": "County Durham"
+  },
+  {
+    "name": "Towcester",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Trafford",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Tranent",
+    "county": "East Lothian"
+  },
+  {
+    "name": "Tredegar",
+    "county": "Blaenau Gwent"
+  },
+  {
+    "name": "Tregaron",
+    "county": "Ceredigion"
+  },
+  {
+    "name": "Treharris",
+    "county": "Merthyr Tydfil"
+  },
+  {
+    "name": "Treorchy",
+    "county": "Rhondda Cynon Taf"
+  },
+  {
+    "name": "Tring",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Troedyrhiw",
+    "county": "Merthyr Tydfil"
+  },
+  {
+    "name": "Troon",
+    "county": "South Ayrshire"
+  },
+  {
+    "name": "Trowbridge",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Truro",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Tunbridge Wells",
+    "county": "Kent"
+  },
+  {
+    "name": "Turriff",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Tutbury",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Twickenham",
+    "county": "Greater London"
+  },
+  {
+    "name": "Twyford",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Tyldesley",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Tynemouth",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Tywyn",
+    "county": "Gwynedd"
+  },
+  {
+    "name": "Uckfield",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Uddingston",
+    "county": "South Lanarkshire"
+  },
+  {
+    "name": "Ullapool",
+    "county": "Highland"
+  },
+  {
+    "name": "Ulverston",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Uphall",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Uplawmoor",
+    "county": "East Renfrewshire"
+  },
+  {
+    "name": "Uppingham",
+    "county": "Rutland"
+  },
+  {
+    "name": "Upton upon Severn",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Urmston",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Usk",
+    "county": "Monmouthshire"
+  },
+  {
+    "name": "Uttoxeter",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Uxbridge",
+    "county": "Greater London"
+  },
+  {
+    "name": "Ventnor",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Verwood",
+    "county": "Dorset"
+  },
+  {
+    "name": "Wadebridge",
+    "county": "Cornwall"
+  },
+  {
+    "name": "Wadhurst",
+    "county": "East Sussex"
+  },
+  {
+    "name": "Wainfleet",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Wakefield",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Walkden",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Wallasey",
+    "county": "Merseyside"
+  },
+  {
+    "name": "Wallingford",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Wallsend",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Walsall",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Waltham Abbey",
+    "county": "Essex"
+  },
+  {
+    "name": "Waltham Cross",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Walthamstow",
+    "county": "Greater London"
+  },
+  {
+    "name": "Walton-on-Thames",
+    "county": "Surrey"
+  },
+  {
+    "name": "Walton-on-the-Naze",
+    "county": "Essex"
+  },
+  {
+    "name": "Wandsworth",
+    "county": "Greater London"
+  },
+  {
+    "name": "Wantage",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Ware",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Wareham",
+    "county": "Dorset"
+  },
+  {
+    "name": "Wargrave",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Warkworth",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Warminster",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Warrenpoint",
+    "county": "Newry, Mourne and Down"
+  },
+  {
+    "name": "Warrington",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Warwick",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Washington",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Watchet",
+    "county": "Somerset"
+  },
+  {
+    "name": "Waterlooville",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Watford",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Wath upon Dearne",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Watlington",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Watton",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Wednesbury",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Wednesfield",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Wellesbourne",
+    "county": "Warwickshire"
+  },
+  {
+    "name": "Wellingborough",
+    "county": "Northamptonshire"
+  },
+  {
+    "name": "Wellington",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Wells",
+    "county": "Somerset"
+  },
+  {
+    "name": "Wells-next-the-Sea",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Welshpool",
+    "county": "Powys"
+  },
+  {
+    "name": "Welwyn Garden City",
+    "county": "Hertfordshire"
+  },
+  {
+    "name": "Wem",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Wembley",
+    "county": "Greater London"
+  },
+  {
+    "name": "Wemyss Bay",
+    "county": "Inverclyde"
+  },
+  {
+    "name": "Wendover",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "West Bridgford",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "West Bromwich",
+    "county": "West Midlands"
+  },
+  {
+    "name": "West Calder",
+    "county": "West Lothian"
+  },
+  {
+    "name": "West Kilbride",
+    "county": "North Ayrshire"
+  },
+  {
+    "name": "West Kirby",
+    "county": "Merseyside"
+  },
+  {
+    "name": "West Malling",
+    "county": "Kent"
+  },
+  {
+    "name": "Westbury",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Westcliff-on-Sea",
+    "county": "Essex"
+  },
+  {
+    "name": "Westerham",
+    "county": "Kent"
+  },
+  {
+    "name": "Westhill",
+    "county": "Aberdeenshire"
+  },
+  {
+    "name": "Weston-super-Mare",
+    "county": "Somerset"
+  },
+  {
+    "name": "Wetherby",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Weybridge",
+    "county": "Surrey"
+  },
+  {
+    "name": "Weymouth",
+    "county": "Dorset"
+  },
+  {
+    "name": "Whickham",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Whitburn",
+    "county": "West Lothian"
+  },
+  {
+    "name": "Whitby",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Whitchurch",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Whitchurch",
+    "county": "Shropshire"
+  },
+  {
+    "name": "Whitechapel",
+    "county": "Greater London"
+  },
+  {
+    "name": "Whitefield",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Whitehaven",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Whitehead",
+    "county": "Mid and East Antrim"
+  },
+  {
+    "name": "Whitland",
+    "county": "Carmarthenshire"
+  },
+  {
+    "name": "Whitley Bay",
+    "county": "Tyne and Wear"
+  },
+  {
+    "name": "Whitstable",
+    "county": "Kent"
+  },
+  {
+    "name": "Whittlesey",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Wick",
+    "county": "Highland"
+  },
+  {
+    "name": "Wickford",
+    "county": "Essex"
+  },
+  {
+    "name": "Wickham",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Widnes",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Wigan",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Wigston",
+    "county": "Leicestershire"
+  },
+  {
+    "name": "Wigton",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Wigtown",
+    "county": "Dumfries and Galloway"
+  },
+  {
+    "name": "Willenhall",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Willington",
+    "county": "County Durham"
+  },
+  {
+    "name": "Wilmslow",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Wilton",
+    "county": "Wiltshire"
+  },
+  {
+    "name": "Wimbledon",
+    "county": "Greater London"
+  },
+  {
+    "name": "Wimborne Minster",
+    "county": "Dorset"
+  },
+  {
+    "name": "Winchcombe",
+    "county": "Gloucestershire"
+  },
+  {
+    "name": "Winchester",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Windermere",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Windsor",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Winsford",
+    "county": "Cheshire"
+  },
+  {
+    "name": "Wirksworth",
+    "county": "Derbyshire"
+  },
+  {
+    "name": "Wisbech",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Wishaw",
+    "county": "North Lanarkshire"
+  },
+  {
+    "name": "Witham",
+    "county": "Essex"
+  },
+  {
+    "name": "Withernsea",
+    "county": "East Riding of Yorkshire"
+  },
+  {
+    "name": "Witney",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Woburn Sands",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Woking",
+    "county": "Surrey"
+  },
+  {
+    "name": "Wokingham",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Wolsingham",
+    "county": "County Durham"
+  },
+  {
+    "name": "Wolverhampton",
+    "county": "West Midlands"
+  },
+  {
+    "name": "Wolverton",
+    "county": "Buckinghamshire"
+  },
+  {
+    "name": "Wombourne",
+    "county": "Staffordshire"
+  },
+  {
+    "name": "Wombwell",
+    "county": "South Yorkshire"
+  },
+  {
+    "name": "Woodbridge",
+    "county": "Suffolk"
+  },
+  {
+    "name": "Woodhall Spa",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Woodley",
+    "county": "Berkshire"
+  },
+  {
+    "name": "Woodstock",
+    "county": "Oxfordshire"
+  },
+  {
+    "name": "Wooler",
+    "county": "Northumberland"
+  },
+  {
+    "name": "Woolwich",
+    "county": "Greater London"
+  },
+  {
+    "name": "Wootton",
+    "county": "Bedfordshire"
+  },
+  {
+    "name": "Worcester",
+    "county": "Worcestershire"
+  },
+  {
+    "name": "Workington",
+    "county": "Cumbria"
+  },
+  {
+    "name": "Worksop",
+    "county": "Nottinghamshire"
+  },
+  {
+    "name": "Worsley",
+    "county": "Greater Manchester"
+  },
+  {
+    "name": "Worthing",
+    "county": "West Sussex"
+  },
+  {
+    "name": "Wragby",
+    "county": "Lincolnshire"
+  },
+  {
+    "name": "Wrexham",
+    "county": "Wrexham"
+  },
+  {
+    "name": "Wymondham",
+    "county": "Norfolk"
+  },
+  {
+    "name": "Yarmouth",
+    "county": "Isle of Wight"
+  },
+  {
+    "name": "Yateley",
+    "county": "Hampshire"
+  },
+  {
+    "name": "Yaxley",
+    "county": "Cambridgeshire"
+  },
+  {
+    "name": "Yeadon",
+    "county": "West Yorkshire"
+  },
+  {
+    "name": "Yeovil",
+    "county": "Somerset"
+  },
+  {
+    "name": "York",
+    "county": "North Yorkshire"
+  },
+  {
+    "name": "Ystrad Mynach",
+    "county": "Caerphilly"
+  }
+]

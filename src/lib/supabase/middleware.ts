@@ -29,13 +29,39 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const pathname = request.nextUrl.pathname;
+
+  // Redirect unauthenticated users to login
   if (
     !user &&
-    request.nextUrl.pathname.startsWith("/dashboard")
+    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding"))
   ) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     return NextResponse.redirect(url);
+  }
+
+  // Onboarding routing for authenticated users
+  if (user && (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding"))) {
+    const { data: profile } = await supabase
+      .from("users")
+      .select("onboarding_completed")
+      .eq("id", user.id)
+      .single();
+
+    const onboardingCompleted = profile?.onboarding_completed === true;
+
+    if (pathname.startsWith("/dashboard") && !onboardingCompleted) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/onboarding";
+      return NextResponse.redirect(url);
+    }
+
+    if (pathname.startsWith("/onboarding") && onboardingCompleted) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/dashboard";
+      return NextResponse.redirect(url);
+    }
   }
 
   return supabaseResponse;

@@ -4,5 +4,16 @@ import { redirect } from "next/navigation";
 export default async function Home() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  redirect(user ? "/dashboard" : "/login");
+
+  if (!user) {
+    redirect("/login");
+  }
+
+  const { data: profile } = await supabase
+    .from("users")
+    .select("onboarding_completed")
+    .eq("id", user.id)
+    .single();
+
+  redirect(profile?.onboarding_completed ? "/dashboard" : "/onboarding");
 }

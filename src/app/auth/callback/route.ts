@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const code = searchParams.get("code");
   const errorParam = searchParams.get("error");
   const errorDescription = searchParams.get("error_description");
-  const next = searchParams.get("next") ?? "/dashboard";
+  const next = searchParams.get("next") ?? "/onboarding";
 
   // Handle OAuth error response from provider (e.g. Azure access denied)
   if (errorParam) {

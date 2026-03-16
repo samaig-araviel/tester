@@ -157,7 +157,7 @@ function OAuthButtons() {
       provider,
       options: {
         scopes: provider === "azure" ? "openid email profile" : undefined,
-        redirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+        redirectTo: `${window.location.origin}/auth/callback?next=/onboarding`,
       },
     });
   }
