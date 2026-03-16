@@ -12,6 +12,7 @@ export interface HubArticle {
   gradientTo: string;
   readTime: number;
   publishedDate: string;
+  imageUrl: string;
 }
 
 export interface HubToolkit {
@@ -67,6 +68,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#F0D5BF",
     readTime: 8,
     publishedDate: "2025-05-20",
+    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
   },
   {
     id: "art-2",
@@ -80,6 +82,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#E8F5F1",
     readTime: 10,
     publishedDate: "2025-06-02",
+    imageUrl: "https://images.unsplash.com/photo-1476234251651-f353703a034d?w=600&h=400&fit=crop",
   },
   {
     id: "art-3",
@@ -93,6 +96,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#E6F2EF",
     readTime: 5,
     publishedDate: "2025-04-15",
+    imageUrl: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=600&h=400&fit=crop",
   },
   {
     id: "art-4",
@@ -106,6 +110,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#EEF4F8",
     readTime: 12,
     publishedDate: "2025-06-10",
+    imageUrl: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=600&h=400&fit=crop",
   },
   {
     id: "art-5",
@@ -119,6 +124,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#F7F4EF",
     readTime: 7,
     publishedDate: "2025-05-08",
+    imageUrl: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop",
   },
   {
     id: "art-6",
@@ -132,6 +138,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#F0D5BF",
     readTime: 6,
     publishedDate: "2025-03-22",
+    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
   },
   {
     id: "art-7",
@@ -145,6 +152,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#FBE8D8",
     readTime: 9,
     publishedDate: "2025-04-28",
+    imageUrl: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop",
   },
   {
     id: "art-8",
@@ -158,6 +166,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#E6F2EF",
     readTime: 8,
     publishedDate: "2025-05-15",
+    imageUrl: "https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?w=600&h=400&fit=crop",
   },
   {
     id: "art-9",
@@ -171,6 +180,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#E8F5F1",
     readTime: 11,
     publishedDate: "2025-06-18",
+    imageUrl: "https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=600&h=400&fit=crop",
   },
   {
     id: "art-10",
@@ -184,6 +194,7 @@ export const ARTICLES: HubArticle[] = [
     gradientTo: "#EEF4F8",
     readTime: 7,
     publishedDate: "2025-02-14",
+    imageUrl: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&h=400&fit=crop",
   },
 ];
 
