@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Search, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Search, X, ChevronLeft, ChevronRight, ChevronDown, SlidersHorizontal, Check } from "lucide-react";
 import type { HubArticle } from "@/lib/hub-data";
 import { ARTICLE_FILTERS } from "@/lib/hub-data";
 
@@ -34,11 +34,26 @@ export default function ArticlesSection({
   onClearFilters,
 }: ArticlesSectionProps) {
   const [currentPage, setCurrentPage] = useState(0);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Reset page when filters or search change
   useEffect(() => {
     setCurrentPage(0);
   }, [searchQuery, activeFilters]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setFilterOpen(false);
+      }
+    }
+    if (filterOpen) {
+      document.addEventListener("mousedown", handleClick);
+      return () => document.removeEventListener("mousedown", handleClick);
+    }
+  }, [filterOpen]);
 
   // Filter articles
   const filtered = articles.filter((article) => {
@@ -66,55 +81,111 @@ export default function ArticlesSection({
   return (
     <section id="articles-section" className="flex-[0_0_58%] min-w-0">
       {/* Header row */}
-      <div className="flex items-start justify-between gap-4 mb-2">
-        <div>
-          <h2 className="font-heading text-[22px] font-semibold text-soft-navy">
-            Helpful Articles &amp; Parent Tips
-          </h2>
-          <p className="font-body text-[14px] text-muted-grey mt-1">
-            Written with working parents in mind.
-          </p>
-        </div>
-        {/* Search */}
-        <div className="relative flex-shrink-0 mt-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-grey pointer-events-none" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search..."
-            className="h-10 w-44 pl-9 pr-3 rounded-xl border border-border bg-surface font-body text-[13px] text-charcoal placeholder:text-muted-grey focus:outline-none focus:ring-2 focus:ring-primary-light focus:border-primary transition-all"
-          />
-        </div>
-      </div>
+      <div className="mb-6">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h2 className="font-heading text-[22px] font-semibold text-soft-navy">
+              Helpful Articles &amp; Parent Tips
+            </h2>
+            <p className="font-body text-[14px] text-muted-grey mt-1">
+              Written with working parents in mind.
+            </p>
+          </div>
 
-      {/* Filter pills — square-rounded edges */}
-      <div className="flex flex-wrap items-center gap-2 mt-4 mb-6">
-        {ARTICLE_FILTERS.map((filter) => {
-          const isActive = activeFilters.has(filter);
-          return (
-            <button
-              key={filter}
-              onClick={() => onToggleFilter(filter)}
-              className={`px-4 py-2 rounded-lg font-body text-[13px] font-medium border transition-all duration-150 cursor-pointer ${
-                isActive
-                  ? "bg-warm-teal-light border-warm-teal text-warm-teal"
-                  : "bg-warm-sand border-border text-charcoal hover:border-muted-grey"
-              }`}
-            >
-              {filter}
-            </button>
-          );
-        })}
-        {activeFilters.size > 0 && (
-          <button
-            onClick={onClearFilters}
-            className="flex items-center gap-1 px-3 py-2 rounded-lg font-body text-[13px] text-muted-grey hover:text-charcoal transition-colors cursor-pointer"
-          >
-            <X className="w-3.5 h-3.5" />
-            Clear
-          </button>
-        )}
+          {/* Filter dropdown + Search — side by side */}
+          <div className="flex items-center gap-2 flex-shrink-0 mt-1">
+            {/* Filter dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setFilterOpen((o) => !o)}
+                className={`h-10 px-4 rounded-xl border flex items-center gap-2 font-body text-[13px] font-medium transition-all duration-150 cursor-pointer ${
+                  activeFilters.size > 0
+                    ? "bg-warm-teal-light border-warm-teal text-warm-teal"
+                    : "bg-surface border-border text-charcoal hover:border-muted-grey"
+                }`}
+              >
+                <SlidersHorizontal className="w-4 h-4" />
+                <span>Filter</span>
+                {activeFilters.size > 0 && (
+                  <span className="w-5 h-5 rounded-full bg-warm-teal text-white text-[11px] font-semibold flex items-center justify-center">
+                    {activeFilters.size}
+                  </span>
+                )}
+                <ChevronDown
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                    filterOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {/* Dropdown panel */}
+              {filterOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-surface rounded-xl border border-border shadow-[0_8px_30px_rgba(0,0,0,0.1)] z-50 overflow-hidden animate-[fadeSlideIn_150ms_ease-out]">
+                  <div className="px-4 py-3 border-b border-border flex items-center justify-between">
+                    <span className="font-heading text-[13px] font-semibold text-soft-navy">
+                      Filter by category
+                    </span>
+                    {activeFilters.size > 0 && (
+                      <button
+                        onClick={() => {
+                          onClearFilters();
+                        }}
+                        className="font-body text-[12px] text-warm-teal hover:underline cursor-pointer"
+                      >
+                        Clear all
+                      </button>
+                    )}
+                  </div>
+                  <div className="py-1">
+                    {ARTICLE_FILTERS.map((filter) => {
+                      const isActive = activeFilters.has(filter);
+                      return (
+                        <button
+                          key={filter}
+                          onClick={() => onToggleFilter(filter)}
+                          className="w-full flex items-center gap-3 px-4 py-2.5 text-left font-body text-[13px] transition-colors duration-100 cursor-pointer hover:bg-warm-sand/60"
+                        >
+                          <span
+                            className={`w-4.5 h-4.5 rounded flex items-center justify-center flex-shrink-0 border transition-all duration-150 ${
+                              isActive
+                                ? "bg-warm-teal border-warm-teal"
+                                : "border-border bg-surface"
+                            }`}
+                          >
+                            {isActive && (
+                              <Check className="w-3 h-3 text-white" />
+                            )}
+                          </span>
+                          <span
+                            className={
+                              isActive
+                                ? "text-warm-teal font-medium"
+                                : "text-charcoal"
+                            }
+                          >
+                            {filter}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Search */}
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-grey pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => onSearchChange(e.target.value)}
+                placeholder="Search..."
+                className="h-10 w-44 pl-9 pr-3 rounded-xl border border-border bg-surface font-body text-[13px] text-charcoal placeholder:text-muted-grey focus:outline-none focus:ring-2 focus:ring-primary-light focus:border-primary transition-all"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Article list */}
