@@ -210,7 +210,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <ExploreDropdown />
             <Link
-              href="/hub"
+              href="/parents-hub"
               className="font-body text-[15px] font-medium text-charcoal hover:text-warm-teal transition-colors"
             >
               Parents Hub

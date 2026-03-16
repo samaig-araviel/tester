@@ -61,7 +61,7 @@ export default function FavouritesSection({
             key={vendor.id}
             vendorName={vendor.vendor_name}
             vendorLogoUrl={vendor.vendor_logo_url}
-            href={`/offers/${vendor.offer_id}`}
+            href={`/offer/${vendor.offer_id}`}
           />
         ))}
         {showSeeAll && <SeeAllTile href="/saved" />}

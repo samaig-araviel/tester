@@ -86,7 +86,7 @@ export default function RecommendedSection({
             offerHeadline={offer.offer_headline}
             isSaved={offer.is_saved}
             onToggleSave={onToggleSave}
-            onClick={() => router.push(`/offers/${offer.id}`)}
+            onClick={() => router.push(`/offer/${offer.id}`)}
           />
         ))}
       </Carousel>
