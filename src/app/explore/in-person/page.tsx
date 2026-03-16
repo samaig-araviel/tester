@@ -85,6 +85,7 @@ export default async function ExploreInPersonPage() {
         id: v.name + "-" + o.id,
         name: v.name ?? "Unknown",
         logo_url: v.logo_url ?? null,
+        cover_image_url: null,
         location_name: v.location_name ?? null,
         category: v.category ?? null,
         delivery_type: v.delivery_type ?? null,

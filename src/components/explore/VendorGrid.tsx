@@ -73,7 +73,7 @@ export default function VendorGrid({
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {vendors.map((vendor, i) => (
         <div
           key={vendor.offer_id}

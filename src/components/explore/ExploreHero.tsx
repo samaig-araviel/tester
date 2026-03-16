@@ -79,13 +79,6 @@ export default function ExploreHero({
             {copy.heading}
           </h1>
 
-          {/* CTA button */}
-          <div className="mt-5">
-            <button className="inline-flex items-center justify-center px-7 h-[44px] rounded-full bg-soft-navy text-white font-body text-[15px] font-semibold transition-all duration-150 hover:opacity-90 hover:scale-[1.02] cursor-pointer">
-              How it works
-            </button>
-          </div>
-
           {/* Search bar */}
           <div className="mt-5">
             <div className="relative">

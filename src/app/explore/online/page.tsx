@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ExploreContent from "@/components/explore/ExploreContent";
-import type { ExploreVendor, UserProfile } from "@/lib/explore";
+import { type ExploreVendor, type UserProfile, MOCK_ONLINE_VENDORS } from "@/lib/explore";
 
 export default async function ExploreOnlinePage() {
   const supabase = await createClient();
@@ -85,6 +85,7 @@ export default async function ExploreOnlinePage() {
         id: v.name + "-" + o.id,
         name: v.name ?? "Unknown",
         logo_url: v.logo_url ?? null,
+        cover_image_url: null,
         location_name: v.location_name ?? null,
         category: v.category ?? null,
         delivery_type: v.delivery_type ?? null,
@@ -101,13 +102,16 @@ export default async function ExploreOnlinePage() {
     })
     .filter(Boolean) as ExploreVendor[];
 
+  // Fall back to mock vendors when the database has no online offers
+  const displayVendors = vendors.length > 0 ? vendors : MOCK_ONLINE_VENDORS;
+
   return (
     <div className="min-h-screen bg-surface">
       <Navbar />
       <main className="max-w-[1200px] mx-auto px-6 py-10">
         <ExploreContent
           pageType="online"
-          vendors={vendors}
+          vendors={displayVendors}
           userProfile={userProfile}
           userId={user.id}
         />
