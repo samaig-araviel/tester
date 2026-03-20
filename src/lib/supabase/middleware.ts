@@ -34,7 +34,7 @@ export async function updateSession(request: NextRequest) {
   // Redirect unauthenticated users to login
   if (
     !user &&
-    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer"))
+    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer") || pathname.startsWith("/saved"))
   ) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
@@ -42,7 +42,7 @@ export async function updateSession(request: NextRequest) {
   }
 
   // Onboarding routing for authenticated users
-  if (user && (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer"))) {
+  if (user && (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer") || pathname.startsWith("/saved"))) {
     const { data: profile } = await supabase
       .from("users")
       .select("onboarding_completed")
@@ -51,7 +51,7 @@ export async function updateSession(request: NextRequest) {
 
     const onboardingCompleted = profile?.onboarding_completed === true;
 
-    if (pathname.startsWith("/dashboard") && !onboardingCompleted) {
+    if ((pathname.startsWith("/dashboard") || pathname.startsWith("/saved")) && !onboardingCompleted) {
       const url = request.nextUrl.clone();
       url.pathname = "/onboarding";
       return NextResponse.redirect(url);
