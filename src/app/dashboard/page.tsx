@@ -78,7 +78,7 @@ export default async function DashboardPage() {
     banner_url: string | null;
     category: string | null;
     delivery_type: string | null;
-    age_relevance: string | null;
+    age_relevance: string[] | null;
     service_radius_km: number | null;
     location_name: string | null;
     active: boolean;
@@ -128,7 +128,8 @@ export default async function DashboardPage() {
   function recommendationScore(o: OfferRow): number {
     let score = 0;
     const cat = o.vendors?.category ?? "";
-    const ageRel = o.vendors?.age_relevance ?? "";
+    const ageRel: string[] = o.vendors?.age_relevance ?? [];
+    const ageRelJoined = ageRel.join(" ").toLowerCase();
 
     // Support needs match (highest weight)
     if (userNeeds.some((need) => cat.toLowerCase().includes(need.toLowerCase()))) {
@@ -141,7 +142,7 @@ export default async function DashboardPage() {
     }
 
     // Child age match
-    if (userAgeBuckets.some((bucket) => ageRel.toLowerCase().includes(bucket.toLowerCase()))) {
+    if (userAgeBuckets.some((bucket) => ageRelJoined.includes(bucket.toLowerCase()))) {
       score += 30;
     }
 
