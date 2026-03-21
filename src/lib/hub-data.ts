@@ -385,7 +385,7 @@ export function personalizeRecommended(
     }
 
     // Child age match — boost early years / return content for young children
-    if (profile.child_age_buckets.includes("0-1") || profile.child_age_buckets.includes("expecting")) {
+    if (profile.child_age_buckets.includes("0-6m") || profile.child_age_buckets.includes("6-24m") || profile.child_age_buckets.includes("expecting")) {
       if (article.tags.some((t) => t.toLowerCase().includes("return") || t.toLowerCase().includes("planning"))) {
         s += 30;
       }

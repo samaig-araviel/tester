@@ -40,8 +40,8 @@ const AGE_BUCKET_OPTIONS = [
   { value: "expecting", label: "Expecting" },
   { value: "0-6m", label: "Parent of child (0-6 months)" },
   { value: "6-24m", label: "Parent of child (6-24 months)" },
-  { value: "2-5", label: "Parent of child (2-5 years)" },
-  { value: "5-16", label: "Parent of child (5-16 years)" },
+  { value: "2-5y", label: "Parent of child (2-5 years)" },
+  { value: "5-16y", label: "Parent of child (5-16 years)" },
 ];
 
 const EMPLOYMENT_TYPES = ["Full-time", "Part-time", "Contract", "Freelance"];

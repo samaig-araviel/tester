@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { MapPin } from "lucide-react";
 
+const UK_POSTCODE_REGEX = /^[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}$/i;
+
 interface LocationScreenProps {
   postcode: string | null;
   onNext: (postcode: string) => void;
@@ -12,8 +14,37 @@ interface LocationScreenProps {
 
 export default function LocationScreen({ postcode, onNext, onSkip, isPending }: LocationScreenProps) {
   const [value, setValue] = useState(postcode ?? "");
+  const [error, setError] = useState<string | null>(null);
+  const [touched, setTouched] = useState(false);
 
-  const isValid = value.trim().length >= 3;
+  function validate(v: string): boolean {
+    if (!v.trim()) return false;
+    return UK_POSTCODE_REGEX.test(v.trim());
+  }
+
+  function handleBlur() {
+    setTouched(true);
+    if (value.trim() && !validate(value)) {
+      setError("Please enter a valid UK postcode");
+    } else {
+      setError(null);
+    }
+  }
+
+  function handleChange(v: string) {
+    setValue(v.toUpperCase());
+    if (touched && error) {
+      if (validate(v)) setError(null);
+    }
+  }
+
+  function handleSubmit() {
+    if (!validate(value)) {
+      setError("Please enter a valid UK postcode");
+      return;
+    }
+    onNext(value.trim());
+  }
 
   return (
     <div className="pt-8 sm:pt-12">
@@ -22,7 +53,7 @@ export default function LocationScreen({ postcode, onNext, onSkip, isPending }: 
           Where are you based?
         </h2>
         <p className="font-body text-[14px] text-text-secondary mb-6">
-          Enter your postcode so we can show nearby services and support.
+          We use this to show nearby and relevant support.
         </p>
 
         <div className="mb-8">
@@ -35,17 +66,25 @@ export default function LocationScreen({ postcode, onNext, onSkip, isPending }: 
               id="postcode"
               type="text"
               value={value}
-              onChange={(e) => setValue(e.target.value.toUpperCase())}
-              placeholder="e.g. SW1A 1AA"
-              className="w-full h-[44px] pl-9 pr-4 rounded-xl border border-border bg-surface font-body text-[15px] text-text-primary placeholder:text-muted-grey focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+              onChange={(e) => handleChange(e.target.value)}
+              onBlur={handleBlur}
+              placeholder="Enter your postcode"
+              className={`w-full h-[44px] pl-9 pr-4 rounded-xl border bg-surface font-body text-[15px] text-text-primary placeholder:text-muted-grey focus:outline-none focus:ring-2 transition-colors ${
+                error
+                  ? "border-red-400 focus:ring-red-200 focus:border-red-400"
+                  : "border-border focus:ring-primary/30 focus:border-primary"
+              }`}
               autoComplete="postal-code"
             />
           </div>
+          {error && (
+            <p className="font-body text-[13px] text-red-500 mt-1.5">{error}</p>
+          )}
         </div>
 
         <button
-          onClick={() => isValid && onNext(value.trim())}
-          disabled={!isValid || isPending}
+          onClick={handleSubmit}
+          disabled={!value.trim() || isPending}
           className="w-full h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isPending ? "Saving..." : "Continue"}
