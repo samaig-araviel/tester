@@ -18,10 +18,10 @@ export const CHILD_COUNT_OPTIONS = ["1", "2", "3", "4", "5+"] as const;
 
 export const AGE_BUCKET_OPTIONS = [
   { key: "expecting", label: "Expecting" },
-  { key: "0-1", label: "0–1" },
-  { key: "2-4", label: "2–4" },
-  { key: "5-11", label: "5–11" },
-  { key: "12+", label: "12+" },
+  { key: "0-6m", label: "0-6 months" },
+  { key: "6-24m", label: "6-24 months" },
+  { key: "2-5y", label: "2-5 years" },
+  { key: "5-16y", label: "5-16 years" },
 ] as const;
 
 export const SUPPORT_NEED_OPTIONS = [

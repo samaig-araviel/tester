@@ -16,15 +16,6 @@ interface ArticlesSectionProps {
 
 const ITEMS_PER_PAGE = 4;
 
-function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("en-GB", {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  });
-}
-
 export default function ArticlesSection({
   articles,
   searchQuery,
@@ -218,14 +209,10 @@ export default function ArticlesSection({
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  {/* Category + date row */}
+                  {/* Category row */}
                   <div className="flex items-center gap-0">
                     <span className="font-body text-[11px] font-semibold tracking-widest uppercase text-muted-grey flex-shrink-0">
                       {article.category}
-                    </span>
-                    <span className="flex-1 h-px bg-border mx-3" />
-                    <span className="font-body text-[13px] text-muted-grey flex-shrink-0">
-                      {formatDate(article.publishedDate)}
                     </span>
                   </div>
 

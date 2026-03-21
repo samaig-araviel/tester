@@ -60,14 +60,15 @@ export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPendin
     return parts.join(" + ") || null;
   })();
 
+  const ageLabelMap: Record<string, string> = {
+    expecting: "Expecting",
+    "0-6m": "0-6 months",
+    "6-24m": "6-24 months",
+    "2-5y": "2-5 years",
+    "5-16y": "5-16 years",
+  };
   const agesDisplay = data.child_age_buckets?.length
-    ? data.child_age_buckets
-        .map((b) => {
-          if (b === "expecting") return "Expecting";
-          if (b === "12+") return "12+";
-          return b;
-        })
-        .join(", ")
+    ? data.child_age_buckets.map((b) => ageLabelMap[b] ?? b).join(", ")
     : null;
 
   const locationDisplay = data.postcode ?? null;

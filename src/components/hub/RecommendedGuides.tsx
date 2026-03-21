@@ -9,15 +9,6 @@ interface RecommendedGuidesProps {
   articles: HubArticle[];
 }
 
-function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
-
 export default function RecommendedGuides({ articles }: RecommendedGuidesProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -118,7 +109,7 @@ export default function RecommendedGuides({ articles }: RecommendedGuidesProps) 
                 {article.excerpt}
               </p>
               <p className="font-body text-[12px] text-muted-grey mt-3">
-                {formatDate(article.publishedDate)} | {article.readTime} Min read
+                {article.readTime} Min read
               </p>
             </div>
           </div>

@@ -9,15 +9,6 @@ interface MoneySectionProps {
   articles: MoneyArticle[];
 }
 
-function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
-
 export default function MoneySection({ articles }: MoneySectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -121,7 +112,7 @@ export default function MoneySection({ articles }: MoneySectionProps) {
                   {article.title}
                 </h3>
                 <p className="font-body text-[12px] text-muted-grey mt-2">
-                  {article.author} &bull; {formatDate(article.publishedDate)}
+                  {article.author}
                 </p>
               </div>
             </div>
