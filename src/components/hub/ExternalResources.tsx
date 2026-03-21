@@ -1,6 +1,5 @@
 "use client";
 
-import { Shield, ChevronRight } from "lucide-react";
 import type { ExternalResource } from "@/lib/hub-data";
 
 interface ExternalResourcesProps {
@@ -10,40 +9,35 @@ interface ExternalResourcesProps {
 export default function ExternalResources({ resources }: ExternalResourcesProps) {
   return (
     <section>
-      <div className="flex items-center gap-2 mb-6">
-        <Shield className="w-5 h-5 text-warm-teal" />
+      <div className="mb-6">
         <h2 className="font-heading text-[22px] font-semibold text-soft-navy">
           Trusted External Resources
         </h2>
+        <p className="font-body text-[14px] text-muted-grey mt-1">
+          Organisations offering expert guidance for working parents.
+        </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {resources.map((resource) => (
-          <div
+          <a
             key={resource.id}
-            className="bg-surface border border-border rounded-xl p-5 flex flex-col transition-all duration-150 hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
+            href={resource.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center text-center transition-all duration-200"
           >
-            {/* Org icon placeholder */}
-            <div className="w-10 h-10 rounded-lg bg-warm-teal-light flex items-center justify-center mb-3">
-              <span className="font-heading text-[14px] font-bold text-warm-teal">
-                {resource.org.charAt(0)}
+            {/* Logo container */}
+            <div className="w-full aspect-[4/3] rounded-2xl bg-surface border border-border flex items-center justify-center p-5 transition-all duration-200 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.07)] group-hover:border-primary-light group-hover:-translate-y-0.5">
+              <span className="font-heading text-[22px] sm:text-[26px] font-bold text-charcoal leading-tight tracking-tight select-none">
+                {resource.org}
               </span>
             </div>
-            <h3 className="font-heading text-[16px] font-semibold text-charcoal">
-              {resource.org}
-            </h3>
-            <p className="font-body text-[13px] text-muted-grey mt-1 line-clamp-2 flex-1">
+            {/* Label */}
+            <p className="font-body text-[13px] text-muted-grey mt-3 group-hover:text-charcoal transition-colors leading-snug">
               {resource.description}
             </p>
-            <a
-              href={resource.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 flex items-center justify-center gap-1 w-full h-9 rounded-full bg-warm-teal text-white font-body text-[13px] font-medium transition-all duration-150 hover:opacity-90"
-            >
-              {resource.ctaLabel}
-              <ChevronRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </section>
