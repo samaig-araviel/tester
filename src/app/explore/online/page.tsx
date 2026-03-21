@@ -68,7 +68,7 @@ export default async function ExploreOnlinePage() {
       )
     `
     )
-    .eq("status", "live")
+    .eq("status", "LIVE")
     .order("created_at", { ascending: false });
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

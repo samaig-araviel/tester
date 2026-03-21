@@ -30,7 +30,7 @@ export default function RecommendedSection({
   const router = useRouter();
 
   // Empty state when onboarding not completed
-  if (!onboardingCompleted || offers.length === 0) {
+  if (!onboardingCompleted) {
     return (
       <section>
         <SectionHeader
@@ -46,23 +46,46 @@ export default function RecommendedSection({
               Tell us what you need
             </h3>
             <p className="font-body text-[14px] text-muted-grey mb-6 leading-relaxed">
-              Answer a few quick questions so we can personalise your
+              Complete your profile so we can personalise your
               recommendations.
             </p>
             <Link
-              href="/onboarding?screen=3"
+              href="/profile"
               className="inline-flex items-center justify-center px-6 h-[44px] rounded-full bg-primary text-white font-body text-[15px] font-medium transition-all duration-150 hover:bg-primary-hover"
             >
-              Personalise my feed
+              Complete my profile
             </Link>
-            <p className="mt-3">
-              <button
-                onClick={() => {}}
-                className="font-body text-[13px] text-muted-grey hover:text-charcoal transition-colors cursor-pointer"
-              >
-                Skip for now
-              </button>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Onboarding complete but no offers matched
+  if (offers.length === 0) {
+    return (
+      <section>
+        <SectionHeader
+          title="Recommended for you"
+          helperText="Based on your preferences and life stage."
+        />
+        <div className="flex items-center justify-center py-8">
+          <div className="max-w-md w-full rounded-2xl border border-border bg-primary-light/30 p-8 text-center">
+            <div className="w-12 h-12 rounded-full bg-warm-teal-light flex items-center justify-center mx-auto mb-4">
+              <Sparkles className="w-6 h-6 text-warm-teal" />
+            </div>
+            <h3 className="font-heading text-[18px] font-semibold text-soft-navy mb-2">
+              No recommendations yet
+            </h3>
+            <p className="font-body text-[14px] text-muted-grey mb-6 leading-relaxed">
+              Update your preferences in your profile to get personalised recommendations.
             </p>
+            <Link
+              href="/profile"
+              className="inline-flex items-center justify-center px-6 h-[44px] rounded-full bg-primary text-white font-body text-[15px] font-medium transition-all duration-150 hover:bg-primary-hover"
+            >
+              Update preferences
+            </Link>
           </div>
         </div>
       </section>

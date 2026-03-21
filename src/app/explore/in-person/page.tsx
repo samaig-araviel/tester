@@ -68,7 +68,7 @@ export default async function ExploreInPersonPage() {
       )
     `
     )
-    .eq("status", "live")
+    .eq("status", "LIVE")
     .order("created_at", { ascending: false });
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -80,7 +80,7 @@ export default async function ExploreInPersonPage() {
       if (!v || v.active === false) return null;
       // Filter for in-person delivery type
       const dt = (v.delivery_type ?? "").toLowerCase();
-      if (!dt.includes("in-person") && !dt.includes("in person")) return null;
+      if (!dt.includes("in-person") && !dt.includes("in person") && !dt.includes("in_person")) return null;
       return {
         id: v.name + "-" + o.id,
         name: v.name ?? "Unknown",

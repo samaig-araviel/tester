@@ -34,7 +34,7 @@ export async function updateSession(request: NextRequest) {
   // Redirect unauthenticated users to login
   if (
     !user &&
-    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer") || pathname.startsWith("/saved"))
+    (pathname.startsWith("/dashboard") || pathname.startsWith("/onboarding") || pathname.startsWith("/parents-hub") || pathname.startsWith("/offer") || pathname.startsWith("/saved") || pathname.startsWith("/profile"))
   ) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";

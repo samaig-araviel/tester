@@ -47,7 +47,7 @@ export default async function OfferDetailPage({ params }: PageProps) {
     `
     )
     .eq("id", offerId)
-    .eq("status", "live")
+    .eq("status", "LIVE")
     .single();
 
   if (!offerRaw) {
@@ -98,7 +98,7 @@ export default async function OfferDetailPage({ params }: PageProps) {
       )
     `
     )
-    .eq("status", "live")
+    .eq("status", "LIVE")
     .neq("id", offerId)
     .order("created_at", { ascending: false })
     .limit(20);

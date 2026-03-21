@@ -69,7 +69,7 @@ export default async function DashboardPage() {
       )
     `
     )
-    .eq("status", "live")
+    .eq("status", "LIVE")
     .order("created_at", { ascending: false });
 
   type VendorData = {
