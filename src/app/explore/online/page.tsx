@@ -19,7 +19,7 @@ export default async function ExploreOnlinePage() {
   const { data: profile } = await supabase
     .from("users")
     .select(
-      "support_needs, child_age_buckets, is_expecting, identity_type, town, county"
+      "support_needs, child_age_buckets, is_expecting, identity_type, postcode"
     )
     .eq("id", user.id)
     .single();
@@ -29,8 +29,7 @@ export default async function ExploreOnlinePage() {
     child_age_buckets: profile?.child_age_buckets ?? [],
     is_expecting: profile?.is_expecting ?? false,
     identity_type: profile?.identity_type ?? null,
-    town: profile?.town ?? null,
-    county: profile?.county ?? null,
+    postcode: profile?.postcode ?? null,
   };
 
   // Fetch saved offer IDs
@@ -58,6 +57,7 @@ export default async function ExploreOnlinePage() {
       vendors (
         name,
         logo_url,
+        banner_url,
         category,
         delivery_type,
         age_relevance,
@@ -86,6 +86,7 @@ export default async function ExploreOnlinePage() {
         name: v.name ?? "Unknown",
         logo_url: v.logo_url ?? null,
         cover_image_url: null,
+        banner_url: v.banner_url ?? null,
         location_name: v.location_name ?? null,
         category: v.category ?? null,
         delivery_type: v.delivery_type ?? null,

@@ -8,13 +8,13 @@ const COPY = {
     pill: "Online services",
     heading:
       "Discover online brands offering exclusive benefits for Parentfits members.",
-    searchPlaceholder: "Search for brands and services",
+    searchPlaceholder: "Search services, activities\u2026",
   },
   "in-person": {
     pill: "In-person services",
     heading:
       "Discover local services and in-person support for you and your family.",
-    searchPlaceholder: "Search services or providers",
+    searchPlaceholder: "Search services, activities\u2026",
   },
 } as const;
 

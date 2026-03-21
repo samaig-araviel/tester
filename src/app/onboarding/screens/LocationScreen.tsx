@@ -1,24 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import TownCombobox from "@/components/onboarding/TownCombobox";
+import { MapPin } from "lucide-react";
 
 interface LocationScreenProps {
-  town: string | null;
-  county: string | null;
-  onNext: (town: string, county: string) => void;
+  postcode: string | null;
+  onNext: (postcode: string) => void;
   onSkip: () => void;
   isPending: boolean;
 }
 
-export default function LocationScreen({ town, county, onNext, onSkip, isPending }: LocationScreenProps) {
-  const [selectedTown, setSelectedTown] = useState<string | null>(town);
-  const [selectedCounty, setSelectedCounty] = useState<string | null>(county);
+export default function LocationScreen({ postcode, onNext, onSkip, isPending }: LocationScreenProps) {
+  const [value, setValue] = useState(postcode ?? "");
 
-  function handleSelect(townName: string, countyName: string) {
-    setSelectedTown(townName || null);
-    setSelectedCounty(countyName || null);
-  }
+  const isValid = value.trim().length >= 3;
 
   return (
     <div className="pt-8 sm:pt-12">
@@ -27,20 +22,30 @@ export default function LocationScreen({ town, county, onNext, onSkip, isPending
           Where are you based?
         </h2>
         <p className="font-body text-[14px] text-text-secondary mb-6">
-          We use this to show nearby and relevant support.
+          Enter your postcode so we can show nearby services and support.
         </p>
 
         <div className="mb-8">
-          <TownCombobox
-            value={selectedTown}
-            county={selectedCounty}
-            onSelect={handleSelect}
-          />
+          <label htmlFor="postcode" className="block font-body text-[13px] font-medium text-text-primary mb-1.5">
+            Postcode
+          </label>
+          <div className="relative">
+            <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-grey" />
+            <input
+              id="postcode"
+              type="text"
+              value={value}
+              onChange={(e) => setValue(e.target.value.toUpperCase())}
+              placeholder="e.g. SW1A 1AA"
+              className="w-full h-[44px] pl-9 pr-4 rounded-xl border border-border bg-surface font-body text-[15px] text-text-primary placeholder:text-muted-grey focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+              autoComplete="postal-code"
+            />
+          </div>
         </div>
 
         <button
-          onClick={() => selectedTown && selectedCounty && onNext(selectedTown, selectedCounty)}
-          disabled={!selectedTown || isPending}
+          onClick={() => isValid && onNext(value.trim())}
+          disabled={!isValid || isPending}
           className="w-full h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isPending ? "Saving..." : "Continue"}

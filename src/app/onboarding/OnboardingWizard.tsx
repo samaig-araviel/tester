@@ -38,8 +38,7 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
     child_count: initialData.child_count,
     is_expecting: initialData.is_expecting ?? false,
     child_age_buckets: initialData.child_age_buckets,
-    town: initialData.town,
-    county: initialData.county,
+    postcode: initialData.postcode,
     support_needs: initialData.support_needs,
     onboarding_completed: initialData.onboarding_completed ?? false,
   });
@@ -142,12 +141,11 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
       case 5:
         return (
           <LocationScreen
-            town={data.town}
-            county={data.county}
-            onNext={(town, county) => {
+            postcode={data.postcode}
+            onNext={(postcode) => {
               startTransition(async () => {
-                await saveLocation(town, county);
-                setData((d) => ({ ...d, town, county }));
+                await saveLocation(postcode);
+                setData((d) => ({ ...d, postcode }));
                 advance();
               });
             }}

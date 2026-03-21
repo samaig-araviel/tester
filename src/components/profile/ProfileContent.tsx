@@ -21,7 +21,7 @@ interface ProfileData {
   child_count: string;
   child_age_buckets: string[];
   is_expecting: boolean;
-  town: string;
+  postcode: string;
   employment_type: string;
   work_location: string;
   working_pattern: string;
@@ -105,7 +105,7 @@ export default function ProfileContent({
   const [childCount, setChildCount] = useState(
     parseInt(profile.child_count) || 0
   );
-  const [town, setTown] = useState(profile.town);
+  const [postcode, setPostcode] = useState(profile.postcode);
   const [familySaving, setFamilySaving] = useState(false);
 
   // Work form state
@@ -183,14 +183,14 @@ export default function ProfileContent({
         child_age_buckets: buckets,
         child_count: childCount.toString(),
         is_expecting: isExpecting,
-        town: town.trim(),
+        postcode: postcode.trim(),
       });
       setProfile((p) => ({
         ...p,
         child_age_buckets: buckets,
         child_count: childCount.toString(),
         is_expecting: isExpecting,
-        town: town.trim(),
+        postcode: postcode.trim(),
         onboarding_completed: true,
       }));
       showToast("Changes saved", "success");
@@ -533,16 +533,16 @@ export default function ProfileContent({
               </div>
             </div>
 
-            {/* Town / Postcode */}
+            {/* Postcode */}
             <div className="mb-6">
               <label className="block font-body text-[13px] font-medium text-charcoal mb-1.5">
-                Town or postcode
+                Postcode
               </label>
               <input
                 type="text"
-                value={town}
-                onChange={(e) => setTown(e.target.value)}
-                placeholder="e.g. London, SW1A 1AA"
+                value={postcode}
+                onChange={(e) => setPostcode(e.target.value.toUpperCase())}
+                placeholder="e.g. SW1A 1AA"
                 className="w-full max-w-xs h-[44px] px-3 rounded-xl border border-border font-body text-[14px] text-charcoal outline-none focus:border-primary transition-colors"
               />
             </div>

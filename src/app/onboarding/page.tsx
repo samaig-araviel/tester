@@ -13,7 +13,7 @@ export default async function OnboardingPage() {
 
   const { data: profile } = await supabase
     .from("users")
-    .select("identity_type, child_count, is_expecting, child_age_buckets, town, county, support_needs, onboarding_completed")
+    .select("identity_type, child_count, is_expecting, child_age_buckets, postcode, support_needs, onboarding_completed")
     .eq("id", user.id)
     .single();
 
@@ -26,8 +26,7 @@ export default async function OnboardingPage() {
     child_count: profile?.child_count ?? null,
     is_expecting: profile?.is_expecting ?? false,
     child_age_buckets: profile?.child_age_buckets ?? null,
-    town: profile?.town ?? null,
-    county: profile?.county ?? null,
+    postcode: profile?.postcode ?? null,
     support_needs: profile?.support_needs ?? null,
     onboarding_completed: profile?.onboarding_completed ?? false,
   };

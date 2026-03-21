@@ -70,9 +70,7 @@ export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPendin
         .join(", ")
     : null;
 
-  const locationDisplay = data.town
-    ? `${data.town}, ${data.county}`
-    : null;
+  const locationDisplay = data.postcode ?? null;
 
   const needsDisplay = data.support_needs?.length
     ? data.support_needs.map((n) => SUPPORT_NEED_DISPLAY[n] || n).join(", ")

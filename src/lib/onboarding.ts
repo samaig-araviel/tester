@@ -3,8 +3,7 @@ export interface OnboardingData {
   child_count: string | null;
   is_expecting: boolean;
   child_age_buckets: string[] | null;
-  town: string | null;
-  county: string | null;
+  postcode: string | null;
   support_needs: string[] | null;
   onboarding_completed: boolean;
 }
