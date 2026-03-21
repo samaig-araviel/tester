@@ -8,7 +8,7 @@ export interface ExploreVendor {
   location_name: string | null;
   category: string | null;
   delivery_type: string | null;
-  age_relevance: string | null;
+  age_relevance: string[] | string | null;
   priority_weight: number | null;
   short_descriptor: string | null;
   offer_id: string;
@@ -294,7 +294,8 @@ export function recommendationScore(
 ): number {
   let score = 0;
   const cat = vendor.category ?? "";
-  const ageRel = vendor.age_relevance ?? "";
+  const ageRel = vendor.age_relevance ?? [];
+  const ageRelJoined = (Array.isArray(ageRel) ? ageRel.join(" ") : String(ageRel)).toLowerCase();
 
   // Support needs match (highest weight)
   if (
@@ -318,7 +319,7 @@ export function recommendationScore(
   // Child age match
   if (
     profile.child_age_buckets.some((bucket) =>
-      ageRel.toLowerCase().includes(bucket.toLowerCase())
+      ageRelJoined.includes(bucket.toLowerCase())
     )
   ) {
     score += 30;

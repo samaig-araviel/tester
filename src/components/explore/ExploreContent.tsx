@@ -91,9 +91,10 @@ export default function ExploreContent({
     // Age filter
     if (ageFilters.length > 0) {
       result = result.filter((v) => {
-        const ageRel = v.age_relevance ?? "";
+        const ageRel = v.age_relevance ?? [];
+        const ageRelJoined = (Array.isArray(ageRel) ? ageRel.join(" ") : String(ageRel)).toLowerCase();
         return ageFilters.some((bucket) =>
-          ageRel.toLowerCase().includes(bucket.toLowerCase())
+          ageRelJoined.includes(bucket.toLowerCase())
         );
       });
     }
