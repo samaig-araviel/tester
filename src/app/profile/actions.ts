@@ -33,7 +33,7 @@ export async function saveFamilyProfile(data: {
   child_age_buckets: string[];
   child_count: string;
   is_expecting: boolean;
-  town: string;
+  postcode: string;
 }) {
   const { supabase, userId } = await getAuthenticatedUserId();
   const { error } = await supabase
@@ -42,7 +42,7 @@ export async function saveFamilyProfile(data: {
       child_age_buckets: data.child_age_buckets,
       child_count: data.child_count,
       is_expecting: data.is_expecting,
-      town: data.town,
+      postcode: data.postcode,
       onboarding_completed: true,
       updated_at: new Date().toISOString(),
     })

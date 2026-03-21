@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import SectionHeader from "./SectionHeader";
-import Carousel from "./Carousel";
 import OfferCard from "./OfferCard";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
@@ -14,6 +13,10 @@ interface Offer {
   banner_url: string | null;
   offer_headline: string;
   is_saved: boolean;
+  category?: string | null;
+  delivery_type?: string | null;
+  short_descriptor?: string | null;
+  age_relevance?: string[] | null;
 }
 
 interface RecommendedSectionProps {
@@ -98,8 +101,8 @@ export default function RecommendedSection({
         title="Recommended for you"
         helperText="Based on your preferences and life stage."
       />
-      <Carousel itemCount={offers.length}>
-        {offers.map((offer) => (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {offers.slice(0, 8).map((offer) => (
           <OfferCard
             key={offer.id}
             id={offer.id}
@@ -108,11 +111,15 @@ export default function RecommendedSection({
             bannerUrl={offer.banner_url}
             offerHeadline={offer.offer_headline}
             isSaved={offer.is_saved}
+            category={offer.category}
+            deliveryType={offer.delivery_type}
+            shortDescriptor={offer.short_descriptor}
+            ageRelevance={offer.age_relevance}
             onToggleSave={onToggleSave}
             onClick={() => router.push(`/offer/${offer.id}`)}
           />
         ))}
-      </Carousel>
+      </div>
     </section>
   );
 }

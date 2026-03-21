@@ -5,6 +5,7 @@ export interface ExploreVendor {
   name: string;
   logo_url: string | null;
   cover_image_url: string | null;
+  banner_url: string | null;
   location_name: string | null;
   category: string | null;
   delivery_type: string | null;
@@ -24,6 +25,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-kidly",
     name: "Kidly",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=400&fit=crop",
     location_name: null,
@@ -43,6 +45,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-jojo",
     name: "JoJo Maman Bébé",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&h=400&fit=crop",
     location_name: null,
@@ -62,6 +65,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-tinyhearts",
     name: "Tiny Hearts Education",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1587654780291-39c9404d7dd0?w=600&h=400&fit=crop",
     location_name: null,
@@ -81,6 +85,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-kiddyum",
     name: "Kiddyum",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=600&h=400&fit=crop",
     location_name: null,
@@ -100,6 +105,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-happity",
     name: "Happity",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1587616211892-f743fcca64f9?w=600&h=400&fit=crop",
     location_name: null,
@@ -119,6 +125,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-mybabiie",
     name: "My Babiie",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
     location_name: null,
@@ -138,6 +145,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-elvie",
     name: "Elvie",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&h=400&fit=crop",
     location_name: null,
@@ -157,6 +165,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-koru-kids",
     name: "Koru Kids",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=600&h=400&fit=crop",
     location_name: null,
@@ -176,6 +185,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-bloom-wild",
     name: "Bloom & Wild",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600&h=400&fit=crop",
     location_name: null,
@@ -195,6 +205,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-tutorful",
     name: "Tutorful",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
     location_name: null,
@@ -214,6 +225,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-mindful-mums",
     name: "The Mindful Mums Club",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop",
     location_name: null,
@@ -233,6 +245,7 @@ export const MOCK_ONLINE_VENDORS: ExploreVendor[] = [
     id: "mock-natural-baby",
     name: "Natural Baby Shower",
     logo_url: null,
+    banner_url: null,
     cover_image_url:
       "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=400&fit=crop",
     location_name: null,
@@ -255,8 +268,7 @@ export interface UserProfile {
   child_age_buckets: string[];
   is_expecting: boolean;
   identity_type: string | null;
-  town: string | null;
-  county: string | null;
+  postcode: string | null;
 }
 
 export const CATEGORY_OPTIONS = [

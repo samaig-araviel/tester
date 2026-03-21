@@ -18,7 +18,7 @@ export default async function DashboardPage() {
   const { data: profile } = await supabase
     .from("users")
     .select(
-      "first_name, identity_type, child_age_buckets, town, county, support_needs, onboarding_completed, last_login, is_expecting"
+      "first_name, identity_type, child_age_buckets, postcode, support_needs, onboarding_completed, last_login, is_expecting"
     )
     .eq("id", user.id)
     .single();
@@ -63,6 +63,7 @@ export default async function DashboardPage() {
         category,
         delivery_type,
         age_relevance,
+        short_descriptor,
         service_radius_km,
         location_name,
         active
@@ -79,6 +80,7 @@ export default async function DashboardPage() {
     category: string | null;
     delivery_type: string | null;
     age_relevance: string[] | null;
+    short_descriptor: string | null;
     service_radius_km: number | null;
     location_name: string | null;
     active: boolean;
@@ -116,6 +118,10 @@ export default async function DashboardPage() {
       offer_headline: o.offer_headline ?? "",
       is_new: o.is_new ?? false,
       is_saved: savedOfferIds.has(o.id),
+      category: o.vendors?.category ?? null,
+      delivery_type: o.vendors?.delivery_type ?? null,
+      short_descriptor: o.vendors?.short_descriptor ?? null,
+      age_relevance: o.vendors?.age_relevance ?? null,
     };
   }
 

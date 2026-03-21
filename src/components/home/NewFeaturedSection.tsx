@@ -13,6 +13,10 @@ interface Offer {
   offer_headline: string;
   is_saved: boolean;
   is_new: boolean;
+  category?: string | null;
+  delivery_type?: string | null;
+  short_descriptor?: string | null;
+  age_relevance?: string[] | null;
 }
 
 interface NewFeaturedSectionProps {
@@ -57,6 +61,10 @@ export default function NewFeaturedSection({
             offerHeadline={offer.offer_headline}
             isNew={offer.is_new}
             isSaved={offer.is_saved}
+            category={offer.category}
+            deliveryType={offer.delivery_type}
+            shortDescriptor={offer.short_descriptor}
+            ageRelevance={offer.age_relevance}
             onToggleSave={onToggleSave}
             onClick={() => router.push(`/offer/${offer.id}`)}
           />

@@ -40,11 +40,11 @@ export async function saveChildAges(ageBuckets: string[]) {
   if (error) throw new Error(error.message);
 }
 
-export async function saveLocation(town: string, county: string) {
+export async function saveLocation(postcode: string) {
   const { supabase, userId } = await getAuthenticatedUserId();
   const { error } = await supabase
     .from("users")
-    .update({ town, county, updated_at: new Date().toISOString() })
+    .update({ postcode, updated_at: new Date().toISOString() })
     .eq("id", userId);
   if (error) throw new Error(error.message);
 }

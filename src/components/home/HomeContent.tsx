@@ -17,6 +17,10 @@ interface OfferWithVendor {
   offer_headline: string;
   is_new: boolean;
   is_saved: boolean;
+  category?: string | null;
+  delivery_type?: string | null;
+  short_descriptor?: string | null;
+  age_relevance?: string[] | null;
 }
 
 interface SavedVendor {
