@@ -9,7 +9,6 @@ import {
   User,
   Heart,
   ChevronDown,
-  Settings,
   Bookmark,
 } from "lucide-react";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
@@ -104,12 +103,12 @@ function ProfileMenu() {
               Saved perks
             </Link>
             <Link
-              href="/settings"
+              href="/profile"
               className="flex items-center gap-2.5 w-full px-3 py-2.5 rounded-lg text-left font-body text-sm text-text-primary hover:bg-primary-light transition-colors"
               onClick={() => setOpen(false)}
             >
-              <Settings className="w-4 h-4" />
-              Settings
+              <User className="w-4 h-4" />
+              My Profile
             </Link>
             <div className="my-1 border-t border-border" />
             <button
