@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import SectionHeader from "./SectionHeader";
 import OfferCard from "./OfferCard";
@@ -25,14 +26,16 @@ interface RecommendedSectionProps {
   onToggleSave: (offerId: string) => void;
 }
 
+const ITEMS_PER_PAGE = 8;
+
 export default function RecommendedSection({
   offers,
   onboardingCompleted,
   onToggleSave,
 }: RecommendedSectionProps) {
   const router = useRouter();
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
-  // Empty state when onboarding not completed
   if (!onboardingCompleted) {
     return (
       <section>
@@ -64,7 +67,6 @@ export default function RecommendedSection({
     );
   }
 
-  // Onboarding complete but no offers matched
   if (offers.length === 0) {
     return (
       <section>
@@ -95,6 +97,9 @@ export default function RecommendedSection({
     );
   }
 
+  const visible = offers.slice(0, visibleCount);
+  const hasMore = visibleCount < offers.length;
+
   return (
     <section>
       <SectionHeader
@@ -102,7 +107,7 @@ export default function RecommendedSection({
         helperText="Based on your preferences and life stage."
       />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {offers.slice(0, 8).map((offer) => (
+        {visible.map((offer) => (
           <OfferCard
             key={offer.id}
             id={offer.id}
@@ -120,6 +125,16 @@ export default function RecommendedSection({
           />
         ))}
       </div>
+      {hasMore && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setVisibleCount((c) => c + ITEMS_PER_PAGE)}
+            className="px-8 py-3 rounded-full border border-border bg-surface font-body text-[14px] font-medium text-charcoal hover:border-warm-teal hover:text-warm-teal transition-all duration-150 cursor-pointer"
+          >
+            Load more
+          </button>
+        </div>
+      )}
     </section>
   );
 }

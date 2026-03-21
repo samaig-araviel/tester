@@ -17,7 +17,6 @@ export default function SupportContent() {
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
   const isClickNav = useRef(false);
 
-  // Handle hash on initial load
   useEffect(() => {
     const hash = window.location.hash.slice(1) as SectionId;
     if (hash && NAV_ITEMS.some((n) => n.id === hash)) {
@@ -28,7 +27,6 @@ export default function SupportContent() {
     }
   }, []);
 
-  // Scroll spy
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -63,28 +61,28 @@ export default function SupportContent() {
   }, []);
 
   return (
-    <div className="flex gap-10">
+    <div className="flex gap-12">
       {/* Left column: Sticky side navigation */}
-      <nav className="hidden lg:block w-[260px] flex-shrink-0">
+      <nav className="hidden lg:block w-[240px] flex-shrink-0">
         <div className="sticky top-[96px]">
-          <p className="font-body text-[12px] font-medium text-muted-grey uppercase tracking-wider mb-4 px-4">
-            Support
-          </p>
-          <ul className="space-y-1">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.id}>
-                <button
-                  onClick={() => handleNavClick(item.id)}
-                  className={`w-full text-left px-4 py-3 rounded-lg font-body text-[14px] transition-all duration-150 cursor-pointer ${
-                    activeSection === item.id
-                      ? "bg-[#E6F2EF] text-soft-navy font-semibold border-l-[3px] border-warm-teal"
-                      : "text-charcoal hover:bg-[#F1F1F1]"
-                  }`}
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
+          <ul className="space-y-0">
+            {NAV_ITEMS.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <li key={item.id}>
+                  <button
+                    onClick={() => handleNavClick(item.id)}
+                    className={`w-full text-left px-5 py-3.5 font-body text-[14px] transition-all duration-150 cursor-pointer border-l-[3px] ${
+                      isActive
+                        ? "border-warm-teal text-warm-teal font-semibold bg-transparent"
+                        : "border-transparent text-charcoal hover:text-soft-navy"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </nav>
@@ -110,55 +108,57 @@ export default function SupportContent() {
 
       {/* Right column: Content */}
       <div className="flex-1 min-w-0">
-        <div className="bg-white rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.06)] p-8 sm:p-12">
-          {/* FAQ */}
-          <section
-            id="faq"
-            ref={(el) => { sectionRefs.current["faq"] = el; }}
-          >
-            <FAQSection />
-          </section>
+        {/* FAQ */}
+        <section
+          id="faq"
+          ref={(el) => { sectionRefs.current["faq"] = el; }}
+          className="mb-16"
+        >
+          <FAQSection />
+        </section>
 
-          <hr className="my-12 border-border" />
+        <hr className="border-border mb-16" />
 
-          {/* About */}
-          <section
-            id="about"
-            ref={(el) => { sectionRefs.current["about"] = el; }}
-          >
-            <AboutSection />
-          </section>
+        {/* About */}
+        <section
+          id="about"
+          ref={(el) => { sectionRefs.current["about"] = el; }}
+          className="mb-16"
+        >
+          <AboutSection />
+        </section>
 
-          <hr className="my-12 border-border" />
+        <hr className="border-border mb-16" />
 
-          {/* How it works */}
-          <section
-            id="how-it-works"
-            ref={(el) => { sectionRefs.current["how-it-works"] = el; }}
-          >
-            <HowItWorksSection />
-          </section>
+        {/* How it works */}
+        <section
+          id="how-it-works"
+          ref={(el) => { sectionRefs.current["how-it-works"] = el; }}
+          className="mb-16"
+        >
+          <HowItWorksSection />
+        </section>
 
-          <hr className="my-12 border-border" />
+        <hr className="border-border mb-16" />
 
-          {/* Data protection */}
-          <section
-            id="data-protection"
-            ref={(el) => { sectionRefs.current["data-protection"] = el; }}
-          >
-            <DataProtectionSection />
-          </section>
+        {/* Data protection */}
+        <section
+          id="data-protection"
+          ref={(el) => { sectionRefs.current["data-protection"] = el; }}
+          className="mb-16"
+        >
+          <DataProtectionSection />
+        </section>
 
-          <hr className="my-12 border-border" />
+        <hr className="border-border mb-16" />
 
-          {/* Safeguarding */}
-          <section
-            id="safeguarding"
-            ref={(el) => { sectionRefs.current["safeguarding"] = el; }}
-          >
-            <SafeguardingSection />
-          </section>
-        </div>
+        {/* Safeguarding */}
+        <section
+          id="safeguarding"
+          ref={(el) => { sectionRefs.current["safeguarding"] = el; }}
+        >
+          <SafeguardingSection />
+        </section>
       </div>
     </div>
   );
@@ -172,28 +172,40 @@ const FAQ_DATA = [
     a: "Parentfits is a dedicated platform for parents that provides access to discounts, services, and practical support. It is designed to support parents across everyday needs, from family finances and wellbeing to childcare and household services.",
   },
   {
-    q: "How do I access Parentfits?",
-    a: "Parentfits is offered through participating employers. If your organisation provides access as part of its benefits package, you will be able to log in and start using Parentfits.",
+    q: "How does the platform work?",
+    a: "Your employer provides access to Parentfits. Once you log in, you can browse parent-focused offers and services, redeem discounts using a code or link, and save your favourites to come back to anytime.",
   },
   {
-    q: "What type of discounts and support are included?",
+    q: "What benefits and discounts are available?",
     a: "Parentfits offers a combination of discounts on family-focused products and services, access to trusted parent-focused providers, and practical resources and guidance.",
   },
   {
-    q: "Is Parentfits only for mums?",
-    a: "No. Parentfits is designed for all parents and caregivers, including fathers, adoptive parents, and guardians.",
+    q: "How do I access these services?",
+    a: "Parentfits is offered through participating employers. If your organisation provides access as part of its benefits package, you will be able to log in and start using Parentfits.",
   },
   {
-    q: "Is Parentfits free to use?",
-    a: "Yes. Parentfits is provided as part of an employer benefits offering and is free for eligible parents to use.",
+    q: "Is Parentfits available through my employer?",
+    a: "You can check with your HR or benefits team. If your employer does not currently offer Parentfits, you can let them know you would like access. Employers can get in touch to find out how to offer the platform to their teams.",
   },
   {
-    q: "What if my employer does not currently offer Parentfits?",
-    a: "You can let your employer know you would like access to Parentfits. Employers can get in touch to find out how to offer the platform to their teams.",
+    q: "How is my personal data protected?",
+    a: "We only collect the information needed to personalise your experience and confirm eligibility. Employer reporting is aggregated and anonymised. We do not access employer HR records and your data is never sold.",
   },
   {
-    q: "How is Parentfits different from other discount platforms?",
-    a: "Parentfits is designed specifically for parents. It combines savings with practical support and trusted services, rather than offering generic discounts that do not reflect family needs.",
+    q: "What safeguarding measures do you take?",
+    a: "We work with vetted partners and provide clear guidance for services involving children and families. If you ever have concerns about a partner experience, you can report it to our support team.",
+  },
+  {
+    q: "How can I update my preferences?",
+    a: "You can update your profile, family details, and preferences at any time from the My Profile page. Changes are saved instantly and your recommendations will update accordingly.",
+  },
+  {
+    q: "Who can use this platform?",
+    a: "Parentfits is designed for all parents and caregivers, including fathers, adoptive parents, and guardians. It is not limited to mums.",
+  },
+  {
+    q: "How can I contact support?",
+    a: "If you need help or have a question that is not answered here, you can reach our support team by emailing hello@parentfits.co.uk.",
   },
 ];
 
@@ -202,20 +214,20 @@ function FAQSection() {
 
   return (
     <div>
-      <h1 className="font-heading text-[28px] font-semibold text-soft-navy mb-3">
+      <h1 className="font-heading text-[32px] font-semibold text-soft-navy mb-4">
         Frequently Asked Questions
       </h1>
-      <p className="font-body text-[15px] text-[#555555] mb-8">
-        Find answers to common questions about the platform. If you cannot find what you are looking for, please get in touch.
+      <p className="font-body text-[16px] text-muted-grey mb-10 leading-relaxed max-w-[640px]">
+        Find answers to common questions about our platform services. If you can&apos;t find what you&apos;re looking for, please get in touch with us.
       </p>
 
-      <div className="space-y-3">
+      <div className="space-y-0">
         {FAQ_DATA.map((faq, i) => {
           const isOpen = openIndex === i;
           return (
             <div
               key={i}
-              className="border border-[#E6E6E6] rounded-xl overflow-hidden"
+              className="border-b border-[#E8E4DE]"
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -226,23 +238,23 @@ function FAQSection() {
                   }
                 }}
                 aria-expanded={isOpen}
-                className="w-full flex items-center justify-between px-4 py-4 text-left cursor-pointer"
+                className="w-full flex items-center justify-between py-5 text-left cursor-pointer group"
               >
-                <span className="font-body text-[15px] font-medium text-charcoal pr-4">
+                <span className="font-body text-[15px] font-medium text-charcoal pr-6">
                   {faq.q}
                 </span>
-                <span className="flex-shrink-0 w-6 h-6 rounded-full border border-border flex items-center justify-center text-muted-grey text-[18px] leading-none transition-transform duration-150">
-                  {isOpen ? "-" : "+"}
+                <span className="flex-shrink-0 text-warm-teal text-[22px] leading-none font-light">
+                  {isOpen ? "\u2212" : "+"}
                 </span>
               </button>
               <div
                 className="overflow-hidden transition-all duration-150 ease-in-out"
                 style={{
-                  maxHeight: isOpen ? "200px" : "0",
+                  maxHeight: isOpen ? "300px" : "0",
                   opacity: isOpen ? 1 : 0,
                 }}
               >
-                <p className="px-4 pb-4 font-body text-[14px] text-[#555555] leading-relaxed">
+                <p className="pb-5 font-body text-[14px] text-muted-grey leading-relaxed pr-12">
                   {faq.a}
                 </p>
               </div>
@@ -259,10 +271,10 @@ function FAQSection() {
 function AboutSection() {
   return (
     <div>
-      <h1 className="font-heading text-[28px] font-semibold text-soft-navy mb-3">
+      <h1 className="font-heading text-[32px] font-semibold text-soft-navy mb-4">
         About Parentfits
       </h1>
-      <p className="font-body text-[15px] text-[#555555] leading-relaxed">
+      <p className="font-body text-[16px] text-muted-grey leading-relaxed max-w-[640px]">
         Parentfits is a parent-first hub designed to make family life easier. It brings together exclusive discounts, trusted services, and practical support all in one place. Built with the realities of modern parenthood in mind, Parentfits helps parents save money, reduce stress, and feel genuinely supported at work and at home.
       </p>
     </div>
@@ -297,14 +309,14 @@ const STEPS = [
 function HowItWorksSection() {
   return (
     <div>
-      <h1 className="font-heading text-[28px] font-semibold text-soft-navy mb-8">
+      <h1 className="font-heading text-[32px] font-semibold text-soft-navy mb-8">
         How it works
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {STEPS.map((step) => (
           <div
             key={step.number}
-            className="bg-[#F7FAF9] rounded-xl p-5 border border-border/50"
+            className="bg-[#F7FAF9] rounded-xl p-6 border border-border/40"
           >
             <span className="font-heading text-[32px] font-semibold text-warm-teal leading-none">
               {step.number}
@@ -312,7 +324,7 @@ function HowItWorksSection() {
             <h3 className="font-heading text-[16px] font-semibold text-soft-navy mt-3 mb-2">
               {step.title}
             </h3>
-            <p className="font-body text-[15px] text-[#555555] leading-relaxed">
+            <p className="font-body text-[15px] text-muted-grey leading-relaxed">
               {step.body}
             </p>
           </div>
@@ -327,10 +339,10 @@ function HowItWorksSection() {
 function DataProtectionSection() {
   return (
     <div>
-      <h1 className="font-heading text-[28px] font-semibold text-soft-navy mb-3">
+      <h1 className="font-heading text-[32px] font-semibold text-soft-navy mb-4">
         Data Protection
       </h1>
-      <div className="font-body text-[15px] text-[#555555] leading-relaxed space-y-4">
+      <div className="font-body text-[16px] text-muted-grey leading-relaxed space-y-4 max-w-[640px]">
         <p>
           We only collect the information needed to personalise your experience and confirm eligibility. Employer reporting is aggregated and anonymised. We do not access employer HR records. We only use your information to provide the Parentfits service.
         </p>
@@ -347,10 +359,10 @@ function DataProtectionSection() {
 function SafeguardingSection() {
   return (
     <div>
-      <h1 className="font-heading text-[28px] font-semibold text-soft-navy mb-3">
+      <h1 className="font-heading text-[32px] font-semibold text-soft-navy mb-4">
         Safeguarding
       </h1>
-      <p className="font-body text-[15px] text-[#555555] leading-relaxed">
+      <p className="font-body text-[16px] text-muted-grey leading-relaxed max-w-[640px]">
         We work with vetted partners and provide clear guidance for services involving children and families. If you ever have concerns about a partner experience, you can report it to our support team.
       </p>
     </div>

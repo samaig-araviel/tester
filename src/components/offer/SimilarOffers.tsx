@@ -14,12 +14,20 @@ interface SimilarOffer {
   is_new: boolean;
   is_saved: boolean;
   delivery_type: string | null;
+  category?: string | null;
+  short_descriptor?: string | null;
+  age_relevance?: string[] | null;
 }
 
 interface SimilarOffersProps {
   offers: SimilarOffer[];
   category: string | null;
   onToggleSave: (offerId: string) => void;
+}
+
+function formatCategoryDisplay(cat: string | null): string | undefined {
+  if (!cat) return undefined;
+  return cat.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 export default function SimilarOffers({
@@ -31,16 +39,15 @@ export default function SimilarOffers({
 
   if (offers.length === 0) return null;
 
-  const explorePath = category
-    ? `/explore/online`
-    : undefined;
+  const categoryDisplay = formatCategoryDisplay(category);
+  const explorePath = category ? `/explore/online` : undefined;
 
   return (
     <section className="mt-12 pt-10 border-t border-border">
       <SectionHeader
         title="You might also like..."
         helperText=""
-        ctaText={category ? `View all in ${category}` : undefined}
+        ctaText={categoryDisplay ? `View all in ${categoryDisplay}` : undefined}
         ctaHref={explorePath}
       />
       <Carousel itemCount={offers.length}>
@@ -54,6 +61,10 @@ export default function SimilarOffers({
             offerHeadline={offer.offer_headline}
             isNew={offer.is_new}
             isSaved={offer.is_saved}
+            category={offer.category}
+            deliveryType={offer.delivery_type}
+            shortDescriptor={offer.short_descriptor}
+            ageRelevance={offer.age_relevance}
             onToggleSave={onToggleSave}
             onClick={() => router.push(`/offer/${offer.id}`)}
           />

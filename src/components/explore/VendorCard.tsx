@@ -20,17 +20,28 @@ function formatDeliveryType(dt: string | null): string {
 
 function formatCategory(cat: string | null): string {
   if (!cat) return "";
-  return cat.toUpperCase();
+  return cat.replace(/_/g, " ").toUpperCase();
 }
 
-function formatAgeRelevance(ageRel: string[] | string | null): string | null {
+function formatAgeLabel(ageRel: string[] | string | null): string | null {
   if (!ageRel) return null;
   const joined = Array.isArray(ageRel) ? ageRel.join(", ") : ageRel;
   if (!joined) return null;
-  // Shorten for display
   const parts = joined.split(",").map((s) => s.trim());
   if (parts.length === 0) return null;
-  return parts[0];
+  // Map slug to readable label
+  const labelMap: Record<string, string> = {
+    expecting: "Trying to Conceive & Pregnancy",
+    "0-6m": "Baby",
+    "6-24m": "Toddler & Early Childhood",
+    "2-5y": "Toddler & Early Childhood",
+    "5-16y": "Primary & Secondary School",
+    "0-1": "Baby",
+    "2-4": "Toddler & Early Childhood",
+    "5-11": "Primary & Secondary School",
+    "12+": "Primary & Secondary School",
+  };
+  return labelMap[parts[0]] ?? parts[0];
 }
 
 export default function VendorCard({
@@ -41,7 +52,7 @@ export default function VendorCard({
   const deliveryLabel = formatDeliveryType(vendor.delivery_type);
   const categoryLabel = formatCategory(vendor.category);
   const tagLine = [deliveryLabel, categoryLabel].filter(Boolean).join(" \u00B7 ");
-  const ageLabel = formatAgeRelevance(vendor.age_relevance);
+  const ageLabel = formatAgeLabel(vendor.age_relevance);
 
   return (
     <button
@@ -74,10 +85,17 @@ export default function VendorCard({
           </div>
         )}
 
-        {/* Save heart button */}
-        <div className="absolute top-3 right-3">
+        {/* Top row: NEW badge left, heart right */}
+        <div className="absolute top-3 left-3 right-3 flex items-start justify-between">
+          <div>
+            {vendor.is_new && (
+              <span className="px-2.5 py-1 rounded-full bg-warm-teal text-white text-[11px] font-semibold uppercase tracking-wide">
+                New
+              </span>
+            )}
+          </div>
           <div
-            className={`w-9 h-9 rounded-full flex items-center justify-center backdrop-blur-sm transition-colors duration-150 ${
+            className={`w-9 h-9 rounded-full flex items-center justify-center backdrop-blur-sm transition-colors duration-150 flex-shrink-0 ${
               vendor.is_saved
                 ? "bg-warm-teal text-white"
                 : "bg-black/20 text-white hover:bg-black/40"
@@ -89,28 +107,19 @@ export default function VendorCard({
           </div>
         </div>
 
-        {/* Vendor name pill overlay at bottom of image */}
-        <div className="absolute bottom-3 right-3">
-          <span className="px-3 py-1.5 rounded-lg bg-white/90 backdrop-blur-sm font-body text-[12px] font-semibold text-charcoal shadow-sm">
+        {/* Vendor name centered at top of image */}
+        <div className="absolute top-3 left-0 right-0 flex justify-center pointer-events-none">
+          <span className="px-3 py-1 rounded-lg bg-white/80 backdrop-blur-sm font-body text-[11px] font-semibold text-charcoal shadow-sm max-w-[70%] truncate">
             {vendor.name}
           </span>
         </div>
-
-        {/* Match badge */}
-        {vendor.is_new && (
-          <div className="absolute top-3 left-3">
-            <span className="px-2.5 py-1 rounded-full bg-warm-teal text-white text-[11px] font-semibold uppercase tracking-wide">
-              New
-            </span>
-          </div>
-        )}
       </div>
 
       {/* Content area */}
-      <div className="flex flex-col px-4 pt-3.5 pb-4">
+      <div className="flex flex-col px-4 pt-3.5 pb-4 flex-1">
         {/* Category tag line */}
         {tagLine && (
-          <p className="font-body text-[11px] font-medium text-muted-grey uppercase tracking-wider mb-1">
+          <p className="font-body text-[10px] font-medium text-muted-grey uppercase tracking-wider mb-1">
             {tagLine}
           </p>
         )}
@@ -128,14 +137,14 @@ export default function VendorCard({
         )}
 
         {/* Bottom row: age pill + delivery type pill */}
-        <div className="flex items-center gap-2 mt-3">
+        <div className="flex flex-wrap items-center gap-2 mt-auto pt-3">
           {ageLabel && (
-            <span className="px-2.5 py-1 rounded-full border border-primary/20 text-primary font-body text-[11px] font-medium">
+            <span className="px-2.5 py-1 rounded-full border border-border text-muted-grey font-body text-[11px]">
               {ageLabel}
             </span>
           )}
           {pageType === "in-person" && (
-            <span className="px-2.5 py-1 rounded-full border border-primary/20 text-primary font-body text-[11px] font-medium">
+            <span className="px-2.5 py-1 rounded-full border border-border text-muted-grey font-body text-[11px]">
               In-person
             </span>
           )}
