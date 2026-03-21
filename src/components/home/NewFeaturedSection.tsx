@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import SectionHeader from "./SectionHeader";
-import Carousel from "./Carousel";
 import OfferCard from "./OfferCard";
 
 interface Offer {
@@ -50,8 +49,8 @@ export default function NewFeaturedSection({
         title="New & Featured"
         helperText="New partners and offers added recently."
       />
-      <Carousel itemCount={offers.length}>
-        {offers.map((offer) => (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {offers.slice(0, 4).map((offer) => (
           <OfferCard
             key={offer.id}
             id={offer.id}
@@ -69,7 +68,7 @@ export default function NewFeaturedSection({
             onClick={() => router.push(`/offer/${offer.id}`)}
           />
         ))}
-      </Carousel>
+      </div>
     </section>
   );
 }

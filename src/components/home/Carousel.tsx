@@ -3,6 +3,8 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import React from "react";
+
 interface CarouselProps {
   children: React.ReactNode;
   itemCount: number;
@@ -57,7 +59,11 @@ export default function Carousel({ children, itemCount }: CarouselProps) {
         className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
         style={{ scrollSnapType: "x mandatory" }}
       >
-        {children}
+        {React.Children.map(children, (child) => (
+          <div className="flex-shrink-0 w-[264px]" style={{ scrollSnapAlign: "start" }}>
+            {child}
+          </div>
+        ))}
       </div>
 
       {/* Controls */}
