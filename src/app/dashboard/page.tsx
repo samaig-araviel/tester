@@ -232,7 +232,7 @@ export default async function DashboardPage() {
     <div className="min-h-screen bg-surface overflow-x-hidden">
       <Navbar />
 
-      <main className="max-w-[1200px] mx-auto px-6 py-10">
+      <main className="max-w-[1200px] mx-auto px-6 pt-10 pb-0">
         <HomeContent
           firstName={firstName}
           isReturning={isReturning}
