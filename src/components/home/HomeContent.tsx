@@ -153,13 +153,13 @@ export default function HomeContent({
       {/* Explore Online Services */}
       <div className="mt-12">
         <ExploreBlock
-          direction="image-right"
-          pillText="Online services"
-          heading="Explore online services"
+          variant="dark"
+          heading="Explore online"
+          headingAccent="services"
           body="Access online brands and services offering exclusive benefits for working parents, from baby essentials and wellbeing to learning and family support."
           ctaText="Browse our partners"
           ctaHref="/explore/online"
-          imageSrc={null}
+          imageSrc="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&q=80&auto=format&fit=crop"
           imageAlt="Parent browsing online on a laptop"
         />
       </div>
@@ -167,14 +167,14 @@ export default function HomeContent({
       {/* Explore In-Person Services */}
       <div className="mt-12">
         <ExploreBlock
-          direction="image-left"
-          pillText="In-person services"
-          heading="Explore in-person services"
+          variant="light"
+          heading="Explore in-person"
+          headingAccent="services"
           body="Discover local and in-person services near you, including childcare, classes, wellbeing services, and family support."
           ctaText="Find out more"
           ctaHref="/explore/in-person"
-          imageSrc={null}
-          imageAlt="Parent visiting a local childcare centre"
+          imageSrc="https://images.unsplash.com/photo-1543342384-1f1350e27861?w=600&q=80&auto=format&fit=crop"
+          imageAlt="Parent and child at a local activity"
         />
       </div>
 
