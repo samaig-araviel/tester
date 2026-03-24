@@ -80,60 +80,63 @@ export default function ExploreBlock({
 
   return (
     <section
-      className="w-full rounded-3xl overflow-hidden relative"
+      className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden"
       style={{ backgroundColor: config.bg }}
     >
-      <div className="flex flex-col md:flex-row items-stretch min-h-[360px] md:min-h-[400px]">
-        {/* Left: Text content */}
-        <div className="flex-1 flex flex-col justify-center px-8 py-10 md:px-12 md:py-14 lg:px-16 relative z-10">
-          <h2 className={`leading-[1.1] ${config.textColor} mb-5`}>
-            <span
-              className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+      {/* Constrain inner content to page max-width */}
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-stretch min-h-[360px] md:min-h-[420px]">
+          {/* Left: Text content */}
+          <div className="flex-1 flex flex-col justify-center py-12 md:py-16 lg:py-20 relative z-10">
+            <h2 className={`leading-[1.1] ${config.textColor} mb-5`}>
+              <span
+                className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                {heading}
+              </span>
+              <span
+                className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold italic"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                {headingAccent}
+              </span>
+            </h2>
+
+            <p className={`font-body text-[15px] md:text-[16px] leading-relaxed max-w-[420px] mb-8 ${config.bodyColor}`}>
+              {body}
+            </p>
+
+            <Link
+              href={ctaHref}
+              className={`inline-flex items-center justify-center self-start h-[48px] px-7 rounded-full font-body text-[15px] font-medium transition-all duration-200 hover:-translate-y-px hover:shadow-lg active:translate-y-0 ${config.btnBg} ${config.btnText} ${config.btnHover}`}
             >
-              {heading}
-            </span>
-            <span
-              className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold italic"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              {headingAccent}
-            </span>
-          </h2>
-
-          <p className={`font-body text-[15px] md:text-[16px] leading-relaxed max-w-[400px] mb-8 ${config.bodyColor}`}>
-            {body}
-          </p>
-
-          <Link
-            href={ctaHref}
-            className={`inline-flex items-center justify-center self-start h-[48px] px-7 rounded-full font-body text-[15px] font-medium transition-all duration-200 hover:-translate-y-px hover:shadow-lg active:translate-y-0 ${config.btnBg} ${config.btnText} ${config.btnHover}`}
-          >
-            {ctaText}
-          </Link>
-        </div>
-
-        {/* Right: Decorative sparkles + Image */}
-        <div className="flex-1 relative min-h-[260px] md:min-h-0">
-          {/* Sparkle decorations */}
-          <div className="absolute top-4 right-4 md:top-6 md:right-6 z-10 flex items-start gap-1">
-            <Sparkle size={56} className={`${config.sparkleColor} md:block hidden`} />
-            <Sparkle size={40} className={config.sparkleColor} />
-            <Sparkle size={64} className={`${config.sparkleColor} -mt-2`} />
+              {ctaText}
+            </Link>
           </div>
 
-          {/* Image positioned bottom-right with rounded top-left */}
-          <div
-            className="absolute bottom-0 right-0 w-[75%] md:w-[70%] h-[85%] overflow-hidden"
-            style={{ borderTopLeftRadius: "2rem" }}
-          >
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 75vw, 35vw"
-            />
+          {/* Right: Decorative sparkles + Image */}
+          <div className="flex-1 relative min-h-[280px] md:min-h-0">
+            {/* Sparkle decorations */}
+            <div className="absolute top-6 right-0 md:top-8 md:right-0 z-10 flex items-start gap-1">
+              <Sparkle size={56} className={`${config.sparkleColor} hidden md:block`} />
+              <Sparkle size={40} className={config.sparkleColor} />
+              <Sparkle size={64} className={`${config.sparkleColor} -mt-2`} />
+            </div>
+
+            {/* Image positioned bottom-right with rounded top-left */}
+            <div
+              className="absolute bottom-0 right-0 w-[80%] md:w-[72%] h-[85%] overflow-hidden"
+              style={{ borderTopLeftRadius: "2rem" }}
+            >
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 80vw, 36vw"
+              />
+            </div>
           </div>
         </div>
       </div>
