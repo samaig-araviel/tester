@@ -163,8 +163,7 @@ export default function HomeContent({
         imageAlt="Parent browsing online on a laptop"
       />
 
-      {/* Explore In-Person Services – full-bleed */}
-      <div className="mt-16" />
+      {/* Explore In-Person Services – flush, no gap */}
       <ExploreBlock
         variant="light"
         heading="Explore in-person"

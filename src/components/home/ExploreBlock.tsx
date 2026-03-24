@@ -85,7 +85,7 @@ export default function ExploreBlock({
     >
       {/* Constrain inner content to page max-width */}
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-stretch min-h-[360px] md:min-h-[420px]">
+        <div className="flex flex-col md:flex-row items-stretch min-h-[400px] md:min-h-[480px]">
           {/* Left: Text content */}
           <div className="flex-1 flex flex-col justify-center py-12 md:py-16 lg:py-20 relative z-10">
             <h2 className={`leading-[1.1] ${config.textColor} mb-5`}>
