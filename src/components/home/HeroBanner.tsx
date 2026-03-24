@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Star } from "lucide-react";
 
 interface HeroBannerProps {
   firstName: string;
@@ -73,24 +72,6 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
             </Link>
           </div>
 
-          {/* Star rating */}
-          <div className="flex items-center gap-2 mt-5">
-            <div className="flex items-center gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  size={16}
-                  className="text-yellow-500 fill-yellow-500"
-                />
-              ))}
-            </div>
-            <span className="font-body text-[14px] font-semibold text-soft-navy">
-              5.0
-            </span>
-            <span className="font-body text-[13px] text-muted-grey">
-              from 200+ <span className="underline">reviews</span>
-            </span>
-          </div>
         </div>
 
         {/* Right: Bento grid */}
