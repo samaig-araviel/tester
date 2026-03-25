@@ -13,7 +13,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-warm-sand mt-12">
+    <footer className="bg-warm-sand">
       <div className="max-w-[1200px] mx-auto px-6 pt-12 pb-8">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8">
