@@ -117,7 +117,7 @@ export default async function DashboardPage() {
     return {
       id: o.id,
       vendor_name: vendorName,
-      vendor_logo_url: o.vendors?.logo_url ?? fallbackImage,
+      vendor_logo_url: o.vendors?.logo_url ?? null,
       banner_url: o.vendors?.banner_url ?? fallbackImage,
       offer_headline: o.offer_headline ?? "",
       is_new: o.is_new ?? false,
