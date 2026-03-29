@@ -13,7 +13,6 @@ interface ExploreBlockProps {
   ctaHref: string;
   imageSrc: string;
   imageAlt: string;
-  imageSquare?: boolean;
 }
 
 /* Four-pointed sparkle star */
@@ -75,7 +74,6 @@ export default function ExploreBlock({
   ctaHref,
   imageSrc,
   imageAlt,
-  imageSquare = false,
 }: ExploreBlockProps) {
   const config = variantConfig[variant];
 
@@ -127,11 +125,7 @@ export default function ExploreBlock({
 
             {/* Image with rounded corners and breathing room */}
             <div
-              className={`absolute top-1/2 -translate-y-1/2 ${variant === "light" ? "left-0" : "right-0"} overflow-hidden rounded-2xl ${
-                imageSquare
-                  ? "w-[75%] md:w-[68%] aspect-square"
-                  : "w-[85%] md:w-[78%] h-[76%]"
-              }`}
+              className={`absolute top-1/2 -translate-y-1/2 ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] h-[76%] overflow-hidden rounded-2xl`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
