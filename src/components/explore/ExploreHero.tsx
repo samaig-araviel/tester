@@ -40,8 +40,8 @@ export default function ExploreHero({
           height: 300,
           background:
             pageType === "online"
-              ? "linear-gradient(135deg, #E6F2EF 0%, #EEF4F8 25%, #F0D5BF 50%, #FBF0E6 75%, #E6F2EF 100%)"
-              : "linear-gradient(135deg, #EEF4F8 0%, #E6F2EF 30%, #FBF0E6 60%, #F0D5BF 100%)",
+              ? "linear-gradient(135deg, #D9EFEA 0%, #EEF4F8 25%, #C8A96E 50%, #FBF0E6 75%, #D9EFEA 100%)"
+              : "linear-gradient(135deg, #EEF4F8 0%, #D9EFEA 30%, #FBF0E6 60%, #C8A96E 100%)",
         }}
       >
         {/* Subtle decorative elements */}
@@ -52,10 +52,10 @@ export default function ExploreHero({
           preserveAspectRatio="xMidYMid slice"
         >
           <circle cx="200" cy="80" r="120" fill="#117A65" />
-          <circle cx="900" cy="200" r="100" fill="#F0D5BF" />
-          <circle cx="600" cy="50" r="60" fill="#0A2342" />
+          <circle cx="900" cy="200" r="100" fill="#C8A96E" />
+          <circle cx="600" cy="50" r="60" fill="#0B4F4F" />
           <circle cx="1050" cy="100" r="80" fill="#117A65" />
-          <circle cx="350" cy="250" r="50" fill="#F0D5BF" />
+          <circle cx="350" cy="250" r="50" fill="#C8A96E" />
         </svg>
       </div>
 

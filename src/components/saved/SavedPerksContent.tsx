@@ -449,8 +449,8 @@ export default function SavedPerksContent({
                 onClick={() => setFilterType(option.key)}
                 className={`h-[36px] px-4 rounded-full font-body text-[13px] font-medium border transition-all duration-150 cursor-pointer ${
                   filterType === option.key
-                    ? "bg-[#E6F2EF] border-[#117A65] text-[#117A65]"
-                    : "bg-[#F7F4EF] border-[#E7E2DA] text-charcoal hover:border-muted-grey"
+                    ? "bg-[#D9EFEA] border-[#14827C] text-[#14827C]"
+                    : "bg-[#EDE5D5] border-[#E7E2DA] text-charcoal hover:border-muted-grey"
                 }`}
               >
                 {option.label}

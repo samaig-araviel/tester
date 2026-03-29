@@ -201,9 +201,9 @@ export default function ArticlesSection({
                     className="w-14 h-10 opacity-30"
                     aria-hidden="true"
                   >
-                    <rect x="20" y="15" width="80" height="50" rx="6" fill="#0A2342" />
+                    <rect x="20" y="15" width="80" height="50" rx="6" fill="#0B4F4F" />
                     <circle cx="60" cy="35" r="12" fill="#117A65" />
-                    <path d="M30 60 L45 45 L65 55 L80 40 L100 60Z" fill="#F0D5BF" />
+                    <path d="M30 60 L45 45 L65 55 L80 40 L100 60Z" fill="#C8A96E" />
                   </svg>
                 </div>
 

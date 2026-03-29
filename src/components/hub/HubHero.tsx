@@ -33,13 +33,13 @@ export default function HubHero() {
             aria-hidden="true"
           >
             {/* Background elements */}
-            <circle cx="420" cy="60" r="36" fill="#F0D5BF" opacity="0.5" />
-            <circle cx="80" cy="240" r="20" fill="#E6F2EF" opacity="0.6" />
+            <circle cx="420" cy="60" r="36" fill="#C8A96E" opacity="0.5" />
+            <circle cx="80" cy="240" r="20" fill="#D9EFEA" opacity="0.6" />
 
             {/* Clock */}
             <circle cx="430" cy="64" r="28" fill="#FFFFFF" stroke="#E8E4DE" strokeWidth="2" />
-            <circle cx="430" cy="64" r="2" fill="#0A2342" />
-            <line x1="430" y1="64" x2="430" y2="46" stroke="#0A2342" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="430" cy="64" r="2" fill="#0B4F4F" />
+            <line x1="430" y1="64" x2="430" y2="46" stroke="#0B4F4F" strokeWidth="2" strokeLinecap="round" />
             <line x1="430" y1="64" x2="442" y2="64" stroke="#117A65" strokeWidth="2" strokeLinecap="round" />
 
             {/* Desk */}
@@ -48,14 +48,14 @@ export default function HubHero() {
             <rect x="376" y="208" width="4" height="60" fill="#E8E4DE" />
 
             {/* Laptop on desk */}
-            <rect x="230" y="168" width="100" height="32" rx="4" fill="#0A2342" />
+            <rect x="230" y="168" width="100" height="32" rx="4" fill="#0B4F4F" />
             <rect x="236" y="172" width="88" height="24" rx="2" fill="#117A65" opacity="0.3" />
             <rect x="220" y="200" width="120" height="4" rx="2" fill="#6F6F6F" />
 
             {/* Books stack */}
             <rect x="360" y="180" width="30" height="8" rx="2" fill="#117A65" opacity="0.6" />
-            <rect x="358" y="172" width="34" height="8" rx="2" fill="#F0D5BF" />
-            <rect x="362" y="164" width="26" height="8" rx="2" fill="#E6F2EF" />
+            <rect x="358" y="172" width="34" height="8" rx="2" fill="#C8A96E" />
+            <rect x="362" y="164" width="26" height="8" rx="2" fill="#D9EFEA" />
 
             {/* Plant */}
             <rect x="140" y="180" width="12" height="20" rx="4" fill="#D4A574" />
@@ -73,7 +73,7 @@ export default function HubHero() {
 
             {/* Child figure */}
             <circle cx="320" cy="150" r="14" fill="#F5D5C0" />
-            <rect x="312" y="164" width="16" height="30" rx="6" fill="#F0D5BF" />
+            <rect x="312" y="164" width="16" height="30" rx="6" fill="#C8A96E" />
             {/* Child hair */}
             <path d="M306 148 Q308 136 320 134 Q332 136 334 148" fill="#8B6B47" />
 
@@ -90,7 +90,7 @@ export default function HubHero() {
               <path d="M4 0 L5 3 L8 4 L5 5 L4 8 L3 5 L0 4 L3 3Z" fill="#117A65" />
             </g>
             <g transform="translate(120, 130)" opacity="0.4">
-              <path d="M3 0 L4 2.5 L6.5 3 L4 3.5 L3 6 L2 3.5 L0 3 L2 2.5Z" fill="#F0D5BF" />
+              <path d="M3 0 L4 2.5 L6.5 3 L4 3.5 L3 6 L2 3.5 L0 3 L2 2.5Z" fill="#C8A96E" />
             </g>
           </svg>
         </div>

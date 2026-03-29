@@ -15,25 +15,26 @@ export default function Footer() {
   return (
     <footer className="bg-warm-sand">
       <div className="max-w-[1200px] mx-auto px-6 pt-12 pb-8">
-        {/* Logo */}
-        <div className="flex items-center gap-2 mb-8">
-          <Leaf className="w-6 h-6 text-primary" strokeWidth={2.5} />
-          <span className="font-heading text-lg font-bold text-primary">
-            Parentfits
-          </span>
-        </div>
+        {/* Logo + Links row */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+          <div className="flex items-center gap-2">
+            <Leaf className="w-6 h-6 text-primary" strokeWidth={2.5} />
+            <span className="font-heading text-lg font-bold text-primary">
+              Parentfits
+            </span>
+          </div>
 
-        {/* Links */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
-          {FOOTER_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="font-body text-[14px] text-muted-grey hover:text-charcoal transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          <div className="flex flex-wrap items-center gap-6">
+            {FOOTER_LINKS.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="font-body text-[14px] text-muted-grey hover:text-charcoal transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Copyright */}

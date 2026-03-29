@@ -33,19 +33,19 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
           <h1 className="leading-[1.1] text-soft-navy mb-8">
             <span
               className="block text-[36px] md:text-[48px] lg:text-[56px] font-bold"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               Find the right
             </span>
             <span
               className="block text-[36px] md:text-[48px] lg:text-[56px] font-bold"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               support for your
             </span>
             <span
               className="block text-[36px] md:text-[48px] lg:text-[56px] font-bold italic text-primary"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               family
             </span>
@@ -93,10 +93,10 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
             </div>
 
             {/* Top-right: Services stat card */}
-            <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden p-5 md:p-6 flex flex-col justify-between aspect-[4/3]" style={{ backgroundColor: "#F0EBE3" }}>
+            <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden p-5 md:p-6 flex flex-col justify-between aspect-[4/3]" style={{ backgroundColor: "#EDE5D5" }}>
               <span
                 className="text-[36px] md:text-[44px] font-bold text-soft-navy leading-none"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
               >
                 100+
               </span>
@@ -112,11 +112,11 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
                   fill="none"
                   className="opacity-80"
                 >
-                  <circle cx="24" cy="24" r="20" stroke="#0A2342" strokeWidth="1.5" fill="none" />
-                  <ellipse cx="24" cy="24" rx="10" ry="20" stroke="#0A2342" strokeWidth="1.5" fill="none" />
-                  <line x1="4" y1="24" x2="44" y2="24" stroke="#0A2342" strokeWidth="1.5" />
-                  <line x1="8" y1="14" x2="40" y2="14" stroke="#0A2342" strokeWidth="1" opacity="0.6" />
-                  <line x1="8" y1="34" x2="40" y2="34" stroke="#0A2342" strokeWidth="1" opacity="0.6" />
+                  <circle cx="24" cy="24" r="20" stroke="#0B4F4F" strokeWidth="1.5" fill="none" />
+                  <ellipse cx="24" cy="24" rx="10" ry="20" stroke="#0B4F4F" strokeWidth="1.5" fill="none" />
+                  <line x1="4" y1="24" x2="44" y2="24" stroke="#0B4F4F" strokeWidth="1.5" />
+                  <line x1="8" y1="14" x2="40" y2="14" stroke="#0B4F4F" strokeWidth="1" opacity="0.6" />
+                  <line x1="8" y1="34" x2="40" y2="34" stroke="#0B4F4F" strokeWidth="1" opacity="0.6" />
                 </svg>
               </div>
             </div>
@@ -126,10 +126,10 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
               {/* Sparkle icons */}
               <div className="flex items-center gap-1.5">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#0A2342" />
+                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#0B4F4F" />
                 </svg>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#0A2342" />
+                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#0B4F4F" />
                 </svg>
               </div>
 
@@ -150,8 +150,8 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
                         className={`w-8 h-8 rounded-full ${bg} border-2 border-white flex items-center justify-center`}
                       >
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                          <circle cx="12" cy="8" r="4" fill="#0A2342" opacity="0.4" />
-                          <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20" stroke="#0A2342" strokeWidth="1.5" opacity="0.4" fill="none" />
+                          <circle cx="12" cy="8" r="4" fill="#0B4F4F" opacity="0.4" />
+                          <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20" stroke="#0B4F4F" strokeWidth="1.5" opacity="0.4" fill="none" />
                         </svg>
                       </div>
                     ))}
@@ -166,11 +166,11 @@ export default function HeroBanner({ firstName, isReturning }: HeroBannerProps) 
             </div>
 
             {/* Bottom-right: Trusted partners card (dark) */}
-            <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden p-5 md:p-6 flex flex-col justify-between aspect-[4/3]" style={{ backgroundColor: "#0A2342" }}>
+            <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden p-5 md:p-6 flex flex-col justify-between aspect-[4/3]" style={{ backgroundColor: "#0B4F4F" }}>
               <div className="flex items-start justify-between">
                 <span
                   className="text-[28px] md:text-[36px] font-bold text-white leading-none"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
                 >
                   50+
                 </span>
