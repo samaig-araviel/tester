@@ -159,7 +159,7 @@ export default function HomeContent({
         body="Access online brands and services offering exclusive benefits for working parents, from baby essentials and wellbeing to learning and family support."
         ctaText="Browse our partners"
         ctaHref="/explore/online"
-        imageSrc="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&q=80&auto=format&fit=crop"
+        imageSrc="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=800&q=80&auto=format&fit=crop"
         imageAlt="Parent browsing online on a laptop"
       />
 
@@ -171,7 +171,7 @@ export default function HomeContent({
         body="Discover local and in-person services near you, including childcare, classes, wellbeing services, and family support."
         ctaText="Find out more"
         ctaHref="/explore/in-person"
-        imageSrc="https://images.unsplash.com/photo-1543342384-1f1350e27861?w=600&q=80&auto=format&fit=crop"
+        imageSrc="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80&auto=format&fit=crop"
         imageAlt="Parent and child at a local activity"
       />
 
