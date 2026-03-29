@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 type ExploreVariant = "dark" | "light";
 
@@ -124,24 +123,15 @@ export default function ExploreBlock({
               <Sparkle size={72} className={`${config.sparkleColor} -mt-2`} />
             </div>
 
-            {/* Image with padding for breathing room */}
+            {/* Image with rounded corners and breathing room */}
             <div
-              className={`absolute ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] overflow-hidden`}
-              style={{
-                top: "4.5rem",
-                bottom: "4.5rem",
-                borderTopLeftRadius: variant === "light" ? undefined : "2rem",
-                borderTopRightRadius: variant === "light" ? "2rem" : undefined,
-                borderBottomLeftRadius: variant === "light" ? undefined : "2rem",
-                borderBottomRightRadius: variant === "light" ? "2rem" : undefined,
-              }}
+              className={`absolute bottom-8 ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] h-[82%] overflow-hidden rounded-2xl`}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={imageSrc}
                 alt={imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 80vw, 36vw"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
