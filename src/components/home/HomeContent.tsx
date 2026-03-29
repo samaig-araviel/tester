@@ -171,8 +171,9 @@ export default function HomeContent({
         body="Discover local and in-person services near you, including childcare, classes, wellbeing services, and family support."
         ctaText="Find out more"
         ctaHref="/explore/in-person"
-        imageSrc="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&q=80&auto=format&fit=crop"
+        imageSrc="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=700&h=700&q=80&auto=format&fit=crop&crop=faces"
         imageAlt="Happy family spending time together outdoors"
+        imageSquare
       />
 
       {/* Toast */}
