@@ -27,6 +27,11 @@ export default function VendorCardInPerson({
       className="bg-surface border border-border rounded-2xl p-6 shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
       style={{ position: "sticky", top: 96 }}
     >
+      {/* Service type tag */}
+      <span className="inline-block px-2.5 py-1 mb-4 rounded-md bg-primary-light text-primary font-body text-[11px] font-semibold uppercase tracking-wide">
+        In-Person
+      </span>
+
       {/* Logo + Name */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center overflow-hidden flex-shrink-0">

@@ -9,8 +9,8 @@ interface DoneScreenProps {
 
 export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
   return (
-    <div className="pt-8 sm:pt-12">
-      <div className="w-full max-w-[520px] mx-auto text-center">
+    <div>
+      <div className="w-full text-center">
         <div className="w-16 h-16 rounded-full bg-primary-light flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-8 h-8 text-primary" />
         </div>
@@ -22,13 +22,15 @@ export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
           We&apos;ll use this to personalise your experience. You can update your preferences anytime in your profile.
         </p>
 
-        <button
-          onClick={onFinish}
-          disabled={isPending}
-          className="w-full h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {isPending ? "Finishing..." : "Go to Parentfits"}
-        </button>
+        <div className="flex flex-col items-center">
+          <button
+            onClick={onFinish}
+            disabled={isPending}
+            className="w-full max-w-[320px] h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isPending ? "Finishing..." : "Go to Parentfits"}
+          </button>
+        </div>
       </div>
     </div>
   );

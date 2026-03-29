@@ -57,7 +57,7 @@ export default function VendorCard({
   return (
     <button
       onClick={onClick}
-      className="group flex flex-col bg-surface rounded-2xl border border-border overflow-hidden transition-all duration-200 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-[#C8C3BB] cursor-pointer text-left w-full"
+      className="group flex flex-col bg-surface rounded-2xl border border-border overflow-hidden transition-all duration-200 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-[#C8C3BB] hover:scale-[1.03] cursor-pointer text-left w-full"
     >
       {/* Cover image */}
       <div className="relative w-full overflow-hidden" style={{ aspectRatio: "4 / 3" }}>

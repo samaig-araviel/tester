@@ -1,12 +1,13 @@
 "use client";
 
-import { Pencil } from "lucide-react";
+import { Pencil, ArrowLeft } from "lucide-react";
 import type { OnboardingData } from "@/lib/onboarding";
 import { IDENTITY_DISPLAY, SUPPORT_NEED_DISPLAY } from "@/lib/onboarding";
 
 interface ReviewScreenProps {
   data: OnboardingData;
   onConfirm: () => void;
+  onBack: () => void;
   onSkip: () => void;
   onEdit: (screenIndex: number) => void;
   isPending: boolean;
@@ -45,7 +46,7 @@ function ReviewRow({
   );
 }
 
-export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPending }: ReviewScreenProps) {
+export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, isPending }: ReviewScreenProps) {
   const identityDisplay = data.identity_type
     ? IDENTITY_DISPLAY[data.identity_type] || data.identity_type
     : null;
@@ -78,8 +79,17 @@ export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPendin
     : null;
 
   return (
-    <div className="pt-8 sm:pt-12">
-      <div className="w-full max-w-[520px] mx-auto">
+    <div>
+      <div className="w-full">
+        <button
+          onClick={onBack}
+          disabled={isPending}
+          className="flex items-center gap-1.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer mb-6 disabled:opacity-50"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back
+        </button>
+
         <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
           Here&apos;s what you&apos;ve told us
         </h2>
@@ -95,21 +105,23 @@ export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPendin
           <ReviewRow label="Support needs" value={needsDisplay} onEdit={() => onEdit(6)} />
         </div>
 
-        <button
-          onClick={onConfirm}
-          disabled={isPending}
-          className="w-full h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {isPending ? "Saving..." : "Confirm & finish"}
-        </button>
+        <div className="flex flex-col items-center gap-3">
+          <button
+            onClick={onConfirm}
+            disabled={isPending}
+            className="w-full max-w-[320px] h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isPending ? "Saving..." : "Confirm & finish"}
+          </button>
 
-        <button
-          onClick={onSkip}
-          disabled={isPending}
-          className="w-full mt-3 py-2 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
-        >
-          Skip for now
-        </button>
+          <button
+            onClick={onSkip}
+            disabled={isPending}
+            className="py-2 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
+          >
+            Skip for now
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -56,14 +56,25 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
     }
   }
 
+  function goBack() {
+    if (currentScreen > 0) {
+      setCurrentScreen((s) => s - 1);
+    }
+  }
+
   function handleSkipEarly() {
     // Skip from Welcome or Introduction — go to dashboard
     goToDashboard();
   }
 
   function handleSkipStep() {
-    // Skip from screens 3-7 — advance without saving
+    // Skip from screens 2-6 — advance without saving
     advance();
+  }
+
+  function handleSkipAll() {
+    // Skip the entire onboarding — go straight to dashboard
+    goToDashboard();
   }
 
   function handleSkipReview() {
@@ -89,6 +100,7 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
         return (
           <IntroductionScreen
             onNext={() => setCurrentScreen(2)}
+            onBack={goBack}
             onSkip={handleSkipEarly}
           />
         );
@@ -103,7 +115,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
                 advance();
               });
             }}
+            onBack={goBack}
             onSkip={handleSkipStep}
+            onSkipAll={handleSkipAll}
             isPending={isPending}
           />
         );
@@ -119,7 +133,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
                 advance();
               });
             }}
+            onBack={goBack}
             onSkip={handleSkipStep}
+            onSkipAll={handleSkipAll}
             isPending={isPending}
           />
         );
@@ -134,7 +150,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
                 advance();
               });
             }}
+            onBack={goBack}
             onSkip={handleSkipStep}
+            onSkipAll={handleSkipAll}
             isPending={isPending}
           />
         );
@@ -149,7 +167,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
                 advance();
               });
             }}
+            onBack={goBack}
             onSkip={handleSkipStep}
+            onSkipAll={handleSkipAll}
             isPending={isPending}
           />
         );
@@ -164,7 +184,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
                 advance();
               });
             }}
+            onBack={goBack}
             onSkip={handleSkipStep}
+            onSkipAll={handleSkipAll}
             isPending={isPending}
           />
         );
@@ -173,6 +195,7 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
           <ReviewScreen
             data={data}
             onConfirm={() => setCurrentScreen(8)}
+            onBack={goBack}
             onSkip={handleSkipReview}
             onEdit={handleEditFromReview}
             isPending={isPending}
@@ -200,12 +223,12 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   const stepIndex = currentScreen - 2;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col items-center">
       {showStepper && (
         <StepIndicator currentStep={stepIndex} />
       )}
 
-      <div className="max-w-[560px] mx-auto px-4 pb-12">
+      <div className="w-full max-w-[520px] mx-auto px-4 pb-12 flex-1 flex flex-col justify-center">
         <ScreenTransition key={currentScreen}>
           {renderScreen()}
         </ScreenTransition>
