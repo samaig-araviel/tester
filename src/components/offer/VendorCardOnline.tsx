@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { Heart } from "lucide-react";
+import { Heart, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 interface VendorCardOnlineProps {
@@ -18,42 +17,15 @@ export default function VendorCardOnline({
   vendorName,
   vendorLogoUrl,
   offerHeadline,
-  discountCode,
   websiteUrl,
   isSaved,
   onToggleSave,
 }: VendorCardOnlineProps) {
-  const [redeemState, setRedeemState] = useState<"idle" | "copying" | "done">("idle");
-
-  const handleRedeem = useCallback(async () => {
-    if (redeemState !== "idle") return;
-
-    if (discountCode) {
-      // Flow 2: Copy code, show message, then open website after 2s
-      try {
-        await navigator.clipboard.writeText(discountCode);
-      } catch {
-        // Clipboard may fail silently
-      }
-      setRedeemState("copying");
-      setTimeout(() => {
-        if (websiteUrl) {
-          window.open(websiteUrl, "_blank", "noopener,noreferrer");
-        }
-        setRedeemState("done");
-        // Reset back to idle after the website opens
-        setTimeout(() => setRedeemState("idle"), 1000);
-      }, 2000);
-    } else if (websiteUrl) {
-      // Flow 1: No discount code, just open the website
+  function handleRedeem() {
+    if (websiteUrl) {
       window.open(websiteUrl, "_blank", "noopener,noreferrer");
     }
-  }, [redeemState, discountCode, websiteUrl]);
-
-  const redeemLabel =
-    redeemState === "copying"
-      ? "Code copied, launching website..."
-      : "Redeem";
+  }
 
   return (
     <div
@@ -93,10 +65,11 @@ export default function VendorCardOnline({
       <div className="flex items-center gap-3 mt-4">
         <button
           onClick={handleRedeem}
-          disabled={redeemState === "copying"}
-          className="flex-1 h-11 rounded-full bg-warm-teal text-white font-body text-[14px] font-medium transition-all duration-150 hover:opacity-90 cursor-pointer disabled:cursor-wait"
+          disabled={!websiteUrl}
+          className="flex-1 h-11 rounded-full bg-warm-teal text-white font-body text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all duration-150 hover:opacity-90 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {redeemLabel}
+          Redeem
+          <ExternalLink className="w-3.5 h-3.5" />
         </button>
         <button
           onClick={onToggleSave}
