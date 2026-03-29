@@ -299,7 +299,7 @@ function BarChart({ months }: { months: { month: string; grossPay: number }[] })
                     ? "var(--warm-teal)"
                     : heightPercent > 20
                     ? "var(--primary-light)"
-                    : "#F0D5BF",
+                    : "#C8A96E",
                 transitionDelay: `${i * 50}ms`,
               }}
             />

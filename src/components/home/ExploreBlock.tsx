@@ -47,7 +47,7 @@ const variantConfig: Record<
   }
 > = {
   dark: {
-    bg: "#0A2342",
+    bg: "#0B4F4F",
     textColor: "text-white",
     bodyColor: "text-white/70",
     sparkleColor: "text-white/20",
@@ -56,7 +56,7 @@ const variantConfig: Record<
     btnHover: "hover:bg-white/90",
   },
   light: {
-    bg: "#E6F2EF",
+    bg: "#EDE5D5",
     textColor: "text-soft-navy",
     bodyColor: "text-muted-grey",
     sparkleColor: "text-primary/20",
@@ -85,19 +85,19 @@ export default function ExploreBlock({
     >
       {/* Constrain inner content to page max-width */}
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-stretch min-h-[400px] md:min-h-[480px]">
-          {/* Left: Text content */}
+        <div className={`flex flex-col ${variant === "light" ? "md:flex-row-reverse" : "md:flex-row"} items-stretch min-h-[400px] md:min-h-[480px]`}>
+          {/* Text content */}
           <div className="flex-1 flex flex-col justify-center py-12 md:py-16 lg:py-20 relative z-10">
             <h2 className={`leading-[1.1] ${config.textColor} mb-5`}>
               <span
                 className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
               >
                 {heading}
               </span>
               <span
                 className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold italic"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
               >
                 {headingAccent}
               </span>
@@ -115,19 +115,22 @@ export default function ExploreBlock({
             </Link>
           </div>
 
-          {/* Right: Decorative sparkles + Image */}
+          {/* Decorative sparkles + Image */}
           <div className="flex-1 relative min-h-[280px] md:min-h-0">
             {/* Sparkle decorations */}
-            <div className="absolute top-6 right-0 md:top-8 md:right-0 z-10 flex items-start gap-1">
+            <div className={`absolute top-6 md:top-8 z-10 flex items-start gap-1 ${variant === "light" ? "left-0" : "right-0"}`}>
               <Sparkle size={56} className={`${config.sparkleColor} hidden md:block`} />
               <Sparkle size={40} className={config.sparkleColor} />
               <Sparkle size={64} className={`${config.sparkleColor} -mt-2`} />
             </div>
 
-            {/* Image positioned bottom-right with rounded top-left */}
+            {/* Image positioned with rounded corner */}
             <div
-              className="absolute bottom-0 right-0 w-[80%] md:w-[72%] h-[85%] overflow-hidden"
-              style={{ borderTopLeftRadius: "2rem" }}
+              className={`absolute bottom-0 ${variant === "light" ? "left-0" : "right-0"} w-[80%] md:w-[72%] h-[85%] overflow-hidden`}
+              style={{
+                borderTopLeftRadius: variant === "light" ? undefined : "2rem",
+                borderTopRightRadius: variant === "light" ? "2rem" : undefined,
+              }}
             >
               <Image
                 src={imageSrc}

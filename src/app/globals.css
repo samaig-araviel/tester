@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #0F7B6C;
-  --primary-hover: #0A6356;
-  --primary-light: #E8F5F1;
-  --secondary: #0D1F3C;
-  --bg: #FAF8F5;
+  --primary: #0B4F4F;
+  --primary-hover: #093F3F;
+  --primary-light: #E5EDEB;
+  --secondary: #7FBFB0;
+  --bg: #FFFFFF;
   --surface: #FFFFFF;
-  --accent: #F0D5BF;
-  --text-primary: #1A1A2E;
+  --accent: #C8A96E;
+  --text-primary: #1C1C1C;
   --text-secondary: #6B7280;
   --border: #E8E4DE;
   --error: #D44848;
-  --onboarding-bg: #F7F4EF;
-  --warm-teal: #117A65;
-  --soft-navy: #0A2342;
+  --onboarding-bg: #EDE5D5;
+  --warm-teal: #14827C;
+  --soft-navy: #0B4F4F;
   --charcoal: #1C1C1C;
   --muted-grey: #6F6F6F;
-  --warm-sand: #F7F4EF;
-  --warm-teal-light: #E6F2EF;
+  --warm-sand: #EDE5D5;
+  --warm-teal-light: #D9EFEA;
+  --sage: #7FBFB0;
+  --gold: #C8A96E;
+  --sand: #EDE5D5;
 }
 
 @theme inline {
@@ -40,7 +43,10 @@
   --color-muted-grey: var(--muted-grey);
   --color-warm-sand: var(--warm-sand);
   --color-warm-teal-light: var(--warm-teal-light);
-  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-sage: var(--sage);
+  --color-gold: var(--gold);
+  --color-sand: var(--sand);
+  --font-heading: Georgia, "Times New Roman", serif;
   --font-body: "DM Sans", system-ui, sans-serif;
 }
 

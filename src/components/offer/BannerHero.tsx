@@ -26,7 +26,7 @@ export default function BannerHero({ bannerUrl, vendorName }: BannerHeroProps) {
           className="w-full h-full"
           style={{
             background:
-              "linear-gradient(135deg, #F7F4EF 0%, #F0D5BF 50%, #E8E4DE 100%)",
+              "linear-gradient(135deg, #EDE5D5 0%, #C8A96E 50%, #E8E4DE 100%)",
           }}
         />
       )}
