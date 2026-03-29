@@ -194,7 +194,7 @@ export default async function OfferDetailPage({ params }: PageProps) {
           discountCode={offer.discount_code ?? null}
           vendor={{
             name: vendor.name ?? "Unknown",
-            logo_url: vendor.logo_url ?? getVendorFallbackImage(vendor.name ?? "Unknown", vendor.category),
+            logo_url: vendor.logo_url ?? null,
             banner_url: vendor.banner_url ?? getVendorFallbackImage(vendor.name ?? "Unknown", vendor.category),
             category: vendor.category ?? null,
             delivery_type: vendor.delivery_type ?? null,

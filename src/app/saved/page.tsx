@@ -79,7 +79,7 @@ export default async function SavedPage() {
       const offer = Array.isArray(row.offers)
         ? row.offers[0] ?? null
         : row.offers ?? null;
-      if (!offer || offer.status !== "live") return null;
+      if (!offer || offer.status.toLowerCase() !== "live") return null;
 
       const vendor = Array.isArray(offer.vendors)
         ? offer.vendors[0] ?? null
@@ -92,7 +92,7 @@ export default async function SavedPage() {
         offer_id: row.offer_id,
         saved_at: row.saved_at,
         vendor_name: vendorName,
-        vendor_logo_url: vendor.logo_url ?? fallbackImage,
+        vendor_logo_url: vendor.logo_url ?? null,
         cover_image_url: vendor.banner_url ?? fallbackImage,
         offer_headline: offer.offer_headline ?? "",
         delivery_type: vendor.delivery_type,

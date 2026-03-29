@@ -216,7 +216,6 @@ export default function OfferDetailContent({
               vendorLogoUrl={vendor.logo_url}
               shortDescriptor={vendor.short_descriptor}
               offerTitle={offerTitle}
-              category={vendor.category}
               websiteUrl={vendor.website_url}
               isSaved={saved}
               onToggleSave={toggleSave}

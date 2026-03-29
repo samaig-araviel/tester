@@ -87,7 +87,7 @@ export default async function ExploreInPersonPage() {
       return {
         id: v.name + "-" + o.id,
         name: vendorName,
-        logo_url: v.logo_url ?? fallbackImage,
+        logo_url: v.logo_url ?? null,
         cover_image_url: null,
         banner_url: v.banner_url ?? fallbackImage,
         location_name: v.location_name ?? null,

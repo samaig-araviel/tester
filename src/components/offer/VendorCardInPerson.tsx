@@ -8,7 +8,6 @@ interface VendorCardInPersonProps {
   vendorLogoUrl: string | null;
   shortDescriptor: string | null;
   offerTitle: string | null;
-  category: string | null;
   websiteUrl: string | null;
   isSaved: boolean;
   onToggleSave: () => void;
@@ -19,7 +18,6 @@ export default function VendorCardInPerson({
   vendorLogoUrl,
   shortDescriptor,
   offerTitle,
-  category,
   websiteUrl,
   isSaved,
   onToggleSave,
@@ -78,16 +76,9 @@ export default function VendorCardInPerson({
         </p>
       )}
 
-      {/* Category pill */}
-      {category && (
-        <span className="inline-block mt-3 px-3 py-1 rounded-full bg-warm-teal-light text-warm-teal text-[12px] font-medium">
-          {category}
-        </span>
-      )}
-
       {/* Offer title */}
       {offerTitle && (
-        <p className="font-body text-[12px] text-muted-grey mt-3 leading-relaxed">
+        <p className="font-body text-[12px] text-muted-grey mt-3 leading-relaxed text-center">
           {offerTitle}
         </p>
       )}
