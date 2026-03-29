@@ -24,9 +24,24 @@ export default function VendorCardInPerson({
 }: VendorCardInPersonProps) {
   return (
     <div
-      className="bg-surface border border-border rounded-2xl p-6 shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
+      className="relative bg-surface border border-border rounded-2xl p-6 shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
       style={{ position: "sticky", top: 96 }}
     >
+      {/* Save button — top right */}
+      <button
+        onClick={onToggleSave}
+        className="absolute top-4 right-4 w-10 h-10 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal cursor-pointer bg-surface"
+        aria-label={isSaved ? "Unsave offer" : "Save offer"}
+      >
+        <Heart
+          className={`w-[18px] h-[18px] transition-colors duration-150 ${
+            isSaved
+              ? "fill-warm-teal text-warm-teal"
+              : "text-muted-grey"
+          }`}
+        />
+      </button>
+
       {/* Service type tag */}
       <span className="inline-block px-2.5 py-1 mb-4 rounded-md bg-primary-light text-primary font-body text-[11px] font-semibold uppercase tracking-wide">
         In-Person
@@ -49,7 +64,7 @@ export default function VendorCardInPerson({
             </span>
           )}
         </div>
-        <h2 className="font-heading text-[20px] font-semibold text-charcoal">
+        <h2 className="font-heading text-[20px] font-semibold text-charcoal pr-10">
           {vendorName}
         </h2>
       </div>
@@ -67,21 +82,6 @@ export default function VendorCardInPerson({
           {category}
         </span>
       )}
-
-      {/* Save button */}
-      <button
-        onClick={onToggleSave}
-        className="flex items-center gap-2 mt-4 font-body text-[14px] text-charcoal cursor-pointer group"
-      >
-        <Heart
-          className={`w-5 h-5 transition-colors duration-150 ${
-            isSaved
-              ? "fill-warm-teal text-warm-teal"
-              : "text-muted-grey group-hover:text-warm-teal"
-          }`}
-        />
-        {isSaved ? "Saved" : "Save"}
-      </button>
 
       {/* Launch vendor site */}
       {websiteUrl && (
