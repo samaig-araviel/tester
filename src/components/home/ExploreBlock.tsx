@@ -125,7 +125,7 @@ export default function ExploreBlock({
 
             {/* Image with rounded corners and breathing room */}
             <div
-              className={`absolute bottom-8 ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] h-[82%] overflow-hidden rounded-2xl`}
+              className={`absolute top-1/2 -translate-y-1/2 ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] h-[76%] overflow-hidden rounded-2xl`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
