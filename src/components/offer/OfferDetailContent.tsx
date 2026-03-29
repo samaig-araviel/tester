@@ -36,6 +36,7 @@ interface SimilarOffer {
 
 interface OfferDetailContentProps {
   offerId: string;
+  offerTitle: string | null;
   offerHeadline: string;
   discountCode: string | null;
   vendor: VendorData;
@@ -47,6 +48,7 @@ interface OfferDetailContentProps {
 
 export default function OfferDetailContent({
   offerId,
+  offerTitle,
   offerHeadline,
   discountCode,
   vendor,
@@ -202,6 +204,7 @@ export default function OfferDetailContent({
               vendorName={vendor.name}
               vendorLogoUrl={vendor.logo_url}
               offerHeadline={offerHeadline}
+              offerTitle={offerTitle}
               discountCode={discountCode}
               websiteUrl={vendor.website_url}
               isSaved={saved}
@@ -212,6 +215,7 @@ export default function OfferDetailContent({
               vendorName={vendor.name}
               vendorLogoUrl={vendor.logo_url}
               shortDescriptor={vendor.short_descriptor}
+              offerTitle={offerTitle}
               category={vendor.category}
               websiteUrl={vendor.website_url}
               isSaved={saved}
