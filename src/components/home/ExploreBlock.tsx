@@ -85,51 +85,55 @@ export default function ExploreBlock({
     >
       {/* Constrain inner content to page max-width */}
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className={`flex flex-col ${variant === "light" ? "md:flex-row-reverse" : "md:flex-row"} items-stretch min-h-[400px] md:min-h-[480px]`}>
+        <div className={`flex flex-col ${variant === "light" ? "md:flex-row-reverse" : "md:flex-row"} items-stretch min-h-[480px] md:min-h-[600px]`}>
           {/* Text content */}
-          <div className="flex-1 flex flex-col justify-center py-12 md:py-16 lg:py-20 relative z-10">
-            <h2 className={`leading-[1.1] ${config.textColor} mb-5`}>
+          <div className="flex-1 flex flex-col justify-center py-14 md:py-20 lg:py-24 relative z-10">
+            <h2 className={`leading-[1.1] ${config.textColor} mb-6`}>
               <span
-                className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold"
+                className="block text-[30px] md:text-[40px] lg:text-[48px] font-bold"
                 style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
               >
                 {heading}
               </span>
               <span
-                className="block text-[28px] md:text-[36px] lg:text-[42px] font-bold italic"
+                className="block text-[30px] md:text-[40px] lg:text-[48px] font-bold italic"
                 style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
               >
                 {headingAccent}
               </span>
             </h2>
 
-            <p className={`font-body text-[15px] md:text-[16px] leading-relaxed max-w-[420px] mb-8 ${config.bodyColor}`}>
+            <p className={`font-body text-[15px] md:text-[17px] leading-relaxed max-w-[440px] mb-10 ${config.bodyColor}`}>
               {body}
             </p>
 
             <Link
               href={ctaHref}
-              className={`inline-flex items-center justify-center self-start h-[48px] px-7 rounded-full font-body text-[15px] font-medium transition-all duration-200 hover:-translate-y-px hover:shadow-lg active:translate-y-0 ${config.btnBg} ${config.btnText} ${config.btnHover}`}
+              className={`inline-flex items-center justify-center self-start h-[52px] px-8 rounded-full font-body text-[15px] font-semibold transition-all duration-200 hover:-translate-y-px hover:shadow-lg active:translate-y-0 ${config.btnBg} ${config.btnText} ${config.btnHover}`}
             >
               {ctaText}
             </Link>
           </div>
 
           {/* Decorative sparkles + Image */}
-          <div className="flex-1 relative min-h-[280px] md:min-h-0">
+          <div className="flex-1 relative min-h-[320px] md:min-h-0">
             {/* Sparkle decorations */}
-            <div className={`absolute top-6 md:top-8 z-10 flex items-start gap-1 ${variant === "light" ? "left-0" : "right-0"}`}>
-              <Sparkle size={56} className={`${config.sparkleColor} hidden md:block`} />
-              <Sparkle size={40} className={config.sparkleColor} />
-              <Sparkle size={64} className={`${config.sparkleColor} -mt-2`} />
+            <div className={`absolute top-8 md:top-10 z-10 flex items-start gap-1.5 ${variant === "light" ? "left-0" : "right-0"}`}>
+              <Sparkle size={60} className={`${config.sparkleColor} hidden md:block`} />
+              <Sparkle size={44} className={config.sparkleColor} />
+              <Sparkle size={72} className={`${config.sparkleColor} -mt-2`} />
             </div>
 
-            {/* Image positioned with rounded corner */}
+            {/* Image with padding for breathing room */}
             <div
-              className={`absolute bottom-0 ${variant === "light" ? "left-0" : "right-0"} w-[80%] md:w-[72%] h-[85%] overflow-hidden`}
+              className={`absolute ${variant === "light" ? "left-0" : "right-0"} w-[80%] md:w-[70%] overflow-hidden`}
               style={{
+                top: "2rem",
+                bottom: "2rem",
                 borderTopLeftRadius: variant === "light" ? undefined : "2rem",
                 borderTopRightRadius: variant === "light" ? "2rem" : undefined,
+                borderBottomLeftRadius: variant === "light" ? undefined : "2rem",
+                borderBottomRightRadius: variant === "light" ? "2rem" : undefined,
               }}
             >
               <Image
