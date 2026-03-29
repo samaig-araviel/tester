@@ -17,14 +17,14 @@ export function FavouriteTile({
 }: FavouriteTileProps) {
   return (
     <Link href={href} className="flex-shrink-0 group">
-      <div className="w-[140px] h-[100px] rounded-xl border border-border bg-surface flex items-center justify-center transition-all duration-150 group-hover:border-warm-teal overflow-hidden">
+      <div className="relative w-[140px] h-[100px] rounded-xl border border-border bg-surface flex items-center justify-center transition-all duration-150 group-hover:border-warm-teal overflow-hidden">
         {vendorLogoUrl ? (
           <Image
             src={vendorLogoUrl}
             alt={`${vendorName} logo`}
-            width={96}
-            height={64}
-            className="object-contain max-w-[80%] max-h-[80%]"
+            fill
+            sizes="140px"
+            className="object-cover"
           />
         ) : (
           <span className="font-heading text-[20px] font-semibold text-primary">

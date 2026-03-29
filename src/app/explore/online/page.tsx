@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ExploreContent from "@/components/explore/ExploreContent";
 import { type ExploreVendor, type UserProfile, MOCK_ONLINE_VENDORS } from "@/lib/explore";
+import { getVendorFallbackImage } from "@/lib/vendor-images";
 
 export default async function ExploreOnlinePage() {
   const supabase = await createClient();
@@ -81,12 +82,14 @@ export default async function ExploreOnlinePage() {
       // Filter for online delivery type
       const dt = (v.delivery_type ?? "").toLowerCase();
       if (!dt.includes("online")) return null;
+      const vendorName = v.name ?? "Unknown";
+      const fallbackImage = getVendorFallbackImage(vendorName, v.category);
       return {
         id: v.name + "-" + o.id,
-        name: v.name ?? "Unknown",
-        logo_url: v.logo_url ?? null,
+        name: vendorName,
+        logo_url: v.logo_url ?? fallbackImage,
         cover_image_url: null,
-        banner_url: v.banner_url ?? null,
+        banner_url: v.banner_url ?? fallbackImage,
         location_name: v.location_name ?? null,
         category: v.category ?? null,
         delivery_type: v.delivery_type ?? null,

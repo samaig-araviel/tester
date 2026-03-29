@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SavedPerksContent from "@/components/saved/SavedPerksContent";
+import { getVendorFallbackImage } from "@/lib/vendor-images";
 
 export default async function SavedPage() {
   const supabase = await createClient();
@@ -85,12 +86,14 @@ export default async function SavedPage() {
         : offer.vendors ?? null;
       if (!vendor || vendor.active === false) return null;
 
+      const vendorName = vendor.name ?? "Unknown";
+      const fallbackImage = getVendorFallbackImage(vendorName, vendor.category);
       return {
         offer_id: row.offer_id,
         saved_at: row.saved_at,
-        vendor_name: vendor.name ?? "Unknown",
-        vendor_logo_url: vendor.logo_url,
-        cover_image_url: vendor.banner_url,
+        vendor_name: vendorName,
+        vendor_logo_url: vendor.logo_url ?? fallbackImage,
+        cover_image_url: vendor.banner_url ?? fallbackImage,
         offer_headline: offer.offer_headline ?? "",
         delivery_type: vendor.delivery_type,
         category: vendor.category,
