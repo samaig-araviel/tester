@@ -32,7 +32,7 @@ export default function SupportNeedsScreen({ value, onNext, onSkip, isPending }:
 
   return (
     <div className="pt-8 sm:pt-12">
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px] mx-auto">
+      <div className="w-full max-w-[520px] mx-auto">
         <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
           What kind of support matters most right now?
         </h2>
@@ -48,10 +48,10 @@ export default function SupportNeedsScreen({ value, onNext, onSkip, isPending }:
                 key={option.key}
                 type="button"
                 onClick={() => toggle(option.key)}
-                className={`relative flex flex-col items-center text-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 cursor-pointer ${
+                className={`relative flex flex-col items-center text-center gap-2 p-4 rounded-xl border transition-all duration-200 cursor-pointer ${
                   isSelected
-                    ? "border-primary bg-primary-light/40 shadow-sm"
-                    : "border-border bg-white hover:border-gray-300 hover:shadow-sm"
+                    ? "border-primary bg-primary-light/40"
+                    : "border-border bg-white hover:border-gray-300"
                 }`}
               >
                 {isSelected && (

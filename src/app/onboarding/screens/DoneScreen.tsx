@@ -10,7 +10,7 @@ interface DoneScreenProps {
 export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
   return (
     <div className="pt-8 sm:pt-12">
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px] mx-auto text-center">
+      <div className="w-full max-w-[520px] mx-auto text-center">
         <div className="w-16 h-16 rounded-full bg-primary-light flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-8 h-8 text-primary" />
         </div>
