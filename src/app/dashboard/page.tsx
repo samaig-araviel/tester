@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HomeContent from "@/components/home/HomeContent";
+import { getVendorFallbackImage } from "@/lib/vendor-images";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -110,15 +111,18 @@ export default async function DashboardPage() {
 
   // Map offers to UI format
   function mapOffer(o: OfferRow) {
+    const vendorName = o.vendors?.name ?? "Unknown";
+    const category = o.vendors?.category ?? null;
+    const fallbackImage = getVendorFallbackImage(vendorName, category);
     return {
       id: o.id,
-      vendor_name: o.vendors?.name ?? "Unknown",
-      vendor_logo_url: o.vendors?.logo_url ?? null,
-      banner_url: o.vendors?.banner_url ?? null,
+      vendor_name: vendorName,
+      vendor_logo_url: o.vendors?.logo_url ?? fallbackImage,
+      banner_url: o.vendors?.banner_url ?? fallbackImage,
       offer_headline: o.offer_headline ?? "",
       is_new: o.is_new ?? false,
       is_saved: savedOfferIds.has(o.id),
-      category: o.vendors?.category ?? null,
+      category,
       delivery_type: o.vendors?.delivery_type ?? null,
       short_descriptor: o.vendors?.short_descriptor ?? null,
       age_relevance: o.vendors?.age_relevance ?? null,
@@ -208,11 +212,13 @@ export default async function DashboardPage() {
     .map((row: { offer_id: string; saved_at: string }) => {
       const offer = offers.find((o) => o.id === row.offer_id);
       if (!offer) return null;
+      const vendorName = offer.vendors?.name ?? "Unknown";
+      const fallbackImage = getVendorFallbackImage(vendorName, offer.vendors?.category);
       return {
         id: `saved-${row.offer_id}`,
         offer_id: row.offer_id,
-        vendor_name: offer.vendors?.name ?? "Unknown",
-        vendor_logo_url: offer.vendors?.logo_url ?? null,
+        vendor_name: vendorName,
+        vendor_logo_url: offer.vendors?.logo_url ?? fallbackImage,
       };
     })
     .filter(Boolean) as {

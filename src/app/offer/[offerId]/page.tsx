@@ -3,6 +3,7 @@ import { redirect, notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import OfferDetailContent from "@/components/offer/OfferDetailContent";
+import { getVendorFallbackImage } from "@/lib/vendor-images";
 
 interface PageProps {
   params: Promise<{ offerId: string }>;
@@ -193,8 +194,8 @@ export default async function OfferDetailPage({ params }: PageProps) {
           discountCode={offer.discount_code ?? null}
           vendor={{
             name: vendor.name ?? "Unknown",
-            logo_url: vendor.logo_url ?? null,
-            banner_url: vendor.banner_url ?? null,
+            logo_url: vendor.logo_url ?? getVendorFallbackImage(vendor.name ?? "Unknown", vendor.category),
+            banner_url: vendor.banner_url ?? getVendorFallbackImage(vendor.name ?? "Unknown", vendor.category),
             category: vendor.category ?? null,
             delivery_type: vendor.delivery_type ?? null,
             short_descriptor: vendor.short_descriptor ?? null,
