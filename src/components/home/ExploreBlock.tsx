@@ -126,10 +126,10 @@ export default function ExploreBlock({
 
             {/* Image with padding for breathing room */}
             <div
-              className={`absolute ${variant === "light" ? "left-0" : "right-0"} w-[80%] md:w-[70%] overflow-hidden`}
+              className={`absolute ${variant === "light" ? "left-0" : "right-0"} w-[85%] md:w-[78%] overflow-hidden`}
               style={{
-                top: "2rem",
-                bottom: "2rem",
+                top: "4.5rem",
+                bottom: "4.5rem",
                 borderTopLeftRadius: variant === "light" ? undefined : "2rem",
                 borderTopRightRadius: variant === "light" ? "2rem" : undefined,
                 borderBottomLeftRadius: variant === "light" ? undefined : "2rem",
