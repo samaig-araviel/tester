@@ -78,7 +78,7 @@ export default function OfferCard({
   return (
     <div
       onClick={onClick}
-      className="flex-shrink-0 w-full bg-surface rounded-2xl border border-border overflow-hidden cursor-pointer transition-all duration-150 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-[#C8C3BB] flex flex-col"
+      className="flex-shrink-0 w-full bg-surface rounded-2xl border border-border overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-[#C8C3BB] hover:scale-[1.03] flex flex-col"
     >
       {/* Vendor image */}
       <div className="relative w-full h-[160px] bg-primary-light overflow-hidden">

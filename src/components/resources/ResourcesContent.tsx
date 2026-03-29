@@ -29,7 +29,7 @@ function ToolkitCard({ toolkit }: { toolkit: HubToolkit }) {
   const IconComp = ICON_MAP[toolkit.icon] ?? FileText;
 
   return (
-    <div className="group flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-surface border border-border transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:border-primary-light">
+    <div className="group flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-surface border border-border transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:border-primary-light hover:scale-[1.03]">
       <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-warm-teal-light flex items-center justify-center transition-colors duration-200 group-hover:bg-primary-light">
         <IconComp className="w-5 h-5 text-warm-teal" />
       </div>
@@ -88,7 +88,7 @@ export default function ResourcesContent() {
       {/* Calculator Hero Section - full width */}
       <Link
         href="/parents-hub/maternity-calculator"
-        className="group block rounded-2xl overflow-hidden border border-border bg-surface transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:border-warm-teal/30 mb-10"
+        className="group block rounded-2xl overflow-hidden border border-border bg-surface transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:border-warm-teal/30 hover:scale-[1.01] mb-10"
       >
         <div className="flex flex-col lg:flex-row">
           {/* Left: info side */}

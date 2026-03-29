@@ -24,7 +24,7 @@ export default function HubCard({
   return (
     <div
       onClick={onClick}
-      className="group bg-surface rounded-2xl border border-border overflow-hidden cursor-pointer transition-all duration-150 hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
+      className="group bg-surface rounded-2xl border border-border overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:scale-[1.03]"
     >
       {/* Illustration area */}
       <div
