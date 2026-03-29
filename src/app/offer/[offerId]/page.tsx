@@ -26,6 +26,7 @@ export default async function OfferDetailPage({ params }: PageProps) {
     .select(
       `
       id,
+      title,
       offer_headline,
       status,
       featured,
@@ -187,6 +188,7 @@ export default async function OfferDetailPage({ params }: PageProps) {
       <main className="max-w-[1200px] mx-auto px-6 py-6">
         <OfferDetailContent
           offerId={offerId}
+          offerTitle={offer.title ?? null}
           offerHeadline={offer.offer_headline ?? ""}
           discountCode={offer.discount_code ?? null}
           vendor={{

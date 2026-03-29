@@ -7,6 +7,7 @@ interface VendorCardOnlineProps {
   vendorName: string;
   vendorLogoUrl: string | null;
   offerHeadline: string;
+  offerTitle: string | null;
   discountCode: string | null;
   websiteUrl: string | null;
   isSaved: boolean;
@@ -17,6 +18,7 @@ export default function VendorCardOnline({
   vendorName,
   vendorLogoUrl,
   offerHeadline,
+  offerTitle,
   websiteUrl,
   isSaved,
   onToggleSave,
@@ -75,6 +77,13 @@ export default function VendorCardOnline({
       <p className="font-heading text-[15px] font-semibold text-charcoal text-center">
         {offerHeadline}
       </p>
+
+      {/* Offer title */}
+      {offerTitle && (
+        <p className="font-body text-[12px] text-muted-grey text-center mt-1.5">
+          {offerTitle}
+        </p>
+      )}
 
       {/* Redeem button */}
       <button
