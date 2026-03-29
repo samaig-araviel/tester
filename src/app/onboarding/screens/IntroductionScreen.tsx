@@ -10,7 +10,7 @@ interface IntroductionScreenProps {
 export default function IntroductionScreen({ onNext, onSkip }: IntroductionScreenProps) {
   return (
     <div className="flex flex-col items-center text-center pt-16 sm:pt-24">
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px]">
+      <div className="w-full max-w-[520px]">
         <div className="w-14 h-14 rounded-2xl bg-primary-light flex items-center justify-center mx-auto mb-6">
           <Sparkles className="w-7 h-7 text-primary" />
         </div>

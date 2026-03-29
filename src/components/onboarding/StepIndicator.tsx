@@ -19,12 +19,12 @@ export default function StepIndicator({ currentStep }: StepIndicatorProps) {
               <div className="flex flex-col items-center">
                 {/* Dot */}
                 <div
-                  className={`w-3 h-3 rounded-full border-2 transition-colors duration-200 ${
+                  className={`w-3 h-3 rounded-full transition-colors duration-200 ${
                     isCompleted
-                      ? "bg-primary border-primary"
+                      ? "bg-primary"
                       : isCurrent
-                        ? "bg-primary border-primary ring-4 ring-primary-light"
-                        : "bg-white border-gray-300"
+                        ? "bg-primary ring-2 ring-primary-light"
+                        : "bg-gray-200"
                   }`}
                 />
                 {/* Label */}

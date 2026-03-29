@@ -23,10 +23,10 @@ export default function SelectionCard({
     <button
       type="button"
       onClick={onClick}
-      className={`w-full flex items-center gap-4 p-4 rounded-2xl border-2 transition-all duration-200 cursor-pointer text-left ${
+      className={`w-full flex items-center gap-4 p-4 rounded-xl border transition-all duration-200 cursor-pointer text-left ${
         selected
-          ? "border-primary bg-primary-light/40 shadow-sm"
-          : "border-border bg-white hover:border-gray-300 hover:shadow-sm"
+          ? "border-primary bg-primary-light/40"
+          : "border-border bg-white hover:border-gray-300"
       }`}
     >
       {icon && (
@@ -46,7 +46,7 @@ export default function SelectionCard({
       </div>
       {/* Indicator */}
       <div
-        className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors duration-200 ${
+        className={`flex-shrink-0 w-6 h-6 rounded-full border flex items-center justify-center transition-colors duration-200 ${
           selected
             ? "border-primary bg-primary"
             : "border-gray-300 bg-white"

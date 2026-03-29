@@ -15,7 +15,7 @@ export default function WelcomeScreen({ onNext, onSkip }: WelcomeScreenProps) {
         <span className="font-heading text-[28px] font-bold text-primary">Parentfits</span>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px]">
+      <div className="w-full max-w-[520px]">
         <h1 className="font-heading text-[28px] sm:text-[32px] font-bold text-text-primary mb-4">
           Welcome to Parentfits.
         </h1>

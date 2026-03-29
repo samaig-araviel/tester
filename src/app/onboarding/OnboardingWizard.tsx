@@ -200,7 +200,7 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   const stepIndex = currentScreen - 2;
 
   return (
-    <div className="min-h-screen bg-onboarding-bg">
+    <div className="min-h-screen bg-white">
       {showStepper && (
         <StepIndicator currentStep={stepIndex} />
       )}

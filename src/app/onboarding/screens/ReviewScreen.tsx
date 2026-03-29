@@ -22,7 +22,7 @@ function ReviewRow({
   onEdit: () => void;
 }) {
   return (
-    <div className="flex items-start justify-between py-3 border-b border-border/50 last:border-b-0">
+    <div className="flex items-start justify-between py-3 border-b border-border last:border-b-0">
       <div className="flex-1 min-w-0">
         <span className="font-body text-[13px] text-text-secondary block">{label}</span>
         <span
@@ -79,7 +79,7 @@ export default function ReviewScreen({ data, onConfirm, onSkip, onEdit, isPendin
 
   return (
     <div className="pt-8 sm:pt-12">
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px] mx-auto">
+      <div className="w-full max-w-[520px] mx-auto">
         <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
           Here&apos;s what you&apos;ve told us
         </h2>

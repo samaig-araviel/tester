@@ -48,7 +48,7 @@ export default function LocationScreen({ postcode, onNext, onSkip, isPending }: 
 
   return (
     <div className="pt-8 sm:pt-12">
-      <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10 w-full max-w-[520px] mx-auto">
+      <div className="w-full max-w-[520px] mx-auto">
         <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
           Where are you based?
         </h2>
