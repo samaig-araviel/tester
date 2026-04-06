@@ -63,24 +63,26 @@ export default function Carousel({
         controlsPosition === "top" ? "mb-5" : "mt-5"
       }`}
     >
-      <div className="flex gap-2">
-        <button
-          onClick={() => scroll("left")}
-          disabled={!canScrollLeft}
-          className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
-          aria-label="Scroll left"
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          disabled={!canScrollRight}
-          className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
-          aria-label="Scroll right"
-        >
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </div>
+      {controlsPosition === "bottom" && (
+        <div className="flex gap-2">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      )}
 
       {/* Progress bar */}
       <div className="flex-1 h-[3px] bg-border rounded-full overflow-hidden">
@@ -92,6 +94,27 @@ export default function Carousel({
           }}
         />
       </div>
+
+      {controlsPosition === "top" && (
+        <div className="flex gap-2">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      )}
     </div>
   );
 
