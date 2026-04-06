@@ -8,9 +8,14 @@ import React from "react";
 interface CarouselProps {
   children: React.ReactNode;
   itemCount: number;
+  controlsPosition?: "top" | "bottom";
 }
 
-export default function Carousel({ children, itemCount }: CarouselProps) {
+export default function Carousel({
+  children,
+  itemCount,
+  controlsPosition = "bottom",
+}: CarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -52,8 +57,47 @@ export default function Carousel({ children, itemCount }: CarouselProps) {
     });
   }
 
+  const controls = itemCount > 4 && (
+    <div
+      className={`flex items-center gap-4 ${
+        controlsPosition === "top" ? "mb-5" : "mt-5"
+      }`}
+    >
+      <div className="flex gap-2">
+        <button
+          onClick={() => scroll("left")}
+          disabled={!canScrollLeft}
+          className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+          aria-label="Scroll left"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
+        <button
+          onClick={() => scroll("right")}
+          disabled={!canScrollRight}
+          className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
+          aria-label="Scroll right"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+
+      {/* Progress bar */}
+      <div className="flex-1 h-[3px] bg-border rounded-full overflow-hidden">
+        <div
+          className="h-full bg-warm-teal rounded-full transition-all duration-150"
+          style={{
+            width: `${Math.max(20, (1 / Math.ceil(itemCount / 4)) * 100)}%`,
+            marginLeft: `${scrollProgress * (100 - Math.max(20, (1 / Math.ceil(itemCount / 4)) * 100))}%`,
+          }}
+        />
+      </div>
+    </div>
+  );
+
   return (
     <div>
+      {controlsPosition === "top" && controls}
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
@@ -65,41 +109,7 @@ export default function Carousel({ children, itemCount }: CarouselProps) {
           </div>
         ))}
       </div>
-
-      {/* Controls */}
-      {itemCount > 4 && (
-        <div className="flex items-center gap-4 mt-5">
-          <div className="flex gap-2">
-            <button
-              onClick={() => scroll("left")}
-              disabled={!canScrollLeft}
-              className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
-              aria-label="Scroll left"
-            >
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button
-              onClick={() => scroll("right")}
-              disabled={!canScrollRight}
-              className="w-9 h-9 rounded-full border border-border flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:text-warm-teal disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-surface"
-              aria-label="Scroll right"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-
-          {/* Progress bar */}
-          <div className="flex-1 h-[3px] bg-border rounded-full overflow-hidden">
-            <div
-              className="h-full bg-warm-teal rounded-full transition-all duration-150"
-              style={{
-                width: `${Math.max(20, (1 / Math.ceil(itemCount / 4)) * 100)}%`,
-                marginLeft: `${scrollProgress * (100 - Math.max(20, (1 / Math.ceil(itemCount / 4)) * 100))}%`,
-              }}
-            />
-          </div>
-        </div>
-      )}
+      {controlsPosition === "bottom" && controls}
     </div>
   );
 }
