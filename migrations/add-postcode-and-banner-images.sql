@@ -81,7 +81,7 @@ WHERE name = 'Explore Learning' AND banner_url IS NULL;
 UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop'
 WHERE name = 'Kumon' AND banner_url IS NULL;
 
-UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1576037728058-60e2bfde5765?w=600&h=400&fit=crop'
+UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=600&h=400&fit=crop'
 WHERE name = 'Tinies' AND banner_url IS NULL;
 
 UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1587616211892-f743fcca64f9?w=600&h=400&fit=crop'
@@ -105,7 +105,7 @@ WHERE name = 'Little Dish' AND banner_url IS NULL;
 UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1522661067900-ab829854a57f?w=600&h=400&fit=crop'
 WHERE name = 'Bright Horizons' AND banner_url IS NULL;
 
-UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1564429238961-bf8cf1ce4e28?w=600&h=400&fit=crop'
+UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=600&h=400&fit=crop'
 WHERE name = 'Busy Bees' AND banner_url IS NULL;
 
 UPDATE vendors SET banner_url = 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop'

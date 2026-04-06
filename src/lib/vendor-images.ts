@@ -12,11 +12,11 @@ const VENDOR_BANNER_MAP: Record<string, string> = {
   "bright horizons":
     "https://images.unsplash.com/photo-1522661067900-ab829854a57f?w=600&h=400&fit=crop",
   "busy bees":
-    "https://images.unsplash.com/photo-1564429238961-bf8cf1ce4e28?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=600&h=400&fit=crop",
   "tinies":
-    "https://images.unsplash.com/photo-1576037728058-60e2bfde5765?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=600&h=400&fit=crop",
   "tinies childcare":
-    "https://images.unsplash.com/photo-1576037728058-60e2bfde5765?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=600&h=400&fit=crop",
   "koru kids":
     "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=600&h=400&fit=crop",
   "n family club":
