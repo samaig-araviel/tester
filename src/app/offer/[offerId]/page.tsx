@@ -127,7 +127,8 @@ export default async function OfferDetailPage({ params }: PageProps) {
         id: o.id,
         vendor_name: v.name ?? "Unknown",
         vendor_logo_url: v.logo_url ?? null,
-        banner_url: v.banner_url ?? null,
+        banner_url:
+          v.banner_url ?? getVendorFallbackImage(v.name ?? "Unknown", v.category),
         offer_headline: o.offer_headline ?? "",
         is_new: o.is_new ?? false,
         is_saved: savedIds.has(o.id),
@@ -165,7 +166,9 @@ export default async function OfferDetailPage({ params }: PageProps) {
           id: o.id,
           vendor_name: v.name ?? "Unknown",
           vendor_logo_url: v.logo_url ?? null,
-          banner_url: v.banner_url ?? null,
+          banner_url:
+            v.banner_url ??
+            getVendorFallbackImage(v.name ?? "Unknown", v.category),
           offer_headline: o.offer_headline ?? "",
           is_new: o.is_new ?? false,
           is_saved: savedIds.has(o.id),
