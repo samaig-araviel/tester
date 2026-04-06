@@ -54,29 +54,27 @@ export default function VendorCardOnline({
         Online
       </span>
 
-      {/* Vendor logo */}
-      <div className="flex justify-center mb-3">
-        <div className="w-16 h-16 rounded-xl bg-surface border border-border flex items-center justify-center overflow-hidden">
+      {/* Logo + Name */}
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center overflow-hidden flex-shrink-0">
           {vendorLogoUrl ? (
             <Image
               src={vendorLogoUrl}
               alt={`${vendorName} logo`}
-              width={52}
-              height={52}
+              width={40}
+              height={40}
               className="object-contain"
             />
           ) : (
-            <span className="font-heading text-[20px] font-semibold text-primary">
+            <span className="font-heading text-[16px] font-semibold text-primary">
               {vendorName.charAt(0)}
             </span>
           )}
         </div>
+        <h2 className="font-heading text-[20px] font-semibold text-charcoal pr-10">
+          {vendorName}
+        </h2>
       </div>
-
-      {/* Vendor name */}
-      <h2 className="font-heading text-[20px] font-semibold text-charcoal text-center mb-3">
-        {vendorName}
-      </h2>
 
       {/* Offer headline */}
       <p className="font-heading text-[15px] font-semibold text-charcoal text-center">
