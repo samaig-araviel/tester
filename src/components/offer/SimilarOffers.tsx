@@ -50,7 +50,7 @@ export default function SimilarOffers({
         ctaText={categoryDisplay ? `View all in ${categoryDisplay}` : undefined}
         ctaHref={explorePath}
       />
-      <Carousel itemCount={offers.length}>
+      <Carousel itemCount={offers.length} controlsPosition="top">
         {offers.map((offer) => (
           <OfferCard
             key={offer.id}
