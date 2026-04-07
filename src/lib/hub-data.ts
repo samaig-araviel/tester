@@ -53,6 +53,7 @@ export interface ExternalResource {
   org: string;
   description: string;
   url: string;
+  logoUrl: string;
   ctaLabel: string;
 }
 
@@ -413,6 +414,7 @@ export const EXTERNAL_RESOURCES: ExternalResource[] = [
     org: "GOV.UK",
     description: "Official government advice on parental rights and benefits",
     url: "https://www.gov.uk/browse/childcare-parenting",
+    logoUrl: "https://www.google.com/s2/favicons?sz=128&domain=gov.uk",
     ctaLabel: "Read more",
   },
   {
@@ -420,6 +422,7 @@ export const EXTERNAL_RESOURCES: ExternalResource[] = [
     org: "Working Families",
     description: "The UK's national charity for working parents and carers",
     url: "https://workingfamilies.org.uk",
+    logoUrl: "https://www.google.com/s2/favicons?sz=128&domain=workingfamilies.org.uk",
     ctaLabel: "Read more",
   },
   {
@@ -427,6 +430,7 @@ export const EXTERNAL_RESOURCES: ExternalResource[] = [
     org: "Pregnant Then Screwed",
     description: "Campaigning for better support for pregnant women and mothers",
     url: "https://pregnantthenscrewed.com",
+    logoUrl: "https://www.google.com/s2/favicons?sz=128&domain=pregnantthenscrewed.com",
     ctaLabel: "Read more",
   },
   {
@@ -434,6 +438,7 @@ export const EXTERNAL_RESOURCES: ExternalResource[] = [
     org: "Pregnant and Protected",
     description: "Free legal advice for workplace pregnancy discrimination",
     url: "https://pregnantandprotected.com",
+    logoUrl: "https://www.google.com/s2/favicons?sz=128&domain=pregnantandprotected.com",
     ctaLabel: "View details",
   },
 ];

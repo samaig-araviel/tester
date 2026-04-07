@@ -28,8 +28,16 @@ export default function ExternalResources({ resources }: ExternalResourcesProps)
             className="group flex flex-col items-center text-center transition-all duration-200"
           >
             {/* Logo container */}
-            <div className="w-full aspect-[4/3] rounded-2xl bg-surface border border-border flex items-center justify-center p-5 transition-all duration-200 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.07)] group-hover:border-primary-light group-hover:-translate-y-0.5">
-              <span className="font-heading text-[22px] sm:text-[26px] font-bold text-charcoal leading-tight tracking-tight select-none">
+            <div className="w-full h-[120px] rounded-2xl bg-surface border border-border flex flex-col items-center justify-center gap-3 px-4 py-5 transition-all duration-200 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.07)] group-hover:border-primary-light group-hover:-translate-y-0.5">
+              <img
+                src={resource.logoUrl}
+                alt={`${resource.org} logo`}
+                width={40}
+                height={40}
+                loading="lazy"
+                className="w-10 h-10 object-contain"
+              />
+              <span className="font-heading text-[14px] font-semibold text-charcoal leading-tight tracking-tight select-none text-center">
                 {resource.org}
               </span>
             </div>
