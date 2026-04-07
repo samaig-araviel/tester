@@ -45,11 +45,6 @@ export default function RecommendedGuides({ articles }: RecommendedGuidesProps) 
     });
   }
 
-  function scrollToArticles() {
-    const el = document.getElementById("articles-section");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
     <section>
       {/* Header with arrows */}
@@ -116,15 +111,6 @@ export default function RecommendedGuides({ articles }: RecommendedGuidesProps) 
         ))}
       </div>
 
-      {/* See more button */}
-      <div className="flex justify-center mt-8">
-        <button
-          onClick={scrollToArticles}
-          className="bg-warm-teal text-white rounded-full px-8 py-3 font-body text-[14px] font-medium transition-all duration-150 hover:opacity-90 cursor-pointer"
-        >
-          See more guides
-        </button>
-      </div>
     </section>
   );
 }

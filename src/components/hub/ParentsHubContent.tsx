@@ -66,7 +66,7 @@ export default function ParentsHubContent({
       </div>
 
       {/* Articles + Podcasts two-column */}
-      <div className="mt-12 flex flex-col lg:flex-row gap-10">
+      <div className="mt-12 flex flex-col lg:flex-row gap-16">
         <ArticlesSection
           articles={allArticles}
           searchQuery={searchQuery}
