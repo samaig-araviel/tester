@@ -19,7 +19,7 @@ function getStepState(index: number, currentStep: number): StepState {
 function StepBadge({ state, number }: { state: StepState; number: number }) {
   if (state === "completed") {
     return (
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#22C55E] text-white shadow-[0_0_0_4px_rgba(34,197,94,0.12)]">
+      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#0B4F4F] text-white shadow-[0_0_0_4px_rgba(11,79,79,0.12)]">
         <Check className="h-4 w-4" strokeWidth={3} />
       </span>
     );
