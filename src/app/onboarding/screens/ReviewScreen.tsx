@@ -79,17 +79,8 @@ export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, 
     : null;
 
   return (
-    <div>
-      <div className="w-full">
-        <button
-          onClick={onBack}
-          disabled={isPending}
-          className="flex items-center gap-1.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer mb-6 disabled:opacity-50"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back
-        </button>
-
+    <div className="flex flex-col h-full">
+      <div className="w-full flex-1">
         <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
           Here&apos;s what you&apos;ve told us
         </h2>
@@ -104,24 +95,35 @@ export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, 
           <ReviewRow label="Location" value={locationDisplay} onEdit={() => onEdit(5)} />
           <ReviewRow label="Support needs" value={needsDisplay} onEdit={() => onEdit(6)} />
         </div>
+      </div>
 
-        <div className="flex flex-col items-center gap-3">
+      <div className="w-full space-y-3">
+        <div className="flex gap-3">
+          <button
+            onClick={onBack}
+            disabled={isPending}
+            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-border text-text-secondary hover:text-text-primary hover:border-text-secondary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back
+          </button>
+
           <button
             onClick={onConfirm}
             disabled={isPending}
-            className="w-full max-w-[320px] h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isPending ? "Saving..." : "Confirm & finish"}
           </button>
-
-          <button
-            onClick={onSkip}
-            disabled={isPending}
-            className="py-2 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
-          >
-            Skip for now
-          </button>
         </div>
+
+        <button
+          onClick={onSkip}
+          disabled={isPending}
+          className="w-full py-2 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
+        >
+          Skip for now
+        </button>
       </div>
     </div>
   );
