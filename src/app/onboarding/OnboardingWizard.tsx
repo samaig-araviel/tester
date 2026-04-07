@@ -232,15 +232,19 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   const stepIndex = currentScreen - 2;
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center">
+    <div className="min-h-screen bg-white flex">
+      {/* Left Sidebar - only show for screens 2-8 */}
       {showStepper && (
         <StepIndicator currentStep={stepIndex} />
       )}
 
-      <div className="w-full max-w-[520px] mx-auto px-4 pb-12 flex-1 flex flex-col justify-center">
-        <ScreenTransition key={currentScreen}>
-          {renderScreen()}
-        </ScreenTransition>
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col items-center justify-center px-8 py-12">
+        <div className="w-full max-w-[600px]">
+          <ScreenTransition key={currentScreen}>
+            {renderScreen()}
+          </ScreenTransition>
+        </div>
       </div>
     </div>
   );
