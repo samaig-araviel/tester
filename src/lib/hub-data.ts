@@ -25,6 +25,17 @@ export interface HubToolkit {
   icon: "Calendar" | "FileText" | "CheckSquare" | "ClipboardList" | "BookOpen" | "FileCheck";
 }
 
+export interface HubPodcast {
+  id: string;
+  title: string;
+  host: string;
+  episodeCount: number;
+  totalMinutes: number;
+  imageUrl: string;
+  url: string;
+  platform: "Spotify" | "YouTube" | "Apple Podcasts";
+}
+
 export interface MoneyArticle {
   id: string;
   title: string;
@@ -249,6 +260,77 @@ export const TOOLKITS: HubToolkit[] = [
     fileUrl: "#",
     format: "Interactive",
     icon: "BookOpen",
+  },
+];
+
+/* ─── Podcasts for You ─── */
+
+export const PODCASTS: HubPodcast[] = [
+  {
+    id: "pod-1",
+    title: "The Double Shift",
+    host: "Katherine Goldstein",
+    episodeCount: 42,
+    totalMinutes: 1680,
+    imageUrl:
+      "https://images.unsplash.com/photo-1589903308904-1010c2294adc?w=400&h=400&fit=crop",
+    url: "https://open.spotify.com/show/6aK9xjqgVo3GfWmCpLJnzR",
+    platform: "Spotify",
+  },
+  {
+    id: "pod-2",
+    title: "Motherkind",
+    host: "Zoe Blaskey",
+    episodeCount: 180,
+    totalMinutes: 6300,
+    imageUrl:
+      "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=400&fit=crop",
+    url: "https://podcasts.apple.com/gb/podcast/motherkind-podcast/id1355708942",
+    platform: "Apple Podcasts",
+  },
+  {
+    id: "pod-3",
+    title: "Working Hard, Hardly Working",
+    host: "Grace Beverley",
+    episodeCount: 96,
+    totalMinutes: 5760,
+    imageUrl:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    url: "https://open.spotify.com/show/5dzQ1olB6oZlQZzV4z1Zqz",
+    platform: "Spotify",
+  },
+  {
+    id: "pod-4",
+    title: "The Longest Shortest Time",
+    host: "Hillary Frank",
+    episodeCount: 220,
+    totalMinutes: 9900,
+    imageUrl:
+      "https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=400&h=400&fit=crop",
+    url: "https://www.youtube.com/results?search_query=the+longest+shortest+time+podcast",
+    platform: "YouTube",
+  },
+  {
+    id: "pod-5",
+    title: "Happy Mum Happy Baby",
+    host: "Giovanna Fletcher",
+    episodeCount: 150,
+    totalMinutes: 7500,
+    imageUrl:
+      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400&h=400&fit=crop",
+    url: "https://open.spotify.com/show/2XwvSFfrfXeqsBrNbQoJ8Y",
+    platform: "Spotify",
+  },
+  {
+    id: "pod-6",
+    title: "Parenting Hell",
+    host: "Rob Beckett & Josh Widdicombe",
+    episodeCount: 210,
+    totalMinutes: 12600,
+    imageUrl:
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop",
+    url: "https://open.spotify.com/show/6olvQhNhTwmNMHMu8i8FfY",
+    platform: "Spotify",
   },
 ];
 
