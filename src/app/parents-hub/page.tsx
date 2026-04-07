@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import ParentsHubContent from "@/components/hub/ParentsHubContent";
 import {
   ARTICLES,
-  TOOLKITS,
+  PODCASTS,
   MONEY_ARTICLES,
   EXTERNAL_RESOURCES,
   personalizeRecommended,
@@ -43,7 +43,7 @@ export default async function ParentsHubPage() {
         <ParentsHubContent
           recommendedArticles={recommendedArticles}
           allArticles={ARTICLES}
-          toolkits={TOOLKITS}
+          podcasts={PODCASTS}
           moneyArticles={MONEY_ARTICLES}
           externalResources={EXTERNAL_RESOURCES}
         />

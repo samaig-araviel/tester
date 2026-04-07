@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import HubHero from "./HubHero";
 import RecommendedGuides from "./RecommendedGuides";
 import ArticlesSection from "./ArticlesSection";
-import ToolkitsSection from "./ToolkitsSection";
+import PodcastsSection from "./PodcastsSection";
 import MoneySection from "./MoneySection";
 import ExternalResources from "./ExternalResources";
 import type {
   HubArticle,
-  HubToolkit,
+  HubPodcast,
   MoneyArticle,
   ExternalResource,
 } from "@/lib/hub-data";
@@ -17,7 +17,7 @@ import type {
 interface ParentsHubContentProps {
   recommendedArticles: HubArticle[];
   allArticles: HubArticle[];
-  toolkits: HubToolkit[];
+  podcasts: HubPodcast[];
   moneyArticles: MoneyArticle[];
   externalResources: ExternalResource[];
 }
@@ -25,7 +25,7 @@ interface ParentsHubContentProps {
 export default function ParentsHubContent({
   recommendedArticles,
   allArticles,
-  toolkits,
+  podcasts,
   moneyArticles,
   externalResources,
 }: ParentsHubContentProps) {
@@ -65,8 +65,8 @@ export default function ParentsHubContent({
         <RecommendedGuides articles={recommendedArticles} />
       </div>
 
-      {/* Articles + Toolkits two-column */}
-      <div className="mt-12 flex flex-col lg:flex-row gap-8">
+      {/* Articles + Podcasts two-column */}
+      <div className="mt-12 flex flex-col lg:flex-row gap-10">
         <ArticlesSection
           articles={allArticles}
           searchQuery={searchQuery}
@@ -75,7 +75,7 @@ export default function ParentsHubContent({
           onToggleFilter={toggleFilter}
           onClearFilters={clearFilters}
         />
-        <ToolkitsSection toolkits={toolkits} />
+        <PodcastsSection podcasts={podcasts} />
       </div>
 
       {/* Money & Financial Support */}
