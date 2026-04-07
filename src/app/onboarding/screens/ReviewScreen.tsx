@@ -1,6 +1,7 @@
 "use client";
 
-import { Pencil, ArrowLeft } from "lucide-react";
+import { Pencil } from "lucide-react";
+import ScreenShell from "@/components/onboarding/ScreenShell";
 import type { OnboardingData } from "@/lib/onboarding";
 import { IDENTITY_DISPLAY, SUPPORT_NEED_DISPLAY } from "@/lib/onboarding";
 
@@ -13,6 +14,14 @@ interface ReviewScreenProps {
   isPending: boolean;
 }
 
+const AGE_LABEL_MAP: Record<string, string> = {
+  expecting: "Expecting",
+  "0-6m": "0-6 months",
+  "6-24m": "6-24 months",
+  "2-5y": "2-5 years",
+  "5-16y": "5-16 years",
+};
+
 function ReviewRow({
   label,
   value,
@@ -23,12 +32,14 @@ function ReviewRow({
   onEdit: () => void;
 }) {
   return (
-    <div className="flex items-start justify-between">
-      <div className="flex-1 min-w-0">
-        <span className="font-body text-[13px] text-text-secondary block">{label}</span>
+    <div className="flex items-start justify-between gap-4 py-4 first:pt-0 last:pb-0">
+      <div className="min-w-0 flex-1">
+        <span className="block font-body text-[11px] font-bold uppercase tracking-[0.14em] text-[#9AA2B1]">
+          {label}
+        </span>
         <span
-          className={`font-body text-[15px] block mt-1 ${
-            value ? "text-text-primary font-medium" : "text-text-secondary/60 italic"
+          className={`mt-1 block font-body text-[14px] ${
+            value ? "font-medium text-[#1A1F36]" : "italic text-[#9AA2B1]"
           }`}
         >
           {value || "Not provided"}
@@ -37,94 +48,83 @@ function ReviewRow({
       <button
         type="button"
         onClick={onEdit}
-        className="flex items-center gap-1 text-primary font-body text-[13px] font-medium hover:underline cursor-pointer ml-4 flex-shrink-0"
+        className="flex flex-shrink-0 items-center gap-1 font-body text-[12px] font-semibold text-[#2962FF] transition-colors hover:text-[#1F4EE6]"
       >
-        <Pencil className="w-3.5 h-3.5" />
+        <Pencil className="h-3.5 w-3.5" />
         Edit
       </button>
     </div>
   );
 }
 
-export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, isPending }: ReviewScreenProps) {
+function formatChildCount(data: OnboardingData): string | null {
+  if (!data.child_count && !data.is_expecting) return null;
+  const parts: string[] = [];
+  if (data.is_expecting) parts.push("Expecting");
+  if (data.child_count && data.child_count !== "expecting") {
+    parts.push(
+      `${data.child_count} ${data.child_count === "1" ? "child" : "children"}`
+    );
+  }
+  return parts.join(" + ") || null;
+}
+
+export default function ReviewScreen({
+  data,
+  onConfirm,
+  onBack,
+  onSkip,
+  onEdit,
+  isPending,
+}: ReviewScreenProps) {
   const identityDisplay = data.identity_type
     ? IDENTITY_DISPLAY[data.identity_type] || data.identity_type
     : null;
 
-  const childCountDisplay = (() => {
-    if (!data.child_count && !data.is_expecting) return null;
-    const parts: string[] = [];
-    if (data.is_expecting) parts.push("Expecting");
-    if (data.child_count && data.child_count !== "expecting") {
-      parts.push(`${data.child_count} ${data.child_count === "1" ? "child" : "children"}`);
-    }
-    return parts.join(" + ") || null;
-  })();
+  const childCountDisplay = formatChildCount(data);
 
-  const ageLabelMap: Record<string, string> = {
-    expecting: "Expecting",
-    "0-6m": "0-6 months",
-    "6-24m": "6-24 months",
-    "2-5y": "2-5 years",
-    "5-16y": "5-16 years",
-  };
   const agesDisplay = data.child_age_buckets?.length
-    ? data.child_age_buckets.map((b) => ageLabelMap[b] ?? b).join(", ")
+    ? data.child_age_buckets.map((b) => AGE_LABEL_MAP[b] ?? b).join(", ")
     : null;
-
-  const locationDisplay = data.postcode ?? null;
 
   const needsDisplay = data.support_needs?.length
     ? data.support_needs.map((n) => SUPPORT_NEED_DISPLAY[n] || n).join(", ")
     : null;
 
   return (
-    <div className="flex flex-col h-full justify-between">
-      <div>
-        <h2 className="font-heading text-[32px] font-bold text-text-primary mb-3">
-          Here&apos;s what you&apos;ve told us
-        </h2>
-        <p className="font-body text-[16px] text-text-secondary mb-10">
-          Review your answers below. You can edit any of them before confirming.
-        </p>
-
-        <div className="bg-gray-50 rounded-lg p-6 space-y-6">
-          <ReviewRow label="I am a..." value={identityDisplay} onEdit={() => onEdit(2)} />
-          <ReviewRow label="Children" value={childCountDisplay} onEdit={() => onEdit(3)} />
-          <ReviewRow label="Ages" value={agesDisplay} onEdit={() => onEdit(4)} />
-          <ReviewRow label="Location" value={locationDisplay} onEdit={() => onEdit(5)} />
-          <ReviewRow label="Support needs" value={needsDisplay} onEdit={() => onEdit(6)} />
-        </div>
+    <ScreenShell
+      title="Here's what you've told us"
+      subtitle="Review your answers below. You can edit any of them before confirming."
+      onBack={onBack}
+      onContinue={onConfirm}
+      continueLabel="Confirm & finish"
+      onSkip={onSkip}
+      skipLabel="Skip for now"
+      isPending={isPending}
+    >
+      <div className="divide-y divide-[#EEF0F4] rounded-2xl border border-[#EEF0F4] bg-white p-6 shadow-[0_8px_30px_-18px_rgba(15,23,42,0.25)]">
+        <ReviewRow
+          label="I am a..."
+          value={identityDisplay}
+          onEdit={() => onEdit(2)}
+        />
+        <ReviewRow
+          label="Children"
+          value={childCountDisplay}
+          onEdit={() => onEdit(3)}
+        />
+        <ReviewRow label="Ages" value={agesDisplay} onEdit={() => onEdit(4)} />
+        <ReviewRow
+          label="Location"
+          value={data.postcode ?? null}
+          onEdit={() => onEdit(5)}
+        />
+        <ReviewRow
+          label="Support needs"
+          value={needsDisplay}
+          onEdit={() => onEdit(6)}
+        />
       </div>
-
-      <div className="mt-12 space-y-3">
-        <div className="flex gap-3">
-          <button
-            onClick={onBack}
-            disabled={isPending}
-            className="flex items-center justify-center gap-2 h-[48px] px-6 rounded-lg bg-white border-2 border-primary text-primary hover:bg-primary-light hover:text-primary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </button>
-
-          <button
-            onClick={onConfirm}
-            disabled={isPending}
-            className="flex-1 h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isPending ? "Saving..." : "Confirm & finish"}
-          </button>
-        </div>
-
-        <button
-          onClick={onSkip}
-          disabled={isPending}
-          className="w-full py-2.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
-        >
-          Skip for now
-        </button>
-      </div>
-    </div>
+    </ScreenShell>
   );
 }

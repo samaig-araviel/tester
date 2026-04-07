@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import StepIndicator from "@/components/onboarding/StepIndicator";
+import OnboardingLayout from "@/components/onboarding/OnboardingLayout";
 import ScreenTransition from "@/components/onboarding/ScreenTransition";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import IntroductionScreen from "./screens/IntroductionScreen";
@@ -27,6 +27,12 @@ interface OnboardingWizardProps {
   initialData: OnboardingData;
 }
 
+const WELCOME_SCREEN = 0;
+const INTRODUCTION_SCREEN = 1;
+const FIRST_STEPPED_SCREEN = 2;
+const REVIEW_SCREEN = 7;
+const DONE_SCREEN = 8;
+
 export default function OnboardingWizard({ initialData }: OnboardingWizardProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -48,9 +54,9 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function advance() {
-    if (returnToReview && currentScreen !== 7) {
+    if (returnToReview && currentScreen !== REVIEW_SCREEN) {
       setReturnToReview(false);
-      setCurrentScreen(7); // Go back to review
+      setCurrentScreen(REVIEW_SCREEN);
     } else {
       setCurrentScreen((s) => s + 1);
     }
@@ -63,7 +69,6 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function handleSkipEarly() {
-    // Skip from Welcome or Introduction — mark onboarding complete and go to dashboard
     startTransition(async () => {
       await completeOnboarding();
       goToDashboard();
@@ -71,12 +76,10 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function handleSkipStep() {
-    // Skip from screens 2-6 — advance without saving
     advance();
   }
 
   function handleSkipAll() {
-    // Skip the entire onboarding — mark complete and go straight to dashboard
     startTransition(async () => {
       await completeOnboarding();
       goToDashboard();
@@ -84,7 +87,6 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function handleSkipReview() {
-    // Skip from Review — mark complete and go to dashboard with partial data
     startTransition(async () => {
       await completeOnboarding();
       goToDashboard();
@@ -98,17 +100,17 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
 
   function renderScreen() {
     switch (currentScreen) {
-      case 0:
+      case WELCOME_SCREEN:
         return (
           <WelcomeScreen
-            onNext={() => setCurrentScreen(1)}
+            onNext={() => setCurrentScreen(INTRODUCTION_SCREEN)}
             onSkip={handleSkipEarly}
           />
         );
-      case 1:
+      case INTRODUCTION_SCREEN:
         return (
           <IntroductionScreen
-            onNext={() => setCurrentScreen(2)}
+            onNext={() => setCurrentScreen(FIRST_STEPPED_SCREEN)}
             onBack={goBack}
             onSkip={handleSkipEarly}
           />
@@ -199,18 +201,18 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
             isPending={isPending}
           />
         );
-      case 7:
+      case REVIEW_SCREEN:
         return (
           <ReviewScreen
             data={data}
-            onConfirm={() => setCurrentScreen(8)}
+            onConfirm={() => setCurrentScreen(DONE_SCREEN)}
             onBack={goBack}
             onSkip={handleSkipReview}
             onEdit={handleEditFromReview}
             isPending={isPending}
           />
         );
-      case 8:
+      case DONE_SCREEN:
         return (
           <DoneScreen
             onFinish={() => {
@@ -227,25 +229,17 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
     }
   }
 
-  // Step indicator maps: screens 2-8 correspond to steps 0-6
-  const showStepper = currentScreen >= 2;
-  const stepIndex = currentScreen - 2;
+  // Screens 0 and 1 are "intro" screens with the blue hero panel; from
+  // screen 2 onwards the stepper drives the left panel.
+  const isHero = currentScreen < FIRST_STEPPED_SCREEN;
+  const stepIndex = Math.max(0, currentScreen - FIRST_STEPPED_SCREEN);
 
   return (
-    <div className="min-h-screen bg-white flex">
-      {/* Left Sidebar - only show for screens 2-8 */}
-      {showStepper && (
-        <StepIndicator currentStep={stepIndex} />
-      )}
-
-      {/* Main Content Area */}
-      <div className="flex-1 flex flex-col items-center justify-center px-8 py-12">
-        <div className="w-full max-w-[600px]">
-          <ScreenTransition key={currentScreen}>
-            {renderScreen()}
-          </ScreenTransition>
-        </div>
-      </div>
-    </div>
+    <OnboardingLayout
+      variant={isHero ? "hero" : "stepped"}
+      stepIndex={stepIndex}
+    >
+      <ScreenTransition key={currentScreen}>{renderScreen()}</ScreenTransition>
+    </OnboardingLayout>
   );
 }

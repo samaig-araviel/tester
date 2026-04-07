@@ -1,6 +1,6 @@
 "use client";
 
-import { Leaf } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface WelcomeScreenProps {
   onNext: () => void;
@@ -9,36 +9,44 @@ interface WelcomeScreenProps {
 
 export default function WelcomeScreen({ onNext, onSkip }: WelcomeScreenProps) {
   return (
-    <div className="flex flex-col items-center text-center h-full justify-between">
-      <div className="flex items-center gap-2.5 mb-12">
-        <Leaf className="w-8 h-8 text-primary" strokeWidth={2.5} />
-        <span className="font-heading text-[28px] font-bold text-primary">Parentfits</span>
-      </div>
+    <section className="flex flex-col">
+      <header className="mb-10">
+        <h2 className="font-heading text-[30px] font-bold leading-tight text-[#1A1F36]">
+          Welcome to Parentfits
+        </h2>
+        <p className="mt-3 font-body text-[15px] leading-relaxed text-[#6B7280]">
+          Your dedicated parent support hub with everything you need as a parent,
+          in one place.
+        </p>
+      </header>
 
-      <div className="w-full flex-1">
-        <h1 className="font-heading text-[36px] sm:text-[40px] font-bold text-text-primary mb-5">
-          Welcome to Parentfits.
-        </h1>
-        <p className="font-body text-[16px] text-text-secondary leading-relaxed max-w-md mx-auto">
-          Your dedicated parent support hub with everything you need as a parent, in one place.
+      <div className="rounded-2xl border border-[#EEF0F4] bg-white p-6 shadow-[0_8px_30px_-18px_rgba(15,23,42,0.25)]">
+        <p className="font-body text-[14px] leading-relaxed text-[#6B7280]">
+          We&apos;ll ask a few quick questions so we can tailor Parentfits to your
+          family. It takes about a minute.
         </p>
       </div>
 
-      <div className="w-full space-y-3">
+      <footer className="mt-10 space-y-3">
         <button
+          type="button"
           onClick={onNext}
-          className="w-full h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer"
+          className="flex h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#2962FF] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#1F4EE6]"
         >
-          Continue
+          Get started
+          <ArrowRight className="h-4 w-4" />
         </button>
 
-        <button
-          onClick={onSkip}
-          className="w-full py-2.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
-        >
-          Skip for now
-        </button>
-      </div>
-    </div>
+        <div className="flex justify-center">
+          <button
+            type="button"
+            onClick={onSkip}
+            className="font-body text-[13px] text-[#6B7280] transition-colors hover:text-[#1A1F36]"
+          >
+            Skip for now
+          </button>
+        </div>
+      </footer>
+    </section>
   );
 }
