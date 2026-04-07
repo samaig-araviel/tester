@@ -26,7 +26,7 @@ export default function FavouritesSection({
     return (
       <section>
         <SectionHeader
-          title="Favourites"
+          title="My favourites"
           helperText="Your saved perks, ready when you need them."
         />
         <div className="flex items-center gap-4">
@@ -50,7 +50,7 @@ export default function FavouritesSection({
   return (
     <section>
       <SectionHeader
-        title="Favourites"
+        title="My favourites"
         helperText="Your saved perks, ready when you need them."
         ctaText={showSeeAll ? "See all" : undefined}
         ctaHref={showSeeAll ? "/saved" : undefined}

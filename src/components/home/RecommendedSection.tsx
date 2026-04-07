@@ -40,7 +40,7 @@ export default function RecommendedSection({
     return (
       <section>
         <SectionHeader
-          title="Recommended for you"
+          title="Personalised for you"
           helperText="Based on your preferences and life stage."
         />
         <div className="flex items-center justify-center py-8">
@@ -71,7 +71,7 @@ export default function RecommendedSection({
     return (
       <section>
         <SectionHeader
-          title="Recommended for you"
+          title="Personalised for you"
           helperText="Based on your preferences and life stage."
         />
         <div className="flex items-center justify-center py-8">
@@ -103,7 +103,7 @@ export default function RecommendedSection({
   return (
     <section>
       <SectionHeader
-        title="Recommended for you"
+        title="Personalised for you"
         helperText="Based on your preferences and life stage."
       />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

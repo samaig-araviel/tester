@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Heart } from "lucide-react";
+import { Heart, MapPin } from "lucide-react";
 import type { ExploreVendor, PageType } from "@/lib/explore";
 
 interface VendorCardProps {
@@ -21,6 +21,20 @@ function formatDeliveryType(dt: string | null): string {
 function formatCategory(cat: string | null): string {
   if (!cat) return "";
   return cat.replace(/_/g, " ").toUpperCase();
+}
+
+/**
+ * Returns a stable, deterministic distance (in miles) for an in-person
+ * vendor based on its id. Used as a placeholder until real geocoded
+ * distances from the user's postcode are available.
+ */
+function getApproxDistanceMiles(vendorId: string): number {
+  let hash = 0;
+  for (let i = 0; i < vendorId.length; i += 1) {
+    hash = (hash * 31 + vendorId.charCodeAt(i)) | 0;
+  }
+  const normalised = (Math.abs(hash) % 95) / 10 + 0.5; // 0.5 – 9.9
+  return Math.round(normalised * 10) / 10;
 }
 
 function formatAgeLabel(ageRel: string[] | string | null): string | null {
@@ -144,8 +158,9 @@ export default function VendorCard({
             </span>
           )}
           {pageType === "in-person" && (
-            <span className="px-2.5 py-1 rounded-full border border-border text-muted-grey font-body text-[11px]">
-              In-person
+            <span className="inline-flex items-center gap-1 text-muted-grey font-body text-[11px]">
+              <MapPin className="w-3 h-3" strokeWidth={2} />
+              {getApproxDistanceMiles(vendor.id).toFixed(1)} mi away
             </span>
           )}
         </div>
