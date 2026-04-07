@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 interface DoneScreenProps {
   onFinish: () => void;
@@ -9,25 +9,27 @@ interface DoneScreenProps {
 
 export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center text-center">
-      <div className="w-20 h-20 rounded-full bg-primary-light flex items-center justify-center mx-auto mb-8">
-        <CheckCircle className="w-10 h-10 text-primary" />
-      </div>
+    <section className="flex flex-col items-center text-center">
+      <span className="mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-[#EEF3FF] text-[#2962FF] shadow-[0_0_0_10px_rgba(41,98,255,0.08)]">
+        <CheckCircle2 className="h-10 w-10" strokeWidth={2} />
+      </span>
 
-      <h2 className="font-heading text-[32px] sm:text-[36px] font-bold text-text-primary mb-4">
+      <h2 className="font-heading text-[32px] font-bold leading-tight text-[#1A1F36]">
         You&apos;re all set
       </h2>
-      <p className="font-body text-[16px] text-text-secondary leading-relaxed max-w-md mx-auto mb-10">
-        We&apos;ll use this to personalise your experience. You can update your preferences anytime in your profile.
+      <p className="mx-auto mt-4 max-w-md font-body text-[15px] leading-relaxed text-[#6B7280]">
+        We&apos;ll use this to personalise your experience. You can update your
+        preferences anytime in your profile.
       </p>
 
       <button
+        type="button"
         onClick={onFinish}
         disabled={isPending}
-        className="w-full h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+        className="mt-10 h-[48px] w-full rounded-xl bg-[#2962FF] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#1F4EE6] disabled:cursor-not-allowed disabled:bg-[#2962FF]/50"
       >
         {isPending ? "Finishing..." : "Go to Parentfits"}
       </button>
-    </div>
+    </section>
   );
 }

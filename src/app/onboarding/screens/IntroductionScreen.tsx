@@ -1,6 +1,7 @@
 "use client";
 
-import { Sparkles, ArrowLeft } from "lucide-react";
+import { Sparkles, Compass, ShieldCheck } from "lucide-react";
+import ScreenShell from "@/components/onboarding/ScreenShell";
 
 interface IntroductionScreenProps {
   onNext: () => void;
@@ -8,47 +9,59 @@ interface IntroductionScreenProps {
   onSkip: () => void;
 }
 
-export default function IntroductionScreen({ onNext, onBack, onSkip }: IntroductionScreenProps) {
+const HIGHLIGHTS = [
+  {
+    icon: Sparkles,
+    title: "Personalised for your family",
+    body: "We tailor recommendations to your children and priorities.",
+  },
+  {
+    icon: Compass,
+    title: "Local and relevant",
+    body: "See nearby support based on where you live.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Private by default",
+    body: "Your answers stay private and you can change them anytime.",
+  },
+] as const;
+
+export default function IntroductionScreen({
+  onNext,
+  onBack,
+  onSkip,
+}: IntroductionScreenProps) {
   return (
-    <div className="flex flex-col items-center text-center h-full justify-between">
-      <div className="w-full">
-        <div className="w-16 h-16 rounded-xl bg-primary-light flex items-center justify-center mx-auto mb-8">
-          <Sparkles className="w-8 h-8 text-primary" />
-        </div>
-
-        <h2 className="font-heading text-[32px] sm:text-[36px] font-bold text-text-primary mb-4">
-          Help us tailor this to you
-        </h2>
-        <p className="font-body text-[16px] text-text-secondary leading-relaxed max-w-md mx-auto">
-          Answer a few quick questions so we can show you the most relevant support.
-        </p>
-      </div>
-
-      <div className="w-full space-y-3">
-        <div className="flex gap-3">
-          <button
-            onClick={onBack}
-            className="flex items-center justify-center gap-2 h-[48px] px-6 rounded-lg bg-white border-2 border-primary text-primary hover:bg-primary-light hover:text-primary transition-colors cursor-pointer font-body text-[15px] font-medium"
+    <ScreenShell
+      title="Help us tailor this to you"
+      subtitle="Answer a few quick questions so we can show you the most relevant support."
+      onBack={onBack}
+      onContinue={onNext}
+      continueLabel="Get started"
+      onSkip={onSkip}
+      skipLabel="Skip for now"
+    >
+      <ul className="flex flex-col gap-3">
+        {HIGHLIGHTS.map(({ icon: Icon, title, body }) => (
+          <li
+            key={title}
+            className="flex items-start gap-4 rounded-2xl border border-[#EEF0F4] bg-white p-4 shadow-[0_6px_20px_-18px_rgba(15,23,42,0.35)]"
           >
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </button>
-
-          <button
-            onClick={onNext}
-            className="flex-1 h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer"
-          >
-            Get started
-          </button>
-        </div>
-
-        <button
-          onClick={onSkip}
-          className="w-full py-2.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
-        >
-          Skip for now
-        </button>
-      </div>
-    </div>
+            <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-[#D9DEE8] bg-[#EEF3FF] text-[#2962FF]">
+              <Icon className="h-5 w-5" />
+            </span>
+            <span className="flex min-w-0 flex-1 flex-col">
+              <span className="font-body text-[14px] font-semibold text-[#1A1F36]">
+                {title}
+              </span>
+              <span className="mt-0.5 font-body text-[13px] text-[#6B7280]">
+                {body}
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </ScreenShell>
   );
 }
