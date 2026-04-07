@@ -43,43 +43,7 @@ function HeroPanel({
           {subtitle}
         </p>
       </div>
-
-      <HeroDecoration />
     </aside>
-  );
-}
-
-function HeroDecoration() {
-  return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute bottom-8 left-10 h-40 w-40"
-    >
-      <svg viewBox="0 0 160 160" fill="none" className="h-full w-full">
-        <rect
-          x="52"
-          y="34"
-          width="58"
-          height="40"
-          rx="2"
-          fill="white"
-          fillOpacity="0.95"
-        />
-        <rect
-          x="78"
-          y="74"
-          width="6"
-          height="62"
-          fill="white"
-          fillOpacity="0.9"
-        />
-        <path
-          d="M52 74 L18 150 L144 150 L110 74 Z"
-          fill="white"
-          fillOpacity="0.08"
-        />
-      </svg>
-    </div>
   );
 }
 
@@ -91,34 +55,7 @@ function SteppedPanel({ stepIndex }: { stepIndex: number }) {
       <div className="mt-16 flex-1">
         <StepIndicator currentStep={stepIndex} />
       </div>
-
-      <SteppedDecoration />
     </aside>
-  );
-}
-
-function SteppedDecoration() {
-  return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute bottom-6 left-6 h-28 w-28 opacity-60"
-    >
-      <svg viewBox="0 0 120 120" fill="none" className="h-full w-full">
-        <path
-          d="M10 88 L60 36 L110 88 Z"
-          fill="#D0E3E0"
-        />
-        <path
-          d="M60 36 L60 88 L10 88 Z"
-          fill="#A8CFC9"
-        />
-        <path
-          d="M10 88 L60 64 L110 88 L60 112 Z"
-          fill="#0B4F4F"
-          fillOpacity="0.15"
-        />
-      </svg>
-    </div>
   );
 }
 
@@ -142,13 +79,6 @@ export default function OnboardingLayout({
           <div className="lg:hidden">
             <BrandMark variant="dark" />
           </div>
-          <a
-            href="/support"
-            className="ml-auto font-body text-[14px] text-[#6B7280] transition-colors hover:text-[#0B4F4F]"
-          >
-            Having troubles?{" "}
-            <span className="font-semibold text-[#0B4F4F]">Get Help</span>
-          </a>
         </header>
 
         <div className="flex flex-1 items-center justify-center px-8 py-10 lg:px-14">

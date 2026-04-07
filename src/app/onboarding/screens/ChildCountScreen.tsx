@@ -44,7 +44,7 @@ export default function ChildCountScreen({
   return (
     <ScreenShell
       title="How many children do you have?"
-      subtitle='Select one option. You can also toggle "Expecting" alongside a number.'
+      subtitle='Select all that apply.'
       onBack={onBack}
       onContinue={handleContinue}
       canContinue={hasSelection}

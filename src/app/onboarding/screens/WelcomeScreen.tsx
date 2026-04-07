@@ -11,21 +11,13 @@ export default function WelcomeScreen({ onNext, onSkip }: WelcomeScreenProps) {
   return (
     <section className="flex flex-col">
       <header className="mb-10">
-        <h2 className="font-heading text-[30px] font-bold leading-tight text-[#1A1F36]">
+        <h2 className="text-center font-heading text-[30px] font-bold leading-tight text-[#1A1F36]">
           Welcome to Parentfits
         </h2>
-        <p className="mt-3 font-body text-[15px] leading-relaxed text-[#6B7280]">
-          Your dedicated parent support hub with everything you need as a parent,
-          in one place.
+        <p className="mt-3 text-center font-body text-[15px] leading-relaxed text-[#6B7280]">
+          Your personalised support hub for every stage of work and family life, all in one place.
         </p>
       </header>
-
-      <div className="rounded-2xl border border-[#EEF0F4] bg-white p-6 shadow-[0_8px_30px_-18px_rgba(15,23,42,0.25)]">
-        <p className="font-body text-[14px] leading-relaxed text-[#6B7280]">
-          We&apos;ll ask a few quick questions so we can tailor Parentfits to your
-          family. It takes about a minute.
-        </p>
-      </div>
 
       <footer className="mt-10 space-y-3">
         <button

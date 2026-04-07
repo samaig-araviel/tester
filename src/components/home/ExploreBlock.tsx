@@ -80,7 +80,7 @@ export default function ExploreBlock({
   return (
     <section
       className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden"
-      style={{ backgroundColor: config.bg }}
+      style={{ backgroundColor: config.bg, height: "600px" }}
     >
       {/* Constrain inner content to page max-width */}
       <div className="max-w-[1200px] mx-auto px-6">
