@@ -28,7 +28,7 @@ export default function IntroductionScreen({ onNext, onBack, onSkip }: Introduct
         <div className="flex gap-3">
           <button
             onClick={onBack}
-            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-border text-text-secondary hover:text-text-primary hover:border-text-secondary transition-colors cursor-pointer font-body text-[15px] font-medium"
+            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-primary text-text-secondary hover:text-text-primary transition-colors cursor-pointer font-body text-[15px] font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             Back

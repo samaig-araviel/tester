@@ -78,7 +78,7 @@ export default function SupportNeedsScreen({ value, onNext, onBack, onSkip, onSk
           <button
             onClick={onBack}
             disabled={isPending}
-            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-border text-text-secondary hover:text-text-primary hover:border-text-secondary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
+            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-primary text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
