@@ -62,20 +62,20 @@ export default function SupportNeedsScreen({
               aria-pressed={isSelected}
               className={`group relative flex flex-col items-center gap-3 rounded-2xl border bg-white p-5 text-center transition-all duration-200 ${
                 isSelected
-                  ? "border-[#2962FF] shadow-[0_8px_24px_-12px_rgba(41,98,255,0.35)]"
-                  : "border-[#EEF0F4] shadow-[0_6px_20px_-18px_rgba(15,23,42,0.35)] hover:border-[#C6D2FF]"
+                  ? "border-[#0B4F4F] shadow-[0_8px_24px_-12px_rgba(11,79,79,0.35)]"
+                  : "border-[#EEF0F4] shadow-[0_6px_20px_-18px_rgba(15,23,42,0.35)] hover:border-[#B8D4D0]"
               }`}
             >
               {isSelected && (
-                <span className="absolute right-3 top-3 flex h-5 w-5 items-center justify-center rounded-full bg-[#2962FF] text-white">
+                <span className="absolute right-3 top-3 flex h-5 w-5 items-center justify-center rounded-full bg-[#0B4F4F] text-white">
                   <Check className="h-3 w-3" strokeWidth={3} />
                 </span>
               )}
               <span
                 className={`flex h-12 w-12 items-center justify-center rounded-xl border transition-colors ${
                   isSelected
-                    ? "border-[#2962FF] bg-[#EEF3FF] text-[#2962FF]"
-                    : "border-[#D9DEE8] bg-white text-[#2962FF]"
+                    ? "border-[#0B4F4F] bg-[#E5EDEB] text-[#0B4F4F]"
+                    : "border-[#D9DEE8] bg-white text-[#0B4F4F]"
                 }`}
               >
                 <Icon className="h-5 w-5" />

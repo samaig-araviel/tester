@@ -31,7 +31,7 @@ export default function WelcomeScreen({ onNext, onSkip }: WelcomeScreenProps) {
         <button
           type="button"
           onClick={onNext}
-          className="flex h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#2962FF] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#1F4EE6]"
+          className="flex h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#0B4F4F] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#093F3F]"
         >
           Get started
           <ArrowRight className="h-4 w-4" />

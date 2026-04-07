@@ -69,7 +69,7 @@ export default function ChildCountScreen({
       </div>
 
       {expecting && count && (
-        <p className="mt-6 font-body text-[13px] font-medium text-[#2962FF]">
+        <p className="mt-6 font-body text-[13px] font-medium text-[#0B4F4F]">
           Expecting + {count} {count === "1" ? "child" : "children"}
         </p>
       )}

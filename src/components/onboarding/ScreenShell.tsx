@@ -65,7 +65,7 @@ export default function ScreenShell({
                 type="button"
                 onClick={onBack}
                 disabled={isPending}
-                className="flex h-[48px] items-center justify-center gap-2 rounded-xl border border-[#E1E4EA] bg-white px-6 font-body text-[14px] font-medium text-[#1A1F36] transition-colors hover:border-[#2962FF] hover:text-[#2962FF] disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex h-[48px] items-center justify-center gap-2 rounded-xl border border-[#E1E4EA] bg-white px-6 font-body text-[14px] font-medium text-[#1A1F36] transition-colors hover:border-[#0B4F4F] hover:text-[#0B4F4F] disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <ArrowLeft className="h-4 w-4" />
                 Back
@@ -76,7 +76,7 @@ export default function ScreenShell({
                 type="button"
                 onClick={onContinue}
                 disabled={disabled}
-                className="h-[48px] flex-1 rounded-xl bg-[#2962FF] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#1F4EE6] disabled:cursor-not-allowed disabled:bg-[#2962FF]/50"
+                className="h-[48px] flex-1 rounded-xl bg-[#0B4F4F] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#093F3F] disabled:cursor-not-allowed disabled:bg-[#0B4F4F]/50"
               >
                 {isPending ? "Saving..." : continueLabel}
               </button>

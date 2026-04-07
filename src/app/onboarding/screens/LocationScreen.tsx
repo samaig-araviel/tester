@@ -86,7 +86,7 @@ export default function LocationScreen({
           className={`h-[52px] w-full rounded-xl border bg-white pl-12 pr-4 font-body text-[15px] text-[#1A1F36] placeholder:text-[#9AA2B1] transition-colors focus:outline-none ${
             error
               ? "border-[#EF4444] focus:border-[#EF4444]"
-              : "border-[#E1E4EA] focus:border-[#2962FF]"
+              : "border-[#E1E4EA] focus:border-[#0B4F4F]"
           }`}
         />
       </div>
