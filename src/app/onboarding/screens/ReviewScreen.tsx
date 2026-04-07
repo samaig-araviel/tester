@@ -48,7 +48,7 @@ function ReviewRow({
       <button
         type="button"
         onClick={onEdit}
-        className="flex flex-shrink-0 items-center gap-1 font-body text-[12px] font-semibold text-[#2962FF] transition-colors hover:text-[#1F4EE6]"
+        className="flex flex-shrink-0 items-center gap-1 font-body text-[12px] font-semibold text-[#0B4F4F] transition-colors hover:text-[#093F3F]"
       >
         <Pencil className="h-3.5 w-3.5" />
         Edit

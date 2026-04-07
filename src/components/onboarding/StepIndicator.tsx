@@ -27,7 +27,7 @@ function StepBadge({ state, number }: { state: StepState; number: number }) {
 
   if (state === "current") {
     return (
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#2962FF] bg-white text-[13px] font-semibold text-[#2962FF] shadow-[0_0_0_4px_rgba(41,98,255,0.12)]">
+      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#0B4F4F] bg-white text-[13px] font-semibold text-[#0B4F4F] shadow-[0_0_0_4px_rgba(11,79,79,0.12)]">
         {number}
       </span>
     );
@@ -59,7 +59,7 @@ export default function StepIndicator({ currentStep }: StepIndicatorProps) {
               <span
                 className={`font-body text-[13px] font-semibold uppercase tracking-[0.12em] ${
                   isCurrent
-                    ? "text-[#2962FF]"
+                    ? "text-[#0B4F4F]"
                     : isUpcoming
                       ? "text-[#9AA2B1]"
                       : "text-[#C8CCD4]"

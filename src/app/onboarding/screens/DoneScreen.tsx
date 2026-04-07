@@ -10,7 +10,7 @@ interface DoneScreenProps {
 export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
   return (
     <section className="flex flex-col items-center text-center">
-      <span className="mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-[#EEF3FF] text-[#2962FF] shadow-[0_0_0_10px_rgba(41,98,255,0.08)]">
+      <span className="mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-[#E5EDEB] text-[#0B4F4F] shadow-[0_0_0_10px_rgba(11,79,79,0.08)]">
         <CheckCircle2 className="h-10 w-10" strokeWidth={2} />
       </span>
 
@@ -26,7 +26,7 @@ export default function DoneScreen({ onFinish, isPending }: DoneScreenProps) {
         type="button"
         onClick={onFinish}
         disabled={isPending}
-        className="mt-10 h-[48px] w-full rounded-xl bg-[#2962FF] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#1F4EE6] disabled:cursor-not-allowed disabled:bg-[#2962FF]/50"
+        className="mt-10 h-[48px] w-full rounded-xl bg-[#0B4F4F] font-body text-[14px] font-semibold text-white transition-colors hover:bg-[#093F3F] disabled:cursor-not-allowed disabled:bg-[#0B4F4F]/50"
       >
         {isPending ? "Finishing..." : "Go to Parentfits"}
       </button>

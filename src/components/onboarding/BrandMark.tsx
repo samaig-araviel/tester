@@ -13,8 +13,8 @@ interface BrandMarkProps {
 export default function BrandMark({ variant = "dark" }: BrandMarkProps) {
   const isLight = variant === "light";
   const iconWrapClass = isLight
-    ? "bg-white text-[#2962FF]"
-    : "bg-[#2962FF] text-white";
+    ? "bg-white text-[#0B4F4F]"
+    : "bg-[#0B4F4F] text-white";
   const wordClass = isLight ? "text-white" : "text-[#1A1F36]";
   const softWordClass = isLight ? "text-white/70" : "text-[#6B7280]";
 

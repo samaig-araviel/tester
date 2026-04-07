@@ -32,7 +32,7 @@ function HeroPanel({
   subtitle: string;
 }) {
   return (
-    <aside className="relative hidden w-full max-w-[520px] flex-col justify-between overflow-hidden bg-[#2962FF] px-12 py-10 text-white lg:flex">
+    <aside className="relative hidden w-full max-w-[520px] flex-col justify-between overflow-hidden bg-[#0B4F4F] px-12 py-10 text-white lg:flex">
       <BrandMark variant="light" />
 
       <div className="relative z-10 max-w-[380px]">
@@ -106,15 +106,15 @@ function SteppedDecoration() {
       <svg viewBox="0 0 120 120" fill="none" className="h-full w-full">
         <path
           d="M10 88 L60 36 L110 88 Z"
-          fill="#DCE5FF"
+          fill="#D0E3E0"
         />
         <path
           d="M60 36 L60 88 L10 88 Z"
-          fill="#B6C9FF"
+          fill="#A8CFC9"
         />
         <path
           d="M10 88 L60 64 L110 88 L60 112 Z"
-          fill="#2962FF"
+          fill="#0B4F4F"
           fillOpacity="0.15"
         />
       </svg>
@@ -144,10 +144,10 @@ export default function OnboardingLayout({
           </div>
           <a
             href="/support"
-            className="ml-auto font-body text-[14px] text-[#6B7280] transition-colors hover:text-[#2962FF]"
+            className="ml-auto font-body text-[14px] text-[#6B7280] transition-colors hover:text-[#0B4F4F]"
           >
             Having troubles?{" "}
-            <span className="font-semibold text-[#2962FF]">Get Help</span>
+            <span className="font-semibold text-[#0B4F4F]">Get Help</span>
           </a>
         </header>
 

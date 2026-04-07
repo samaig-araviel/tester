@@ -48,7 +48,7 @@ export default function IntroductionScreen({
             key={title}
             className="flex items-start gap-4 rounded-2xl border border-[#EEF0F4] bg-white p-4 shadow-[0_6px_20px_-18px_rgba(15,23,42,0.35)]"
           >
-            <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-[#D9DEE8] bg-[#EEF3FF] text-[#2962FF]">
+            <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-[#D9DEE8] bg-[#E5EDEB] text-[#0B4F4F]">
               <Icon className="h-5 w-5" />
             </span>
             <span className="flex min-w-0 flex-1 flex-col">
