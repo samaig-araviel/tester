@@ -48,32 +48,9 @@ function LeftPanel() {
       <div
         className="absolute inset-0"
         style={{
-          background: `
-            linear-gradient(135deg, #0A5C50 0%, #0E7566 30%, #1A8B6E 50%, #2D9B6E 80%, #34A572 100%)
-          `,
+            background: '#0B4F4F',
         }}
       />
-
-      {/* Radial glow overlays for depth */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at 20% 20%, rgba(255,255,255,0.08) 0%, transparent 60%)",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at 80% 80%, rgba(45,155,110,0.3) 0%, transparent 50%)",
-        }}
-      />
-
-      {/* Floating orbs */}
-      <div className="absolute top-[15%] left-[10%] w-48 h-48 rounded-full bg-white/[0.08] blur-sm" />
-      <div className="absolute bottom-[20%] right-[12%] w-64 h-64 rounded-full bg-white/[0.06] blur-md" />
-      <div className="absolute top-[55%] left-[60%] w-32 h-32 rounded-full bg-white/[0.1]" />
 
       {/* Dot grid overlay */}
       <div
@@ -97,37 +74,8 @@ function LeftPanel() {
 
         {/* Tagline */}
         <p className="font-body text-lg text-white/85 mb-8">
-          Benefits that work for parents
+            Support for every stage of work and family life
         </p>
-
-        {/* Glassmorphism illustration */}
-        <div className="relative w-[200px] h-[160px]">
-          {/* Main card */}
-          <div
-            className="absolute inset-0 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/[0.15]"
-            style={{ animation: "float 6s ease-in-out infinite" }}
-          />
-
-          {/* Floating decorative elements */}
-          <div
-            className="absolute -top-4 -right-6 w-12 h-12 rounded-lg bg-accent/30 border border-white/10"
-            style={{
-              animation: "float-slow 5s ease-in-out infinite",
-              transform: "rotate(6deg)",
-            }}
-          />
-          <div
-            className="absolute -bottom-3 -left-5 w-10 h-10 rounded-lg bg-white/[0.15] border border-white/10"
-            style={{
-              animation: "float-reverse 7s ease-in-out infinite",
-              transform: "rotate(-12deg)",
-            }}
-          />
-          <div
-            className="absolute top-6 -left-8 w-6 h-6 rounded-md bg-accent/20"
-            style={{ animation: "float-slow 8s ease-in-out infinite" }}
-          />
-        </div>
       </div>
 
       {/* Bottom text */}
