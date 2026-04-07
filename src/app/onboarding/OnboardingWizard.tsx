@@ -63,8 +63,11 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function handleSkipEarly() {
-    // Skip from Welcome or Introduction — go to dashboard
-    goToDashboard();
+    // Skip from Welcome or Introduction — mark onboarding complete and go to dashboard
+    startTransition(async () => {
+      await completeOnboarding();
+      goToDashboard();
+    });
   }
 
   function handleSkipStep() {
@@ -73,13 +76,19 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   }
 
   function handleSkipAll() {
-    // Skip the entire onboarding — go straight to dashboard
-    goToDashboard();
+    // Skip the entire onboarding — mark complete and go straight to dashboard
+    startTransition(async () => {
+      await completeOnboarding();
+      goToDashboard();
+    });
   }
 
   function handleSkipReview() {
-    // Skip from Review — go to dashboard with partial data
-    goToDashboard();
+    // Skip from Review — mark complete and go to dashboard with partial data
+    startTransition(async () => {
+      await completeOnboarding();
+      goToDashboard();
+    });
   }
 
   function handleEditFromReview(screenIndex: number) {
