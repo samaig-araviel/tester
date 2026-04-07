@@ -79,16 +79,16 @@ export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, 
     : null;
 
   return (
-    <div className="flex flex-col h-full justify-between">
+    <div className="flex flex-col gap-8 w-full">
       <div>
-        <h2 className="font-heading text-[32px] font-bold text-text-primary mb-3">
+        <h2 className="font-heading text-[28px] font-bold text-text-primary mb-2">
           Here&apos;s what you&apos;ve told us
         </h2>
-        <p className="font-body text-[16px] text-text-secondary mb-10">
+        <p className="font-body text-[15px] text-text-secondary mb-8">
           Review your answers below. You can edit any of them before confirming.
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 space-y-6">
+        <div className="space-y-4 bg-gray-50 rounded-lg p-5">
           <ReviewRow label="I am a..." value={identityDisplay} onEdit={() => onEdit(2)} />
           <ReviewRow label="Children" value={childCountDisplay} onEdit={() => onEdit(3)} />
           <ReviewRow label="Ages" value={agesDisplay} onEdit={() => onEdit(4)} />
@@ -97,12 +97,12 @@ export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, 
         </div>
       </div>
 
-      <div className="mt-12 space-y-3">
+      <div className="space-y-3 pt-4">
         <div className="flex gap-3">
           <button
             onClick={onBack}
             disabled={isPending}
-            className="flex items-center justify-center gap-2 h-[48px] px-6 rounded-lg bg-white border-2 border-primary text-primary hover:bg-primary-light hover:text-primary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
+            className="flex items-center justify-center gap-2 h-[44px] px-4 rounded-lg bg-white border-2 border-primary text-primary hover:bg-primary-light transition-colors cursor-pointer disabled:opacity-50 font-body text-[14px] font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -111,19 +111,21 @@ export default function ReviewScreen({ data, onConfirm, onBack, onSkip, onEdit, 
           <button
             onClick={onConfirm}
             disabled={isPending}
-            className="flex-1 h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 h-[44px] rounded-lg bg-primary text-white font-body font-medium text-[14px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isPending ? "Saving..." : "Confirm & finish"}
           </button>
         </div>
 
-        <button
-          onClick={onSkip}
-          disabled={isPending}
-          className="w-full py-2.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
-        >
-          Skip for now
-        </button>
+        <div className="text-center pt-2">
+          <button
+            onClick={onSkip}
+            disabled={isPending}
+            className="py-2 font-body text-[13px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
+          >
+            Skip for now
+          </button>
+        </div>
       </div>
     </div>
   );
