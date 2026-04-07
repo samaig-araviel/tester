@@ -234,11 +234,13 @@ export default function OnboardingWizard({ initialData }: OnboardingWizardProps)
   return (
     <div className="min-h-screen bg-white flex">
       {/* Left Sidebar - only show for screens 2-8 */}
-      {showStepper && <StepIndicator currentStep={stepIndex} />}
+      {showStepper && (
+        <StepIndicator currentStep={stepIndex} />
+      )}
 
       {/* Main Content Area */}
-      <div className="flex-1 flex items-center justify-center px-8 py-12">
-        <div className="w-full max-w-[700px]">
+      <div className="flex-1 flex flex-col items-center justify-center px-8 py-12">
+        <div className="w-full max-w-[600px]">
           <ScreenTransition key={currentScreen}>
             {renderScreen()}
           </ScreenTransition>
