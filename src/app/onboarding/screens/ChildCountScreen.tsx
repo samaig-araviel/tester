@@ -42,16 +42,16 @@ export default function ChildCountScreen({
   }
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="w-full flex-1">
-        <h2 className="font-heading text-[24px] font-bold text-text-primary mb-2">
+    <div className="flex flex-col h-full justify-between">
+      <div>
+        <h2 className="font-heading text-[32px] font-bold text-text-primary mb-3">
           How many children do you have?
         </h2>
-        <p className="font-body text-[14px] text-text-secondary mb-6">
+        <p className="font-body text-[16px] text-text-secondary mb-10">
           Select one option. You can also toggle &quot;Expecting&quot; alongside a number.
         </p>
 
-        <div className="flex flex-wrap gap-3 mb-4">
+        <div className="flex flex-wrap gap-4">
           <PillButton
             label="Expecting"
             selected={expecting}
@@ -68,18 +68,18 @@ export default function ChildCountScreen({
         </div>
 
         {expecting && count && (
-          <p className="font-body text-[13px] text-primary mb-4">
+          <p className="font-body text-[14px] text-primary mt-6">
             Expecting + {count} {count === "1" ? "child" : "children"}
           </p>
         )}
       </div>
 
-      <div className="w-full space-y-3">
+      <div className="mt-12 space-y-3">
         <div className="flex gap-3">
           <button
             onClick={onBack}
             disabled={isPending}
-            className="flex items-center justify-center gap-1.5 h-[44px] px-4 rounded-xl bg-surface border border-primary text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
+            className="flex items-center justify-center gap-2 h-[48px] px-6 rounded-lg bg-white border-2 border-primary text-primary hover:bg-primary-light hover:text-primary transition-colors cursor-pointer disabled:opacity-50 font-body text-[15px] font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -88,7 +88,7 @@ export default function ChildCountScreen({
           <button
             onClick={handleContinue}
             disabled={!hasSelection || isPending}
-            className="flex-1 h-[44px] rounded-xl bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 h-[48px] rounded-lg bg-primary text-white font-body font-medium text-[15px] hover:bg-primary-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isPending ? "Saving..." : "Continue"}
           </button>
@@ -97,7 +97,7 @@ export default function ChildCountScreen({
         <button
           onClick={onSkip}
           disabled={isPending}
-          className="w-full py-2 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
+          className="w-full py-2.5 font-body text-[14px] text-text-secondary hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
         >
           Skip this step
         </button>
@@ -105,7 +105,7 @@ export default function ChildCountScreen({
         <button
           onClick={onSkipAll}
           disabled={isPending}
-          className="w-full py-1 font-body text-[13px] text-text-secondary/70 hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
+          className="w-full py-2 font-body text-[13px] text-text-secondary/70 hover:text-text-primary transition-colors cursor-pointer disabled:opacity-50"
         >
           Skip setup entirely
         </button>
