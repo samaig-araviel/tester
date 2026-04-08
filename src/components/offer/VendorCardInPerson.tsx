@@ -78,7 +78,7 @@ export default function VendorCardInPerson({
 
       {/* Offer title */}
       {offerTitle && (
-        <p className="font-body text-[12px] text-muted-grey mt-3 leading-relaxed text-center">
+        <p className="font-body text-[16px] text-muted-grey mt-3 leading-relaxed text-center">
           {offerTitle}
         </p>
       )}

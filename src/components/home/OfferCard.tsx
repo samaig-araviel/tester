@@ -74,6 +74,7 @@ export default function OfferCard({
   const categoryLabel = formatCategory(category);
   const tagLine = [deliveryLabel, categoryLabel].filter(Boolean).join(" \u00B7 ");
   const ageLabel = formatAgeLabel(ageRelevance);
+  const serviceTag = deliveryLabel === "IN-PERSON" ? "In-person" : "Online"
 
   return (
     <div
@@ -123,7 +124,7 @@ export default function OfferCard({
         {/* Vendor name centered at top */}
         <div className="absolute top-3 left-0 right-0 flex justify-center pointer-events-none">
           <span className="px-3 py-1 rounded-lg bg-white/80 backdrop-blur-sm font-body text-[11px] font-semibold text-charcoal shadow-sm max-w-[60%] truncate">
-            {vendorName}
+            {serviceTag}
           </span>
         </div>
       </div>
@@ -154,11 +155,6 @@ export default function OfferCard({
           {ageLabel && (
             <span className="px-2 py-0.5 rounded-full border border-border text-muted-grey font-body text-[10px]">
               {ageLabel}
-            </span>
-          )}
-          {deliveryLabel && (
-            <span className="px-2 py-0.5 rounded-full border border-border text-muted-grey font-body text-[10px]">
-              {deliveryLabel === "IN-PERSON" ? "In-person" : "Online"}
             </span>
           )}
         </div>

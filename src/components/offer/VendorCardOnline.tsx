@@ -83,7 +83,7 @@ export default function VendorCardOnline({
 
       {/* Offer title */}
       {offerTitle && (
-        <p className="font-body text-[12px] text-muted-grey text-center mt-1.5">
+        <p className="font-body text-[16px] text-muted-grey text-center mt-1.5">
           {offerTitle}
         </p>
       )}

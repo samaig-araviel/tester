@@ -82,11 +82,6 @@ export default function ParentsHubContent({
       <div className="mt-12">
         <MoneySection articles={moneyArticles} />
       </div>
-
-      {/* Trusted External Resources */}
-      <div className="mt-12">
-        <ExternalResources resources={externalResources} />
-      </div>
     </>
   );
 }
