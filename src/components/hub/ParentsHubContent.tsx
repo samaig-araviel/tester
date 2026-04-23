@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import HubHero from "./HubHero";
 import RecommendedGuides from "./RecommendedGuides";
+import Testimonial from "./Testimonial";
 import ArticlesSection from "./ArticlesSection";
 import PodcastsSection from "./PodcastsSection";
 import MoneySection from "./MoneySection";
@@ -60,11 +61,20 @@ export default function ParentsHubContent({
       {/* Hero — full-bleed terracotta */}
       <HubHero />
 
-      {/* Mid-page sections within the page max-width */}
-      <div className="max-w-[1200px] mx-auto px-6 py-16">
+      {/* Recommended guides */}
+      <div className="max-w-[1200px] mx-auto px-6 pt-16">
         <RecommendedGuides articles={recommendedArticles} />
+      </div>
 
-        <div className="mt-16 flex flex-col lg:flex-row gap-10">
+      {/* Testimonial */}
+      <Testimonial
+        quote="Parenfits helped me navigate my return to work with confidence. The personalized timeline and toolkit made all the difference in planning my transition back."
+        author="Sarah, London"
+      />
+
+      {/* Articles + Podcasts */}
+      <div className="max-w-[1200px] mx-auto px-6 pb-16">
+        <div className="flex flex-col lg:flex-row gap-10">
           <ArticlesSection
             articles={allArticles}
             searchQuery={searchQuery}
