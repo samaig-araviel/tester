@@ -47,29 +47,37 @@ export default function RecommendedGuides({ articles }: RecommendedGuidesProps) 
 
   return (
     <section>
-      {/* Header with arrows */}
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="font-heading text-[24px] font-semibold text-soft-navy">
-          Recommended guides and resources for you
+      {/* Section header — centred tag, heading, subheading */}
+      <div className="text-center max-w-2xl mx-auto mb-12">
+        <p className="font-body text-[0.85rem] uppercase tracking-[2px] text-[#999]">
+          Recommended for you
+        </p>
+        <h2 className="font-heading text-[2.5rem] md:text-[3.5rem] font-bold text-[#2A2A2A] leading-[1.2] mt-4">
+          Guides curated for your journey
         </h2>
-        <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-          <button
-            onClick={() => scroll("left")}
-            disabled={!canScrollLeft}
-            className="w-10 h-10 rounded-full border border-border bg-surface flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
-            aria-label="Scroll left"
-          >
-            <ChevronLeft className="w-5 h-5 text-charcoal" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            disabled={!canScrollRight}
-            className="w-10 h-10 rounded-full border border-border bg-surface flex items-center justify-center transition-all duration-150 hover:border-warm-teal hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
-            aria-label="Scroll right"
-          >
-            <ChevronRight className="w-5 h-5 text-charcoal" />
-          </button>
-        </div>
+        <p className="font-body text-[1.1rem] text-[#666] mt-4 leading-relaxed">
+          Personalized content based on where you are in your parenting path.
+        </p>
+      </div>
+
+      {/* Carousel arrows above scroll row */}
+      <div className="flex items-center justify-end gap-2 mb-4">
+        <button
+          onClick={() => scroll("left")}
+          disabled={!canScrollLeft}
+          className="w-10 h-10 rounded-full border border-border bg-surface flex items-center justify-center transition-all duration-150 hover:border-[#C96846] hover:text-[#C96846] hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+          aria-label="Scroll left"
+        >
+          <ChevronLeft className="w-5 h-5 text-charcoal" />
+        </button>
+        <button
+          onClick={() => scroll("right")}
+          disabled={!canScrollRight}
+          className="w-10 h-10 rounded-full border border-border bg-surface flex items-center justify-center transition-all duration-150 hover:border-[#C96846] hover:text-[#C96846] hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+          aria-label="Scroll right"
+        >
+          <ChevronRight className="w-5 h-5 text-charcoal" />
+        </button>
       </div>
 
       {/* Horizontal scroll container */}

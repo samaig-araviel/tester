@@ -144,7 +144,7 @@ function ExploreDropdown() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors cursor-pointer"
+        className="flex items-center gap-1 font-body text-[15px] font-medium text-[#2A2A2A] hover:text-[#C96846] transition-colors cursor-pointer"
       >
         Explore Services
         <ChevronDown
@@ -208,13 +208,13 @@ export default function Navbar() {
           <ExploreDropdown />
           <Link
             href="/parents-hub"
-            className="font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors"
+            className="font-body text-[15px] font-medium text-[#2A2A2A] hover:text-[#C96846] transition-colors"
           >
             Parents Hub
           </Link>
           <Link
             href="/resources"
-            className="font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors"
+            className="font-body text-[15px] font-medium text-[#2A2A2A] hover:text-[#C96846] transition-colors"
           >
             Resources
           </Link>
