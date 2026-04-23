@@ -235,7 +235,7 @@ export default async function DashboardPage() {
     .eq("id", user.id);
 
   return (
-    <div className="min-h-screen bg-surface overflow-x-hidden">
+    <div className="min-h-screen bg-bg overflow-x-hidden">
       <Navbar />
 
       <main className="max-w-[1200px] mx-auto px-6 pt-10 pb-0">

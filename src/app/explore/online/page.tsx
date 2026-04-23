@@ -110,7 +110,7 @@ export default async function ExploreOnlinePage() {
   const displayVendors = vendors.length > 0 ? vendors : MOCK_ONLINE_VENDORS;
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-bg">
       <Navbar />
       <main className="max-w-[1200px] mx-auto px-6 py-10">
         <ExploreContent
