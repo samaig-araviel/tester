@@ -190,7 +190,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-[#F5F1E8] transition-[border-color] duration-200 px-12 py-6 ${
+      className={`sticky top-0 z-50 bg-bg transition-[border-color] duration-200 px-12 py-6 ${
         scrolled ? "border-b border-black/5" : "border-b border-transparent"
       }`}
     >

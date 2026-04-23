@@ -57,31 +57,28 @@ export default function ParentsHubContent({
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero — full-bleed terracotta */}
       <HubHero />
 
-      {/* Recommended Guides */}
-      <div className="mt-12">
+      {/* Mid-page sections within the page max-width */}
+      <div className="max-w-[1200px] mx-auto px-6 py-16">
         <RecommendedGuides articles={recommendedArticles} />
+
+        <div className="mt-16 flex flex-col lg:flex-row gap-10">
+          <ArticlesSection
+            articles={allArticles}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
+            activeFilters={activeFilters}
+            onToggleFilter={toggleFilter}
+            onClearFilters={clearFilters}
+          />
+          <PodcastsSection podcasts={podcasts} />
+        </div>
       </div>
 
-      {/* Articles + Podcasts two-column */}
-      <div className="mt-12 flex flex-col lg:flex-row gap-16">
-        <ArticlesSection
-          articles={allArticles}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          activeFilters={activeFilters}
-          onToggleFilter={toggleFilter}
-          onClearFilters={clearFilters}
-        />
-        <PodcastsSection podcasts={podcasts} />
-      </div>
-
-      {/* Money & Financial Support */}
-      <div className="mt-12">
-        <MoneySection articles={moneyArticles} />
-      </div>
+      {/* Money & Financial Support — full-bleed dark */}
+      <MoneySection articles={moneyArticles} />
     </>
   );
 }
