@@ -144,7 +144,7 @@ function ExploreDropdown() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 font-body text-[15px] font-medium text-charcoal hover:text-warm-teal transition-colors cursor-pointer"
+        className="flex items-center gap-1 font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors cursor-pointer"
       >
         Explore Services
         <ChevronDown
@@ -190,49 +190,46 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-surface transition-[border-color] duration-200 ${
-        scrolled ? "border-b border-border" : "border-b border-transparent"
+      className={`sticky top-0 z-50 bg-[#F5F1E8] transition-[border-color] duration-200 px-12 py-6 ${
+        scrolled ? "border-b border-black/5" : "border-b border-transparent"
       }`}
-      style={{ height: 72 }}
     >
-      <div className="max-w-[1200px] mx-auto px-6 h-full">
-        <div className="flex items-center justify-between h-full">
-          {/* Left: Logo */}
-          <Link href="/dashboard" className="flex items-center gap-2">
-            <Leaf className="w-7 h-7 text-primary" strokeWidth={2.5} />
-            <span className="font-heading text-xl font-bold text-primary">
-              Parentfits
-            </span>
+      <div className="flex items-center justify-between">
+        {/* Left: Logo */}
+        <Link href="/dashboard" className="flex items-center gap-2">
+          <Leaf className="w-9 h-9 text-[#2A2A2A]" strokeWidth={2.5} />
+          <span className="font-heading text-[2.5rem] leading-none font-bold tracking-[-1px] text-[#2A2A2A]">
+            Parentfits
+          </span>
+        </Link>
+
+        {/* Centre: Navigation */}
+        <div className="hidden md:flex items-center gap-12">
+          <ExploreDropdown />
+          <Link
+            href="/parents-hub"
+            className="font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors"
+          >
+            Parents Hub
           </Link>
+          <Link
+            href="/resources"
+            className="font-body text-[0.9rem] font-medium uppercase tracking-[1px] text-[#2A2A2A] hover:text-[#C96846] transition-colors"
+          >
+            Resources
+          </Link>
+        </div>
 
-          {/* Centre: Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <ExploreDropdown />
-            <Link
-              href="/parents-hub"
-              className="font-body text-[15px] font-medium text-charcoal hover:text-warm-teal transition-colors"
-            >
-              Parents Hub
-            </Link>
-            <Link
-              href="/resources"
-              className="font-body text-[15px] font-medium text-charcoal hover:text-warm-teal transition-colors"
-            >
-              Resources
-            </Link>
-          </div>
-
-          {/* Right: Actions */}
-          <div className="flex items-center gap-5">
-            <Link
-              href="/saved"
-              className="relative flex items-center justify-center w-9 h-9 rounded-full bg-warm-teal-light hover:bg-primary-light transition-colors"
-              aria-label="Saved perks"
-            >
-              <Heart className="w-[18px] h-[18px] text-warm-teal fill-warm-teal" />
-            </Link>
-            <ProfileMenu />
-          </div>
+        {/* Right: Actions */}
+        <div className="flex items-center gap-4">
+          <Link
+            href="/saved"
+            className="flex items-center justify-center w-[45px] h-[45px] rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:scale-110 transition-transform"
+            aria-label="Saved perks"
+          >
+            <Heart className="w-5 h-5 text-[#C96846] fill-[#C96846]" />
+          </Link>
+          <ProfileMenu />
         </div>
       </div>
     </nav>
