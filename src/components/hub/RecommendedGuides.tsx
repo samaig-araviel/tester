@@ -48,14 +48,14 @@ export default function RecommendedGuides({ articles }: RecommendedGuidesProps) 
   return (
     <section>
       {/* Section header — centred tag, heading, subheading */}
-      <div className="text-center max-w-2xl mx-auto mb-12">
+      <div className="text-center mb-12">
         <p className="font-body text-[0.85rem] uppercase tracking-[2px] text-[#999]">
           Recommended for you
         </p>
-        <h2 className="font-heading text-[2.5rem] md:text-[3.5rem] font-bold text-[#2A2A2A] leading-[1.2] mt-4">
+        <h2 className="font-heading text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold text-[#2A2A2A] leading-[1.2] mt-4 lg:whitespace-nowrap">
           Guides curated for your journey
         </h2>
-        <p className="font-body text-[1.1rem] text-[#666] mt-4 leading-relaxed">
+        <p className="font-body text-[1.1rem] text-[#666] mt-4 leading-relaxed max-w-[600px] mx-auto">
           Personalized content based on where you are in your parenting path.
         </p>
       </div>
