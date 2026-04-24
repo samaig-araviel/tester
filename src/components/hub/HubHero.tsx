@@ -31,7 +31,7 @@ export default function HubHero() {
         </p>
         <div className="mt-10 md:mt-12 flex justify-center">
           <Link
-            href="/parents-hub/maternity-calculator"
+            href="/parents-hub/register-leave"
             className="inline-flex items-center justify-center px-10 py-4 bg-white text-[#C96846] font-body font-bold text-[0.85rem] md:text-[0.95rem] uppercase tracking-[1px] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)]"
           >
             Register Your Parental Leave
