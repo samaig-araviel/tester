@@ -4,6 +4,7 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ChevronDown, ChevronRight } from "lucide-react";
 import type { Coach, AvatarTone } from "@/lib/coaches";
+import {sendEmail} from "@/app/email/sendEmail";
 
 /* ─── Types ─── */
 
@@ -553,8 +554,10 @@ export default function ParentalLeaveRegistration({
   }, [scrollToTop]);
 
   const handleConfirm = useCallback(() => {
-    setSubmitted(true);
-    scrollToTop();
+    sendEmail().then(r => {
+      setSubmitted(true);
+      scrollToTop();
+    });
   }, [scrollToTop]);
 
   const handleRestart = useCallback(() => {
