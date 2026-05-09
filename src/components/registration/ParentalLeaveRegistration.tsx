@@ -613,6 +613,8 @@ export default function ParentalLeaveRegistration() {
         if (!form.email.trim()) issues.push("Please add your work email.");
         else if (!EMAIL_PATTERN.test(form.email.trim()))
           issues.push("That email doesn't look quite right — can you check it?");
+        if (!form.sessionFormat)
+          issues.push("Please choose your preferred session format.");
       }
       if (step === 2) {
         if (!form.coachId) issues.push("Please choose a coach to continue.");
@@ -785,7 +787,7 @@ export default function ParentalLeaveRegistration() {
       </div>
 
       <div>
-        <FieldLabel htmlFor="sessionFormat" optional>
+        <FieldLabel htmlFor="sessionFormat">
           Preferred session format
         </FieldLabel>
         <Select
