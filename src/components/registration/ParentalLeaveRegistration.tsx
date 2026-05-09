@@ -14,13 +14,13 @@ import {
   UserPlus,
   Users,
 } from "lucide-react";
+import type { Coach, AvatarTone } from "@/lib/coaches";
 
 /* ─── Types ─── */
 
 type LeaveType = "maternity" | "paternity" | "shared" | "adoption";
 type LeaveStage = "pre" | "during" | "returning";
 type SessionFormat = "video" | "phone" | "no-preference";
-type AvatarTone = "teal" | "sage" | "gold" | "sand";
 
 interface LeaveOption {
   value: LeaveType;
@@ -32,15 +32,6 @@ interface StageOption {
   value: LeaveStage;
   label: string;
   helper: string;
-}
-
-interface Coach {
-  id: string;
-  name: string;
-  initials: string;
-  specialism: string;
-  tags: string[];
-  avatarTone: AvatarTone;
 }
 
 interface FormState {
@@ -107,41 +98,6 @@ const SESSION_FORMAT_OPTIONS: { value: SessionFormat; label: string }[] = [
   { value: "video", label: "Video call (Zoom / Teams)" },
   { value: "phone", label: "Phone call" },
   { value: "no-preference", label: "No preference" },
-];
-
-const COACHES: Coach[] = [
-  {
-    id: "sarah-turner",
-    name: "Sarah Turner",
-    initials: "ST",
-    specialism: "Parental transition & executive coaching",
-    tags: ["Return to work", "Identity shift", "Leadership"],
-    avatarTone: "teal",
-  },
-  {
-    id: "lisa-boyd",
-    name: "Lisa Boyd",
-    initials: "LB",
-    specialism: "Executive & parental transition coaching",
-    tags: ["Confidence", "Career planning", "Balance"],
-    avatarTone: "sage",
-  },
-  {
-    id: "suzy-stollery",
-    name: "Suzy Stollery",
-    initials: "SS",
-    specialism: "Accredited parental transition coach",
-    tags: ["Pre-leave prep", "Wellbeing"],
-    avatarTone: "gold",
-  },
-  {
-    id: "ian-dinwiddy",
-    name: "Ian Dinwiddy",
-    initials: "ID",
-    specialism: "Working parent coach",
-    tags: ["Paternity", "Working dads", "Shared leave"],
-    avatarTone: "sand",
-  },
 ];
 
 const STEPS: StepConfig[] = [
@@ -568,7 +524,11 @@ function SuccessScreen({
 
 /* ─── Main component ─── */
 
-export default function ParentalLeaveRegistration() {
+export default function ParentalLeaveRegistration({
+  coaches,
+}: {
+  coaches: Coach[];
+}) {
   const [currentStep, setCurrentStep] = useState(0);
   const [form, setForm] = useState<FormState>(INITIAL_STATE);
   const [errors, setErrors] = useState<string[]>([]);
@@ -576,8 +536,8 @@ export default function ParentalLeaveRegistration() {
   const formRef = useRef<HTMLDivElement>(null);
 
   const selectedCoach = useMemo(
-    () => COACHES.find((c) => c.id === form.coachId) ?? null,
-    [form.coachId]
+    () => coaches.find((c) => c.id === form.coachId) ?? null,
+    [coaches, form.coachId]
   );
 
   const update = useCallback(
@@ -819,7 +779,7 @@ export default function ParentalLeaveRegistration() {
       </div>
 
       <div role="radiogroup" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {COACHES.map((coach) => (
+        {coaches.map((coach) => (
           <CoachCard
             key={coach.id}
             coach={coach}

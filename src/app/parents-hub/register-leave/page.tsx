@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ParentalLeaveRegistration from "@/components/registration/ParentalLeaveRegistration";
+import { getCoaches } from "@/lib/coaches";
 
 export const metadata = {
   title: "Register your parental leave | Parentfits",
@@ -20,11 +21,13 @@ export default async function RegisterLeavePage() {
     redirect("/login");
   }
 
+  const coaches = await getCoaches();
+
   return (
     <div className="min-h-screen bg-onboarding-bg">
       <Navbar />
       <main>
-        <ParentalLeaveRegistration />
+        <ParentalLeaveRegistration coaches={coaches} />
       </main>
       <Footer />
     </div>
