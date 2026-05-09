@@ -460,13 +460,13 @@ function SuccessScreen({
             Back to Parents Hub
             <ArrowRight className="w-4 h-4" />
           </Link>
-          <button
+          {/*<button
             type="button"
             onClick={onRestart}
             className="inline-flex items-center justify-center h-[48px] px-6 rounded-lg font-body text-[14px] font-medium text-muted-grey hover:text-charcoal transition-colors duration-200 cursor-pointer"
           >
             Register another leave
-          </button>
+          </button>*/}
         </div>
       </div>
     </article>
