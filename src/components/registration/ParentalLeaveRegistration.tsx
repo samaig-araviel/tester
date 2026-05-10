@@ -554,15 +554,33 @@ export default function ParentalLeaveRegistration({
   }, [scrollToTop]);
 
   const handleConfirm = useCallback(() => {
-    if (!selectedCoach) {
-      setErrors(["Please choose a coach to continue."]);
+    if (!selectedCoach || !form.leaveType || !form.stage || !form.sessionFormat) {
+      setErrors(["Please complete every step before confirming."]);
       return;
     }
-    sendEmail(selectedCoach.email).then(() => {
+    sendEmail({
+      coach: { name: selectedCoach.name, email: selectedCoach.email },
+      parent: {
+        firstName: form.firstName.trim(),
+        lastName: form.lastName.trim(),
+        email: form.email.trim(),
+        jobTitle: form.jobTitle.trim(),
+      },
+      leave: {
+        type: LEAVE_LABELS[form.leaveType],
+        stage: STAGE_LABELS[form.stage],
+        startDate: form.leaveStartDate ? formatDate(form.leaveStartDate) : "",
+        returnDate: form.returnDate ? formatDate(form.returnDate) : "",
+      },
+      sessionFormat:
+        SESSION_FORMAT_OPTIONS.find((o) => o.value === form.sessionFormat)
+          ?.label ?? "",
+      preparation: form.preparation.trim(),
+    }).then(() => {
       setSubmitted(true);
       scrollToTop();
     });
-  }, [selectedCoach, scrollToTop]);
+  }, [selectedCoach, form, scrollToTop]);
 
   const handleRestart = useCallback(() => {
     setForm(INITIAL_STATE);
