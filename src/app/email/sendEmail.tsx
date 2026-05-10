@@ -2,7 +2,7 @@
 
 import {Resend} from 'resend';
 
-export async function sendEmail() {
+export async function sendEmail(coachEmail: string) {
     const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
@@ -13,7 +13,7 @@ export async function sendEmail() {
 
     return await resend.emails.send({
         from: 'hello@parentfits.com',
-        to: 'momamplified@gmail.com',
+        to: coachEmail,
         subject: 'Testing Parents Fits',
         html: '<p>Testing sending coach email <strong>first email</strong>!</p>',
     });

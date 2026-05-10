@@ -554,11 +554,15 @@ export default function ParentalLeaveRegistration({
   }, [scrollToTop]);
 
   const handleConfirm = useCallback(() => {
-    sendEmail().then(r => {
+    if (!selectedCoach) {
+      setErrors(["Please choose a coach to continue."]);
+      return;
+    }
+    sendEmail(selectedCoach.email).then(() => {
       setSubmitted(true);
       scrollToTop();
     });
-  }, [scrollToTop]);
+  }, [selectedCoach, scrollToTop]);
 
   const handleRestart = useCallback(() => {
     setForm(INITIAL_STATE);
